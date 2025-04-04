@@ -34,7 +34,7 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/8ee80040-e5b2-47fb-88f7-a7cd86f740dc.png"
                 alt="Aleksandr Teymurazov"
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-top"
               />
             </div>
           </div>
