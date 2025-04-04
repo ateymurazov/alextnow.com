@@ -19,6 +19,14 @@ const About = () => {
             cross-functional teams spanning multiple time zones and continents. This diverse background 
             gives me a holistic perspective that bridges technical excellence with strategic leadership.
           </p>
+          <p className="text-lg text-gray-700 mb-4">
+            I bring extensive experience in mergers and acquisitions, having successfully integrated 
+            multiple engineering teams from acquired companies at both Shutterfly and Deluxe Corporation. 
+            At Deluxe, I migrated five engineering teams from different acquisitions into a unified One Deluxe 
+            organization, achieving cost savings of $500,000 through tools and license consolidation. 
+            Similarly, at Shutterfly, I led the integration of teams from Snapfish, Lifetouch, Spoonflower, 
+            and Shutterfly Business Solutions into a single cohesive engineering organization.
+          </p>
           <p className="text-lg text-gray-700">
             Today, I leverage my expertise in AI-driven methodologies, cloud architecture, and 
             microservices testing to drive organizational transformation. My approach combines deep 
@@ -43,7 +51,7 @@ const About = () => {
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Specialties:</span>
-              <span>AI-Driven Testing, CI/CD, Cloud Infrastructure, Leadership</span>
+              <span>AI-Driven Testing, CI/CD, M&A Integration, Cloud Infrastructure, Leadership</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Certifications:</span>

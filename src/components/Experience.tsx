@@ -12,6 +12,7 @@ const experienceData = [
       "Defined and executed a multi-year Quality Engineering roadmap, integrating predictive analytics, risk-based testing, and AI-driven test automation to accelerate release cycles by 35% and reduced manual testing efforts by 90%.",
       "Led AI-driven test automation for microservices-based applications, ensuring seamless deployments and zero-downtime releases across 15 teams.",
       "Designed and implemented a scalable, microservices-centric automated testing framework, reducing unknown failures and enabling continuous delivery.",
+      "Successfully integrated engineering teams from multiple acquisitions including Snapfish, Lifetouch, Spoonflower, and Shutterfly Business Solutions into a cohesive single engineering organization with standardized processes and tooling.",
       "Built an end-to-end test automation framework that fully integrates into CI/CD pipelines, eliminating manual validation and cutting test execution time by 30%.",
       "Introduced AI-powered automated test generation and self-healing test scripts, reducing manual authoring efforts by 50%."
     ]
@@ -23,6 +24,8 @@ const experienceData = [
     period: "Feb 2018 - Oct 2020",
     description: [
       "Led 5 diverse product development teams across multiple time zones, overseeing the entire product lifecycle from conception to deployment.",
+      "Orchestrated the consolidation of engineering teams from multiple acquired companies into One Deluxe platform, standardizing development practices and establishing unified CI/CD workflows.",
+      "Achieved over $500,000 in annual cost savings by consolidating and renegotiating tools and licensing contracts across merged engineering organizations.",
       "Built and led a world-class engineering team that fully automated the CI/CD build and deploy process, achieving 100% automated validation.",
       "Developed a distributed, microservices-driven Small Business Services platform to support large-scale enterprise SaaS applications, ensuring smooth service integration.",
       "Spearheaded an internal incubator initiative, driving innovation and new revenue growth by launching a distributed data processing platform that generated over $15M in new revenue.",

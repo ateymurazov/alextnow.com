@@ -15,8 +15,9 @@ const Hero = () => {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 mb-8">
               My journey from Quality Assurance Engineer to Executive Leadership spans over 20 years, 
-              specializing in building automation frameworks, leading globally distributed teams, and 
-              implementing AI-driven methodologies that transform organizations and drive business growth.
+              specializing in building automation frameworks, integrating engineering teams through M&A, 
+              leading globally distributed teams, and implementing AI-driven methodologies that transform 
+              organizations and drive business growth.
             </p>
             <div className="flex gap-4">
               <Button asChild>
