@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, LinkedIn, ArrowRight } from 'lucide-react';
+import { Mail, Linkedin, ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             
             <div className="flex items-center">
-              <LinkedIn className="h-5 w-5 text-primary mr-3" />
+              <Linkedin className="h-5 w-5 text-primary mr-3" />
               <a 
                 href="https://linkedin.com/in/johndoe" 
                 target="_blank" 
