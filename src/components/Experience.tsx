@@ -22,11 +22,11 @@ const experienceData = [
     company: "Deluxe Corp.",
     period: "Feb 2018 - Oct 2020",
     description: [
+      "Led 5 diverse product development teams across multiple time zones, overseeing the entire product lifecycle from conception to deployment.",
       "Built and led a world-class engineering team that fully automated the CI/CD build and deploy process, achieving 100% automated validation.",
       "Developed a distributed, microservices-driven Small Business Services platform to support large-scale enterprise SaaS applications, ensuring smooth service integration.",
       "Spearheaded an internal incubator initiative, driving innovation and new revenue growth by launching a distributed data processing platform that generated over $15M in new revenue.",
-      "Played a key role in M&A technical due diligence, evaluating company IP, software infrastructure and defining post-acquisition integration strategies for acquired companies.",
-      "Provided critical insights that influenced executive decision-making on the acquisition of MyCorporation (Calabasas, CA). Defined post-acquisition integration strategy."
+      "Played a key role in M&A technical due diligence, evaluating company IP, software infrastructure and defining post-acquisition integration strategies for acquired companies."
     ]
   },
   {
@@ -35,11 +35,11 @@ const experienceData = [
     company: "Deluxe Corp.",
     period: "Aug 2015 - Feb 2018",
     description: [
+      "Promoted from Development Manager to Director, taking on expanded responsibilities for multiple engineering teams.",
       "Reduced time to production by 40% for enterprise applications through automation and agile methodologies.",
       "Automated software capital expense reporting process, eliminating manual intervention and significantly improving accuracy, efficiency, and compliance in financial reporting.",
       "Standardized cross-team SDLC processes, tools and frameworks, increasing development velocity by 20% and reducing production incidents.",
-      "Achieved annual $250k cost savings by consolidating & renegotiating licensing contracts for GitHub & Atlassian Tools.",
-      "Optimized cloud-based test environments (AWS, Kubernetes) to ensure high availability and cost efficiency."
+      "Achieved annual $250k cost savings by consolidating & renegotiating licensing contracts for GitHub & Atlassian Tools."
     ]
   },
   {
@@ -48,11 +48,11 @@ const experienceData = [
     company: "Deluxe Corp.",
     period: "Jul 2013 - Aug 2015",
     description: [
-      "Managed a cross-functional team, post-acquisition to build a highly scalable, microservices-driven One Deluxe platform, while ensuring HIPAA and compliance readiness.",
+      "Promoted from QA Manager to Development Manager following the acquisition of VerticalResponse by Deluxe Corp.",
+      "Managed a cross-functional team to build a highly scalable, microservices-driven One Deluxe platform, while ensuring HIPAA and compliance readiness.",
       "Designed and implemented data analysis frameworks for testing distributed systems handling billions of records.",
       "Increased platform scalability and email delivery performance by 50%.",
-      "Recruited, hired and mentored a top-notch talent engineering team, consisting of front/back-end, full-stack developers, test automation, quality, and dev ops engineers.",
-      "Achieved PCI Compliance certification for the Email Marketing (VR2) platform."
+      "Recruited, hired and mentored a top-notch talent engineering team, consisting of front/back-end, full-stack developers, test automation, quality, and dev ops engineers."
     ]
   },
   {
@@ -61,10 +61,24 @@ const experienceData = [
     company: "VerticalResponse",
     period: "Aug 2009 - Jul 2013",
     description: [
+      "Advanced from Senior QA Engineer to QA Manager, leading the quality assurance strategy for the entire organization.",
       "Introduced Test-Driven Development (TDD) and developed an end-to-end automated test suite, increasing deployment frequency to 2-3 times per week.",
       "Developed Continuous Integration (CI) workflows, utilizing parallelization that reduced test runtime from 4.5 hrs. to 30 min and increased test capacity by 5x.",
       "Achieved 90% test coverage for mission-critical components through comprehensive automation strategies.",
       "Architected a GitHub branching strategy to support concurrent major features development, boosting productivity."
+    ]
+  },
+  {
+    id: 6,
+    role: "Senior QA Engineer",
+    company: "VerticalResponse",
+    period: "Jan 2009 - Aug 2009",
+    description: [
+      "Started as a hands-on Quality Assurance Engineer, quickly advancing to a senior role.",
+      "Built the company's first automated testing framework from scratch, establishing the foundation for quality processes.",
+      "Implemented comprehensive regression testing protocols that reduced production defects by 60%.",
+      "Collaborated closely with development teams to enhance product quality and streamline the release process.",
+      "Recognized for exceptional performance, resulting in rapid promotion to QA Manager within 8 months."
     ]
   }
 ];

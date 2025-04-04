@@ -8,20 +8,22 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <p className="text-lg text-gray-700 mb-4">
-            As a Technology & Quality Engineering Leader, I bring over two decades of global experience 
-            transforming engineering teams through cutting-edge automation, AI-driven methodologies, 
-            and strategic technological innovation.
+            My journey began as a Quality Assurance Engineer, where I discovered my passion for building 
+            robust test automation frameworks from the ground up. Over the past two decades, I've evolved 
+            from hands-on QA to leading global engineering organizations, always maintaining my commitment 
+            to quality and innovation.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            My expertise spans microservices architecture, cloud infrastructure, and AI-powered testing 
-            frameworks. I've consistently driven organizational efficiency by implementing advanced 
-            automation strategies that reduce manual efforts and accelerate delivery cycles.
+            What sets me apart is my unique trajectory – starting in quality assurance, advancing to 
+            automation engineering, and growing into leadership roles where I've successfully managed 
+            cross-functional teams spanning multiple time zones and continents. This diverse background 
+            gives me a holistic perspective that bridges technical excellence with strategic leadership.
           </p>
           <p className="text-lg text-gray-700">
-            With a proven track record of leading distributed teams across continents, I specialize in 
-            creating scalable solutions that bridge technological innovation with business growth. 
-            My approach combines deep technical expertise with strategic leadership to deliver 
-            exceptional results.
+            Today, I leverage my expertise in AI-driven methodologies, cloud architecture, and 
+            microservices testing to drive organizational transformation. My approach combines deep 
+            technical knowledge with people-focused leadership, creating environments where teams thrive 
+            and deliver exceptional results that directly impact business outcomes.
           </p>
         </div>
         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
