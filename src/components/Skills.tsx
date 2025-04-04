@@ -4,46 +4,46 @@ import React from 'react';
 const skillsCategories = [
   {
     id: 1,
-    name: "Frontend",
+    name: "Leadership & Management",
     skills: [
-      { name: "React", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Redux", level: 80 },
-      { name: "Next.js", level: 75 }
+      { name: "Team Leadership", level: 95 },
+      { name: "Agile Transformation", level: 90 },
+      { name: "Mentoring", level: 90 },
+      { name: "Project Management", level: 85 },
+      { name: "M&A Technical Integration", level: 85 }
     ]
   },
   {
     id: 2,
-    name: "Backend",
+    name: "Quality Engineering & Automation",
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express", level: 80 },
-      { name: "RESTful APIs", level: 90 },
-      { name: "GraphQL", level: 70 },
-      { name: "PostgreSQL", level: 75 }
+      { name: "AI-Driven Test Automation", level: 95 },
+      { name: "Microservices Testing", level: 90 },
+      { name: "CI/CD Pipelines", level: 90 },
+      { name: "Test-Driven Development", level: 85 },
+      { name: "Performance Testing", level: 85 }
     ]
   },
   {
     id: 3,
-    name: "DevOps",
+    name: "Cloud & DevOps",
     skills: [
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "CI/CD", level: 80 },
-      { name: "Git", level: 90 },
-      { name: "Linux", level: 75 }
+      { name: "AWS", level: 85 },
+      { name: "Kubernetes", level: 80 },
+      { name: "Docker", level: 85 },
+      { name: "Infrastructure Monitoring", level: 80 },
+      { name: "Cloud-Based QA", level: 90 }
     ]
   },
   {
     id: 4,
-    name: "Soft Skills",
+    name: "Technical Skills",
     skills: [
-      { name: "Team Leadership", level: 85 },
-      { name: "Communication", level: 90 },
-      { name: "Problem Solving", level: 95 },
-      { name: "Mentoring", level: 80 },
-      { name: "Project Management", level: 75 }
+      { name: "Java", level: 80 },
+      { name: "Python", level: 75 },
+      { name: "AI/ML Model Validation", level: 85 },
+      { name: "Data Analysis", level: 85 },
+      { name: "Compliance & Risk Management", level: 90 }
     ]
   }
 ];

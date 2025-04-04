@@ -8,17 +8,21 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <p className="text-lg text-gray-700 mb-4">
-            I'm a seasoned Software Engineer with over 10 years of experience building web applications
-            and leading engineering teams. Specializing in frontend development with React and backend
-            systems with Node.js, I've helped companies scale their products and improve their technical foundations.
+            I'm a Technology & Quality Engineering Leader with over 20 years of experience managing globally distributed
+            engineering teams, specializing in AI-driven test automation, microservices testing frameworks, large-
+            scale cloud infrastructure, and CI/CD automation. I have proven expertise in integrating engineering teams
+            post-merger and acquisition (M&A) to create standardized development processes, scalable automation
+            frameworks, and unified CI/CD pipelines.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            Prior to my current role at Tech Solutions Inc., I worked at InnovateTech and WebScale Systems
-            where I led the development of several key products that are now used by millions of users worldwide.
+            Throughout my career, I've led global teams across the US, Europe, and Asia, optimizing server-level 
+            test automation, cloud-based QA, and large-scale infrastructure setups. I have extensive experience in 
+            enterprise QA governance, compliance, risk assessment, and infrastructure automation.
           </p>
           <p className="text-lg text-gray-700">
-            I'm passionate about mentoring junior developers, contributing to open-source projects,
-            and staying on top of the latest technologies and best practices in the industry.
+            I'm passionate about building high-performing teams, driving innovation, and leveraging cutting-edge 
+            technologies to deliver exceptional results. My approach combines technical excellence with strong 
+            leadership to transform organizations and create sustainable, scalable solutions.
           </p>
         </div>
         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -26,23 +30,23 @@ const About = () => {
           <ul className="space-y-3">
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Location:</span>
-              <span>San Francisco, CA</span>
+              <span>Burlingame, California</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Experience:</span>
-              <span>10+ years</span>
+              <span>20+ years</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Education:</span>
-              <span>M.S. Computer Science, Stanford University</span>
+              <span>B.S. Computer Information Systems, San Francisco State University</span>
             </li>
             <li className="flex items-start">
-              <span className="text-primary font-semibold w-32">Interests:</span>
-              <span>Cloud Architecture, DevOps, UI/UX Design</span>
+              <span className="text-primary font-semibold w-32">Specialties:</span>
+              <span>AI-Driven Testing, CI/CD, Cloud Infrastructure, Leadership</span>
             </li>
             <li className="flex items-start">
-              <span className="text-primary font-semibold w-32">Languages:</span>
-              <span>English (Native), Spanish (Conversational)</span>
+              <span className="text-primary font-semibold w-32">Certifications:</span>
+              <span>Scrum Master, Product Owner, Software Testing Professional</span>
             </li>
           </ul>
         </div>

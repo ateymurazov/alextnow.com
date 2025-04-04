@@ -10,30 +10,31 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <p className="text-lg text-gray-700 mb-6">
-            I'm currently open to new opportunities and would love to discuss how my skills and experience
-            can benefit your team. Feel free to reach out via email or connect with me on LinkedIn.
+            I'm currently open to discussing new opportunities where my extensive experience in technology 
+            and quality engineering leadership can drive innovation and excellence. Feel free to reach out 
+            via email or connect with me on LinkedIn.
           </p>
           
           <div className="space-y-4">
             <div className="flex items-center">
               <Mail className="h-5 w-5 text-primary mr-3" />
               <a 
-                href="mailto:john.doe@example.com" 
+                href="mailto:ateymurazov@gmail.com" 
                 className="text-gray-700 hover:text-primary transition-colors"
               >
-                john.doe@example.com
+                ateymurazov@gmail.com
               </a>
             </div>
             
             <div className="flex items-center">
               <Linkedin className="h-5 w-5 text-primary mr-3" />
               <a 
-                href="https://linkedin.com/in/johndoe" 
+                href="https://linkedin.com/in/ateymurazov" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-primary transition-colors"
               >
-                linkedin.com/in/johndoe
+                linkedin.com/in/ateymurazov
               </a>
             </div>
           </div>
@@ -41,7 +42,7 @@ const Contact = () => {
           <div className="mt-8">
             <Button asChild>
               <a 
-                href="mailto:john.doe@example.com"
+                href="mailto:ateymurazov@gmail.com"
                 className="flex items-center"
               >
                 Send me an email <ArrowRight className="ml-2 h-4 w-4" />
