@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#" className="text-xl font-bold text-primary">
-              John Doe
+              Aleksandr Teymurazov
             </a>
           </div>
           
@@ -40,7 +40,7 @@ const Header = () => {
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <Button variant="outline" className="ml-8">
-              <a href="#" download className="flex items-center">
+              <a href="/Aleksandr_Teymurazov_Resume.pdf" download className="flex items-center">
                 Download Resume
               </a>
             </Button>
@@ -56,7 +56,7 @@ const Header = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <a href="#" className="text-xl font-bold text-primary">
-                    John Doe
+                    Aleksandr Teymurazov
                   </a>
                 </div>
                 <div className="-mr-2">
@@ -88,7 +88,7 @@ const Header = () => {
               </div>
               <div className="mt-6 flex justify-center">
                 <Button variant="outline" className="w-full">
-                  <a href="#" download className="flex items-center justify-center">
+                  <a href="/Aleksandr_Teymurazov_Resume.pdf" download className="flex items-center justify-center">
                     Download Resume
                   </a>
                 </Button>

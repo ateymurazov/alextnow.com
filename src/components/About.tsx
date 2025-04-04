@@ -8,21 +8,20 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <p className="text-lg text-gray-700 mb-4">
-            I'm a Technology & Quality Engineering Leader with over 20 years of experience managing globally distributed
-            engineering teams, specializing in AI-driven test automation, microservices testing frameworks, large-
-            scale cloud infrastructure, and CI/CD automation. I have proven expertise in integrating engineering teams
-            post-merger and acquisition (M&A) to create standardized development processes, scalable automation
-            frameworks, and unified CI/CD pipelines.
+            As a Technology & Quality Engineering Leader, I bring over two decades of global experience 
+            transforming engineering teams through cutting-edge automation, AI-driven methodologies, 
+            and strategic technological innovation.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            Throughout my career, I've led global teams across the US, Europe, and Asia, optimizing server-level 
-            test automation, cloud-based QA, and large-scale infrastructure setups. I have extensive experience in 
-            enterprise QA governance, compliance, risk assessment, and infrastructure automation.
+            My expertise spans microservices architecture, cloud infrastructure, and AI-powered testing 
+            frameworks. I've consistently driven organizational efficiency by implementing advanced 
+            automation strategies that reduce manual efforts and accelerate delivery cycles.
           </p>
           <p className="text-lg text-gray-700">
-            I'm passionate about building high-performing teams, driving innovation, and leveraging cutting-edge 
-            technologies to deliver exceptional results. My approach combines technical excellence with strong 
-            leadership to transform organizations and create sustainable, scalable solutions.
+            With a proven track record of leading distributed teams across continents, I specialize in 
+            creating scalable solutions that bridge technological innovation with business growth. 
+            My approach combines deep technical expertise with strategic leadership to deliver 
+            exceptional results.
           </p>
         </div>
         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
