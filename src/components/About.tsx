@@ -8,16 +8,19 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2">
           <p className="text-lg text-gray-700 mb-4">
-            My journey began as a Quality Assurance Engineer, where I discovered my passion for building 
-            robust test automation frameworks from the ground up. Over the past two decades, I've evolved 
-            from hands-on QA to leading global engineering organizations, always maintaining my commitment 
-            to quality and innovation.
+            As a senior technology leader with over 20 years of experience, I provide technical, strategic, 
+            and operational leadership to manage enterprise-grade SaaS solutions built on private, public, 
+            and hybrid cloud infrastructures. My journey began in Quality Assurance, where I discovered my 
+            passion for building robust test automation frameworks from the ground up, and evolved to 
+            leading global engineering organizations spanning development, QA, automation, DevOps, 
+            implementation, and support.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            What sets me apart is my unique trajectory – starting in quality assurance, advancing to 
-            automation engineering, and growing into leadership roles where I've successfully managed 
-            cross-functional teams spanning multiple time zones and continents. This diverse background 
-            gives me a holistic perspective that bridges technical excellence with strategic leadership.
+            I've had the privilege of working with large organizations such as Shutterfly, Deluxe, iPass, 
+            and Oracle, where I regularly partnered with C-suite and executive leadership to define 
+            deliverables that align with vision and strategic business goals. What sets me apart is my 
+            collaborative, multi-disciplinary leadership approach working with diverse global teams across 
+            multiple time zones and continents to set clear direction and employ metrics-driven methodologies.
           </p>
           <p className="text-lg text-gray-700 mb-4">
             I bring extensive experience in mergers and acquisitions, having successfully integrated 
@@ -28,10 +31,12 @@ const About = () => {
             and Shutterfly Business Solutions into a single cohesive engineering organization.
           </p>
           <p className="text-lg text-gray-700">
-            Today, I leverage my expertise in AI-driven methodologies, cloud architecture, and 
-            microservices testing to drive organizational transformation. My approach combines deep 
-            technical knowledge with people-focused leadership, creating environments where teams thrive 
-            and deliver exceptional results that directly impact business outcomes.
+            As a hands-on technologist and team builder, I have a proven ability to optimize processes 
+            and deliver solutions focused on customer value, cost-effectiveness, and quality. I'm equally 
+            comfortable executing new strategic transformational initiatives and driving continuous 
+            improvement across organizations, leveraging my expertise in AI-driven methodologies, cloud 
+            architecture, and microservices testing to create environments where teams thrive and deliver 
+            exceptional results that directly impact business outcomes.
           </p>
         </div>
         <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -51,7 +56,11 @@ const About = () => {
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Specialties:</span>
-              <span>AI-Driven Testing, CI/CD, M&A Integration, Cloud Infrastructure, Leadership</span>
+              <span>Strategic Leadership, AI-Driven Testing, CI/CD, M&A Integration, Cloud Infrastructure</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary font-semibold w-32">Companies:</span>
+              <span>Shutterfly, Deluxe, iPass, Oracle</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary font-semibold w-32">Certifications:</span>
