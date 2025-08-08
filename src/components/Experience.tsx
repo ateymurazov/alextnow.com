@@ -99,7 +99,7 @@ const experiences = [
     id: "6",
     company: "Onepage",
     period: "October 2000 - April 2002",
-    website: "https://www.bizjournals.com/eastbay/stories/2002/04/15/daily50.html",
+    website: "http://onepage.com",
     roles: [
       {
         position: "Software QA Team Lead",
