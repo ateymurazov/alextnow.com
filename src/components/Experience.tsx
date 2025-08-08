@@ -27,39 +27,84 @@ const experiences = [
   },
   {
     id: "3",
-    company: "VerticalResponse",
-    position: "Director of Engineering",
-    period: "January 2009 - July 2013",
-    website: "http://verticalresponse.com",
-    description: "Managed the VerticalResponse engineering organization post-acquisition, focusing on platform modernization and team scaling during integration with Deluxe Corp. Led the complete rewrite of the VR Classic email marketing platform while maintaining zero downtime for millions of users.",
-    details: "Successfully orchestrated a ground-up rewrite of a monolithic SaaS platform processing billions of emails daily. Through phased rollouts and parallel runs, achieved full feature parity with 20% performance improvements. Scaled the engineering team from 15 to 45 developers while implementing modern development practices and microservices architecture."
+    company: "Deluxe Corp.",
+    position: "Software Engineering Manager",
+    period: "July 2013 - August 2015",
+    website: "http://deluxe.com",
+    description: "When Deluxe Corp acquired VerticalResponse, I stepped into the newly created role of Software Engineering Manager—charged with transforming the legacy 'VR Classic' platform into the next-generation VR2. With Ruby on Rails gaining momentum, I architected and led a full rewrite under razor-tight deadlines: my team rebuilt core functionality, integrated PCI compliance requirements for credit-card processing, and secured HIPAA readiness—all while racing to meet our merger timetable.",
+    details: "I assembled and mentored a cross-functional squad of full-stack, QA, automation, and DevOps engineers, defining microservices boundaries and guiding them through agile sprints. As we rolled out VR2's distributed architecture, I also designed a data-analysis framework that stress-tested pipelines against billions of records—ensuring reliability at scale. By launch, VR2 delivered a 50% boost in platform scalability and email-delivery performance, and passed all PCI audits on the first submission."
   },
   {
     id: "4",
-    company: "DeepDyve",
-    position: "Co-Founder & CTO",
-    period: "October 2007 - August 2009",
-    website: "https://www.deepdyve.com",
-    description: "Co-founded DeepDyve, a research discovery platform that provides instant access to scientific and scholarly articles. Led the technical vision and architecture for the platform that would eventually serve millions of researchers worldwide.",
-    details: "Built the foundational technology infrastructure and search algorithms that powered DeepDyve's article discovery engine. Established partnerships with major publishers and developed innovative pay-per-view and subscription models that disrupted traditional academic publishing access."
+    company: "VerticalResponse",
+    position: "QA / Test Automation Manager",
+    period: "August 2010 - July 2013",
+    website: "http://verticalresponse.com",
+    description: "At VerticalResponse, I quickly moved from Senior QA Engineer into the QA Manager seat—entrusted with shaping quality strategy across the entire company. Early on, I championed Test-Driven Development, personally authoring an end-to-end automated test suite that unlocked deployments two to three times per week.",
+    details: "To keep pace, I built a parallelized Continuous Integration workflow: what once took 4½ hours of sequential tests now ran in just 30 minutes, multiplying our test capacity fivefold. I set a team goal of 90% coverage for our mission-critical components and designed the test framework to reach it, catching bugs before they ever hit production. Finally, I architected a GitHub branching strategy that let multiple feature streams progress in parallel—eliminating merge nightmares and boosting developer productivity company-wide."
   },
   {
     id: "5",
-    company: "iPass",
-    position: "Senior Software Engineer",
-    period: "August 2002 - September 2007",
-    website: "http://ipass.com",
-    description: "Developed enterprise mobility solutions for global connectivity and WiFi access management. Worked on core platform features that enabled seamless internet access for business travelers across thousands of hotspots worldwide.",
-    details: "Contributed to the development of iPass's flagship connectivity platform, implementing robust authentication systems and network management tools. Played a key role in scaling the platform to support millions of users and thousands of WiFi hotspot locations globally."
+    company: "VerticalResponse",
+    position: "Senior QA Engineer",
+    period: "August 2009 - August 2010",
+    website: "http://verticalresponse.com",
+    description: "Joining VerticalResponse was my first role landed entirely on my own—no network referrals or professor introductions to lean on—so I walked in with zero internal contacts and a determination to prove myself. I dove headfirst into the Quality Assurance team, writing test cases by day and learning the product's every edge by night.",
+    details: "Within weeks, I saw an opportunity to raise the bar: I architected the company's very first automated testing framework from scratch, laying the groundwork for a repeatable, scalable QA process. As that framework took shape, I designed comprehensive regression suites that drove a 60% drop in production defects—feedback loops that saved wasted hours and shored up customer confidence. In just eight months, that momentum carried me from hands-on tester to QA Manager."
   },
   {
     id: "6",
+    company: "DeepDyve",
+    position: "Principal Test Engineer",
+    period: "October 2007 - August 2009",
+    website: "https://www.deepdyve.com",
+    description: "At Infovell, I took ownership of the end-to-end testing and deployment of the company's WebSearch Engine—an ambitious project that required optimizing both content crawling and indexing to deliver fast, accurate results. I instituted a robust quality-engineering framework, defining processes that flagged reliability risks early and drove efficiency across the team.",
+    details: "To further bolster our coverage and performance, I designed and rolled out innovative test-automation strategies—leveraging shell scripting and CI/CD pipelines—to catch edge-case failures before they ever reached production. The result was a search engine that not only scaled with growing data volumes but consistently met stringent uptime and response-time targets."
+  },
+  {
+    id: "7",
+    company: "iPass",
+    position: "Automation Test Lead",
+    period: "August 2002 - September 2007",
+    website: "http://ipass.com",
+    description: "At iPass, I recognized that our manual testing backlog was creating critical bottlenecks, so I designed and implemented a SilkTest-based automation framework that slashed manual QA effort by 70%. I personally owned the end-to-end integration testing process—defining API and backend test suites, orchestrating performance benchmarks, and refining build-deployment scripts to accelerate release cycles.",
+    details: "To keep stakeholders informed, I overhauled our reporting pipeline: automating data collection and visualization to deliver real-time dashboards that guided prioritization and decision-making. These initiatives not only boosted our release cadence but also ensured the stability and scalability of our global connectivity platform."
+  },
+  {
+    id: "8",
     company: "Onepage",
-    position: "Software Engineer",
+    position: "Software QA Team Lead",
     period: "October 2000 - April 2002",
-    website: "https://www.bizjournals.com/east...",
-    description: "Worked on early web-based business solutions and enterprise software applications. Contributed to the development of innovative business tools during the early dot-com era.",
-    details: "Developed web applications and business management tools that helped companies streamline their operations. Gained valuable experience in early web technologies and enterprise software development practices."
+    website: "https://www.bizjournals.com/eastbay/stories/2002/04/15/daily50.html",
+    description: "At OnePage, I was tasked with transforming our release cycle into a predictable, quality-driven engine. I began by crafting and rolling out a comprehensive QA strategy—defining test plans, coverage goals, and automation roadmaps—that lifted our regression coverage by over 50% and caught more defects earlier in the cycle.",
+    details: "To scale that vision, I built and mentored an offshore QA team, establishing daily stand-ups and pairing sessions that blended integration testing with automated suites. Together, we replaced manual handoffs with continuous feedback loops and self-serving dashboards, accelerating releases without sacrificing quality. My hands-on approach—leveraging PHP for backend validation, database sniffers for data integrity, and custom scripts for automation—ensured every product milestone shipped with confidence."
+  },
+  {
+    id: "9",
+    company: "Saba Software",
+    position: "Sr. SQA Engineer",
+    period: "July 1999 - October 2000",
+    website: "http://sabasoftware.com",
+    description: "At Saba Software, I stepped into a pivotal role overseeing integration testing and automation for the company's flagship enterprise applications. From day one, I recognized that our sprawling Learning Management and Talent suite—comprising modules for course delivery, performance management, and analytics—needed a cohesive testing strategy.",
+    details: "I partnered with Product and Development leads to map out critical end-to-end workflows, then architected an automated integration test framework using Selenium WebDriver and REST-based API scripts. Building on that foundation, I wove those tests into our continuous integration pipeline, so every code check-in triggered a full regression pass against dozens of user scenarios. What had once taken three days of manual effort now ran overnight, catching edge-case failures early and giving developers fast feedback."
+  },
+  {
+    id: "10",
+    company: "Oracle",
+    position: "Software Quality Assurance Engineer",
+    period: "March 1998 - July 1999",
+    website: "http://oracle.com",
+    description: "At Oracle, I saw an opportunity to elevate our enterprise applications' stability by embedding automation deep into the testing lifecycle. I authored Java-based automated test suites—leveraging JDBC for backend data validation and JSP-driven UI scripts—that executed end-to-end scenarios across complex workflows.",
+    details: "By integrating these tests into our nightly builds, I caught critical defects before they reached QA, significantly boosting product reliability and accelerating release confidence. My work laid the groundwork for a culture of continuous quality, where automated checks became an integral part of every development sprint."
+  },
+  {
+    id: "11",
+    company: "C-ATS Software Inc.",
+    position: "Software Quality Assurance Engineer",
+    period: "June 1997 - March 1998",
+    website: "http://www.cats.com",
+    description: "Joining CATS Software straight out of school was my first immersion into the tech world—and it felt like stepping onto a rocket ship. I started as a hands-on tester on their proprietary risk-management platform, diving into requirements documentation and mapping out complex use cases for financial institutions.",
+    details: "My days were spent meticulously crafting and executing test cases—manually validating calculation engines, stress-testing data imports, and verifying UI workflows under shifting market conditions. Early on, I noticed that our regression cycles were eating up valuable release time. On my own initiative, I wrote simple scripts to automate repetitive test steps, cutting down manual effort and freeing the team to focus on deeper exploratory testing."
   }
 ];
 
