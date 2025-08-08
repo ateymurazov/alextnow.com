@@ -34,6 +34,12 @@ const experiences = [
         details: "I established standardized SDLC practices, consolidated toolchains, and created shared CI/CD pipelines that resulted in a 20% lift in feature throughput within months. The integration work I led generated over $500,000 in annual cost savings through licensing consolidation and process optimization, while maintaining service quality across all acquired platforms."
       },
       {
+        position: "Director Software Engineering",
+        period: "August 2015 - February 2018",
+        description: "Promoted to Director Software Engineering, I expanded my leadership scope beyond VerticalResponse to encompass broader engineering initiatives across Deluxe's growing SaaS portfolio. This role positioned me as a key technical leader driving standardization and operational excellence across multiple product lines.",
+        details: "I spearheaded cross-functional engineering initiatives, establishing unified development practices and shared infrastructure components that would later prove essential during the major organizational integration. Through strategic planning and execution, I helped position the engineering organization for the significant expansion that would follow with my promotion to Executive Director."
+      },
+      {
         position: "Software Engineering Manager",
         period: "July 2013 - August 2015",
         description: "When Deluxe Corp acquired VerticalResponse, I stepped into the newly created role of Software Engineering Manager—charged with transforming the legacy 'VR Classic' platform into the next-generation VR2. With Ruby on Rails gaining momentum, I architected and led a full rewrite under razor-tight deadlines: my team rebuilt core functionality, integrated PCI compliance requirements for credit-card processing, and secured HIPAA readiness—all while racing to meet our merger timetable.",
