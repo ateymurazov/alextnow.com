@@ -9,9 +9,8 @@ const Contact = () => {
       
       <div className="max-w-2xl">
         <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-          I'm currently open to discussing new opportunities where my extensive experience in technology 
-          and quality engineering leadership can drive innovation and excellence. Feel free to reach out 
-          via email or connect with me on LinkedIn.
+          If you are looking for a quality engineering leader to scale and elevate your engineering 
+          organization, let's talk! Feel free to reach out via email or connect with me on LinkedIn.
         </p>
         
         <div className="space-y-6">
