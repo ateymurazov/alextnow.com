@@ -1,118 +1,63 @@
-
 import React from 'react';
-import { Briefcase } from 'lucide-react';
 
-const experienceData = [
+const experiences = [
   {
     id: 1,
-    role: "Director, Quality Engineering and Automation",
     company: "Shutterfly",
-    period: "Dec 2020 - Present",
-    description: [
-      "Defined and executed a multi-year Quality Engineering roadmap, integrating predictive analytics, risk-based testing, and AI-driven test automation to accelerate release cycles by 35% and reduced manual testing efforts by 90%.",
-      "Led AI-driven test automation for microservices-based applications, ensuring seamless deployments and zero-downtime releases across 15 teams.",
-      "Designed and implemented a scalable, microservices-centric automated testing framework, reducing unknown failures and enabling continuous delivery.",
-      "Successfully integrated engineering teams from multiple acquisitions including Snapfish, Lifetouch, Spoonflower, and Shutterfly Business Solutions into a cohesive single engineering organization with standardized processes and tooling.",
-      "Built an end-to-end test automation framework that fully integrates into CI/CD pipelines, eliminating manual validation and cutting test execution time by 30%.",
-      "Introduced AI-powered automated test generation and self-healing test scripts, reducing manual authoring efforts by 50%."
-    ]
+    position: "Director, Quality Engineering and Automation",
+    period: "December 2020 - Present",
+    website: "shutterfly.com",
+    description: "When I joined Shutterfly in December 2020, I inherited five independent Quality teams—SnapFish, Lifetouch, Spoonflower, Shutterfly Business, and Shutterfly Consumer, each operating with its own processes, tools, and priorities. I immediately set out to transform those silos into a single, high-performance machine. Over several months, I personally designed and executed a unified Quality Engineering organization: I restructured product-aligned teams under a central Quality function and created a brand new Core Automation team that focused on delivering common frameworks, metrics, and tooling across every brand.",
+    details: "With the new structure in place, 120 quality and automation engineers strong, and three direct managers reporting into me, I turned my attention to building a rolling capacity-planning model in close collaboration with Product, Engineering, and Finance. Next, I revamped our CI/CD pipeline by embedding modern test automation—unit, integration, and performance—into every stage. That initiative slashed manual testing time by 90% and accelerated deployments by 35%. In just eighteen months under my leadership, the reorganized QE org delivered $500K in annual cost savings, increased test execution capacity by 40%, and forged a culture of shared ownership."
   },
   {
     id: 2,
-    role: "Executive Director of Engineering, SBS",
     company: "Deluxe Corp.",
-    period: "Feb 2018 - Oct 2020",
-    description: [
-      "Led 5 diverse product development teams across multiple time zones, overseeing the entire product lifecycle from conception to deployment.",
-      "Orchestrated the consolidation of engineering teams from multiple acquired companies into One Deluxe platform, standardizing development practices and establishing unified CI/CD workflows.",
-      "Achieved over $500,000 in annual cost savings by consolidating and renegotiating tools and licensing contracts across merged engineering organizations.",
-      "Built and led a world-class engineering team that fully automated the CI/CD build and deploy process, achieving 100% automated validation.",
-      "Developed a distributed, microservices-driven Small Business Services platform to support large-scale enterprise SaaS applications, ensuring smooth service integration.",
-      "Spearheaded an internal incubator initiative, driving innovation and new revenue growth by launching a distributed data processing platform that generated over $15M in new revenue.",
-      "Played a key role in M&A technical due diligence, evaluating company IP, software infrastructure and defining post-acquisition integration strategies for acquired companies."
-    ]
+    position: "Executive Director of Engineering, SBS",
+    period: "February 2018 - October 2020",
+    website: "deluxe.com",
+    description: "Led the post-acquisition integration of five engineering organizations (VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation) into a unified 'One Deluxe' engineering ecosystem. This role required balancing technical leadership with strategic business objectives during a period of rapid organizational change.",
+    details: "I established standardized SDLC practices, consolidated toolchains, and created shared CI/CD pipelines that resulted in a 20% lift in feature throughput within months. The integration work I led generated over $500,000 in annual cost savings through licensing consolidation and process optimization, while maintaining service quality across all acquired platforms."
   },
   {
     id: 3,
-    role: "Director Software Engineering",
     company: "Deluxe Corp.",
-    period: "Aug 2015 - Feb 2018",
-    description: [
-      "Promoted from Development Manager to Director, taking on expanded responsibilities for multiple engineering teams.",
-      "Reduced time to production by 40% for enterprise applications through automation and agile methodologies.",
-      "Automated software capital expense reporting process, eliminating manual intervention and significantly improving accuracy, efficiency, and compliance in financial reporting.",
-      "Standardized cross-team SDLC processes, tools and frameworks, increasing development velocity by 20% and reducing production incidents.",
-      "Achieved annual $250k cost savings by consolidating & renegotiating licensing contracts for GitHub & Atlassian Tools."
-    ]
-  },
-  {
-    id: 4,
-    role: "Software Engineering Manager",
-    company: "Deluxe Corp.",
-    period: "Jul 2013 - Aug 2015",
-    description: [
-      "Promoted from QA Manager to Development Manager following the acquisition of VerticalResponse by Deluxe Corp.",
-      "Managed a cross-functional team to build a highly scalable, microservices-driven One Deluxe platform, while ensuring HIPAA and compliance readiness.",
-      "Designed and implemented data analysis frameworks for testing distributed systems handling billions of records.",
-      "Increased platform scalability and email delivery performance by 50%.",
-      "Recruited, hired and mentored a top-notch talent engineering team, consisting of front/back-end, full-stack developers, test automation, quality, and dev ops engineers."
-    ]
-  },
-  {
-    id: 5,
-    role: "QA / Test Automation Manager",
-    company: "VerticalResponse",
-    period: "Aug 2009 - Jul 2013",
-    description: [
-      "Advanced from Senior QA Engineer to QA Manager, leading the quality assurance strategy for the entire organization.",
-      "Introduced Test-Driven Development (TDD) and developed an end-to-end automated test suite, increasing deployment frequency to 2-3 times per week.",
-      "Developed Continuous Integration (CI) workflows, utilizing parallelization that reduced test runtime from 4.5 hrs. to 30 min and increased test capacity by 5x.",
-      "Achieved 90% test coverage for mission-critical components through comprehensive automation strategies.",
-      "Architected a GitHub branching strategy to support concurrent major features development, boosting productivity."
-    ]
-  },
-  {
-    id: 6,
-    role: "Senior QA Engineer",
-    company: "VerticalResponse",
-    period: "Jan 2009 - Aug 2009",
-    description: [
-      "Started as a hands-on Quality Assurance Engineer, quickly advancing to a senior role.",
-      "Built the company's first automated testing framework from scratch, establishing the foundation for quality processes.",
-      "Implemented comprehensive regression testing protocols that reduced production defects by 60%.",
-      "Collaborated closely with development teams to enhance product quality and streamline the release process.",
-      "Recognized for exceptional performance, resulting in rapid promotion to QA Manager within 8 months."
-    ]
+    position: "Director of Engineering",
+    period: "July 2013 - February 2018",
+    website: "deluxe.com",
+    description: "Managed the VerticalResponse engineering organization post-acquisition, focusing on platform modernization and team scaling during integration with Deluxe Corp. Led the complete rewrite of the VR Classic email marketing platform while maintaining zero downtime for millions of users.",
+    details: "Successfully orchestrated a ground-up rewrite of a monolithic SaaS platform processing billions of emails daily. Through phased rollouts and parallel runs, achieved full feature parity with 20% performance improvements. Scaled the engineering team from 15 to 45 developers while implementing modern development practices and microservices architecture."
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="section-container bg-gray-50">
-      <h2 className="section-title">Work Experience</h2>
-      <div className="space-y-12">
-        {experienceData.map((job) => (
-          <div key={job.id} className="bg-white p-6 rounded-lg shadow-sm relative">
-            <div className="absolute -left-3 top-6 bg-primary p-2 rounded-full text-white">
-              <Briefcase className="h-5 w-5" />
+    <section id="experience" className="section-container">
+      <h2 className="section-title">Experience</h2>
+      <div className="space-y-16">
+        {experiences.map((exp) => (
+          <div key={exp.id} className="border-b border-border pb-12 last:border-b-0">
+            <div className="mb-6">
+              <h3 className="text-xl font-medium mb-2">{exp.company}</h3>
+              <p className="text-lg text-muted-foreground mb-2">{exp.position}</p>
+              <p className="text-sm text-muted-foreground mb-2">{exp.period}</p>
+              <a 
+                href={`http://${exp.website}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-foreground hover:text-muted-foreground transition-colors"
+              >
+                {exp.website}
+              </a>
             </div>
-            <div className="ml-6">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">{job.role}</h3>
-                  <p className="text-primary font-medium">{job.company}</p>
-                </div>
-                <div className="mt-2 md:mt-0">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800">
-                    {job.period}
-                  </span>
-                </div>
-              </div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {job.description.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+            
+            <div className="prose prose-lg max-w-none text-foreground">
+              <p className="text-lg leading-relaxed text-muted-foreground mb-4">
+                {exp.description}
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                {exp.details}
+              </p>
             </div>
           </div>
         ))}
