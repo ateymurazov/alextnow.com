@@ -35,7 +35,7 @@ const Accomplishments = () => {
             Leadership Journey
           </h3>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            My journey began wearing every hat in the engineering org, from hands-on coding and DevOps scripting to architecting test automation frameworks, long before leadership became my focus. Over the past 15 years, I've steadily climbed the ladder from QA Manager to Development Manager, Director of Engineering, Executive Director of Engineering, and now Director of Quality Engineering. That unique arc, leading both development and quality teams, means I can still roll up my sleeves to debug production issues, author CI/CD pipelines, or design test automation, then switch roles seamlessly to mentor managers, shape strategy, and align C-suite vision with day-to-day execution.
+            Fifteen years progressing from QA Manager to Director of Quality Engineering — with stops as Development Manager, Director of Engineering, and Executive Director in between. I've led both development and quality organizations, so I move fluently between C-suite strategy and hands-on execution: debugging production, authoring CI/CD, and shaping the operating model in the same week.
           </p>
         </div>
 
