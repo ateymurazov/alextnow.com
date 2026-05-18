@@ -1,18 +1,22 @@
-import React from 'react';
-import { Brain, GitMerge, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Brain, GitMerge, Sparkles, Plus, Minus } from 'lucide-react';
 
 const insights = [
   {
     icon: Sparkles,
     tag: 'Quality',
     title: 'The Evolution of Quality Engineering',
+    summary:
+      "QA is no longer a downstream checkpoint — it's a strategic function that shapes how fast and how safely an org can ship.",
     body:
-      "The traditional QA role is rapidly evolving. Today's quality engineers must be strategic partners, not just testers. They need to understand the business impact of quality decisions, implement AI-driven testing strategies, and lead cross-functional initiatives that prevent defects rather than just finding them. The future belongs to quality leaders who can bridge technical execution with business outcomes.",
+      "Today's quality engineers must be strategic partners, not just testers. They need to understand the business impact of quality decisions, implement AI-driven testing strategies, and lead cross-functional initiatives that prevent defects rather than just finding them. The future belongs to quality leaders who can bridge technical execution with business outcomes.",
   },
   {
     icon: GitMerge,
     tag: 'M&A',
     title: 'M&A Integration: The Hidden Technology Challenge',
+    summary:
+      "Deal economics live or die on tech integration speed — not on the synergies modeled in the pitch deck.",
     body:
       "Most M&A deals focus on financial synergies but underestimate technology integration complexity. Having led multiple post-acquisition technology unifications, I've learned that success requires immediate cultural alignment, standardized toolchains, and clear migration roadmaps. The companies that move fast on technical integration realize value faster and avoid the productivity losses that can derail deal economics.",
   },
@@ -20,12 +24,16 @@ const insights = [
     icon: Brain,
     tag: 'AI',
     title: 'AI in Engineering: Beyond the Hype',
+    summary:
+      "More AI-generated tests don't fix quality. Better signal, ownership, and telemetry do.",
     body:
       "Most organizations applying AI to testing are optimizing the wrong layer. Generating more tests is meaningless if your CI pipeline, ownership model, and telemetry systems cannot identify which signals actually matter. AI only becomes valuable when paired with disciplined engineering systems.",
   },
 ];
 
 const Insight = () => {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <section id="insight" className="section-container">
       <div className="section-eyebrow">04 — Perspective</div>
@@ -34,6 +42,7 @@ const Insight = () => {
       <div className="grid md:grid-cols-3 gap-6">
         {insights.map((item, i) => {
           const Icon = item.icon;
+          const isOpen = open === i;
           return (
             <article
               key={i}
@@ -50,7 +59,25 @@ const Insight = () => {
               <h3 className="text-xl font-semibold text-foreground mb-4 tracking-tight">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">{item.body}</p>
+              <p className="text-[15px] leading-relaxed text-foreground/90 mb-4">
+                {item.summary}
+              </p>
+
+              {isOpen && (
+                <p className="text-sm leading-relaxed text-muted-foreground mb-4 pt-4 border-t border-border">
+                  {item.body}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={() => setOpen(isOpen ? null : i)}
+                className="mt-auto inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:text-accent/80 transition-colors"
+                aria-expanded={isOpen}
+              >
+                {isOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
+                {isOpen ? 'Collapse' : 'Read full perspective'}
+              </button>
             </article>
           );
         })}
