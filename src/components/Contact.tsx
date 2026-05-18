@@ -140,17 +140,6 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-accent/10 rounded-lg border border-primary/20">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-primary mt-0.5" />
-                  <div>
-                    <p className="font-medium text-foreground mb-2">Open to Opportunities</p>
-                    <p className="text-sm text-muted-foreground">
-                      Currently exploring leadership roles in quality engineering, DevOps, and engineering management.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 

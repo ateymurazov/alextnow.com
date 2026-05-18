@@ -86,13 +86,6 @@ const Hero = () => {
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between glass-effect rounded-2xl px-4 py-3">
-                  <div>
-                    <p className="text-xs font-mono uppercase tracking-widest text-accent">Available</p>
-                    <p className="text-sm font-medium text-foreground">For select roles</p>
-                  </div>
-                  <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                </div>
               </div>
             </div>
           </div>
