@@ -21,7 +21,7 @@ const insights = [
     tag: 'AI',
     title: 'AI in Engineering: Beyond the Hype',
     body:
-      "AI isn't just about code generation—it's about augmenting human decision-making. In quality engineering, AI shines in test case prioritization, risk assessment, and anomaly detection. But the real value comes from AI systems that learn from your specific codebase and failure patterns, creating feedback loops that continuously improve both product quality and team productivity.",
+      "Most organizations applying AI to testing are optimizing the wrong layer. Generating more tests is meaningless if your CI pipeline, ownership model, and telemetry systems cannot identify which signals actually matter. AI only becomes valuable when paired with disciplined engineering systems.",
   },
 ];
 
