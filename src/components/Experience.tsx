@@ -184,7 +184,7 @@ const experiences: Experience[] = [
         },
         impact: [
           "Scope: First QA hire on the SaaS email marketing platform, no internal network, no existing framework.",
-          "Action: Architected the company's first automated testing framework from scratch and designed comprehensive regression suites.",
+          "Action: Built the company's first automated testing framework from scratch and wrote the regression suites that ran on it.",
           "Action: Established the developer-QA handoff model and a repeatable, scalable QA process adopted across engineering.",
           "Results: -60% production defects and promoted from IC to QA Manager in 8 months.",
         ],
