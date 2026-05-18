@@ -34,8 +34,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="section-container bg-muted/30">
-      <h2 className="section-title">Education & Certifications</h2>
+    <section id="education" className="section-container">
+      <div className="section-eyebrow">02 — Credentials</div>
+      <h2 className="section-title">Education &<br />Certifications.</h2>
       
       <div className="grid gap-8">
         {educationItems.map((item) => (
