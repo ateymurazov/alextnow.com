@@ -75,13 +75,10 @@ const Accomplishments = () => {
             </div>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Rewriting two flagship systems back-to-back taught me that high-stakes migrations can be engines of innovation, if you plan meticulously and never lose sight of the user.
+                Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily — including VerticalResponse's monolithic email marketing engine — without losing a single user-facing feature.
               </p>
               <p>
-                At VerticalResponse, I faced a monolithic SaaS behemoth: the "VR Classic" email-marketing platform with every imaginable marketing feature, co-branding and white-label options baked in, and it processed multi-million-contact lists and billions of email messages each day. When I took charge of the ground-up rewrite to VR2, the stakes couldn't have been higher.
-              </p>
-              <p>
-                When D-Day arrived, we flipped the switch with zero downtime. Users enjoyed the same rich feature set, plus improvements like 20% faster list uploads and segmentation and a streamlined email-creation workflow, without ever noticing a hiccup.
+                <span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on the new stack with 20% faster list uploads and segmentation, and a streamlined creation workflow, with no migration interruption.
               </p>
             </div>
           </div>
