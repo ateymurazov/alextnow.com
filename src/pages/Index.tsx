@@ -10,6 +10,7 @@ import Insight from "@/components/Insight";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import OperatingScope from "@/components/OperatingScope";
+import Framework from "@/components/Framework";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <Principles />
         <Accomplishments />
         <Experience />
+        <Framework />
         <Insight />
         <Education />
         <Contact />
