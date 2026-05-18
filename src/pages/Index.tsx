@@ -16,9 +16,9 @@ const Index = () => {
       <main className="content-with-sidebar">
         <Hero />
         <Accomplishments />
-        <Education />
         <Experience />
         <Insight />
+        <Education />
         <Contact />
         <Footer />
       </main>

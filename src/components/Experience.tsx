@@ -114,7 +114,7 @@ const experiences = [
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
-      <div className="section-eyebrow">03 — Career</div>
+      <div className="section-eyebrow">02 — Career</div>
       <h2 className="section-title">A timeline of building<br />and scaling teams.</h2>
 
       <div className="relative pl-8 md:pl-12 border-l border-border">

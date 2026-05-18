@@ -3,9 +3,9 @@ import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin } 
 
 const menuItems = [
   { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
-  { id: 'education', label: 'Education', icon: GraduationCap, num: '02' },
-  { id: 'experience', label: 'Experience', icon: Briefcase, num: '03' },
-  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '04' },
+  { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
+  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '03' },
+  { id: 'education', label: 'Education', icon: GraduationCap, num: '04' },
   { id: 'contact', label: 'Contact', icon: Mail, num: '05' },
 ];
 
