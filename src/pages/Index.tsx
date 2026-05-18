@@ -5,6 +5,7 @@ import Sidebar from "@/components/Sidebar";
 import Accomplishments from "@/components/Accomplishments";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Principles from "@/components/Principles";
 import Insight from "@/components/Insight";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
         <Hero />
         <Accomplishments />
         <Experience />
+        <Principles />
         <Insight />
         <Education />
         <Contact />

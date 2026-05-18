@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass } from 'lucide-react';
 
 const menuItems = [
   { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
   { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
-  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '03' },
-  { id: 'education', label: 'Education', icon: GraduationCap, num: '04' },
-  { id: 'contact', label: 'Contact', icon: Mail, num: '05' },
+  { id: 'principles', label: 'Principles', icon: Compass, num: '03' },
+  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '04' },
+  { id: 'education', label: 'Education', icon: GraduationCap, num: '05' },
+  { id: 'contact', label: 'Contact', icon: Mail, num: '06' },
 ];
 
 const Sidebar = () => {

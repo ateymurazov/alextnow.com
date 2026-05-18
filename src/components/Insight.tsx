@@ -28,7 +28,7 @@ const insights = [
 const Insight = () => {
   return (
     <section id="insight" className="section-container">
-      <div className="section-eyebrow">03 — Perspective</div>
+      <div className="section-eyebrow">04 — Perspective</div>
       <h2 className="section-title">Thoughts on building<br />better engineering orgs.</h2>
 
       <div className="grid md:grid-cols-3 gap-6">

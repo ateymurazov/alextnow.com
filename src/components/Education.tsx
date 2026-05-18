@@ -4,7 +4,7 @@ import { GraduationCap } from 'lucide-react';
 const Education = () => {
   return (
     <section id="education" className="section-container">
-      <div className="section-eyebrow">04 — Credentials</div>
+      <div className="section-eyebrow">05 — Credentials</div>
       <h2 className="section-title">Education &<br />Certifications.</h2>
 
       <div className="card-elevated p-6 sm:p-8 hover-lift">
