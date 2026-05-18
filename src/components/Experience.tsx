@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Plus, Minus } from 'lucide-react';
 import OperatingScope from './OperatingScope';
 import {
   Accordion,
@@ -6,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 
 type Snapshot = {
   scope: string;
