@@ -1,72 +1,87 @@
-
 import React from 'react';
-import { ChevronDown, ArrowRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
-  const scrollToSection = () => {
-    const element = document.getElementById('accomplishments');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <div className="relative h-screen overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    <section className="relative min-h-screen overflow-hidden mesh-bg grain pt-24 lg:pt-0">
+      {/* subtle grid */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
-          backgroundImage: `url('/lovable-uploads/8ee80040-e5b2-47fb-88f7-a7cd86f740dc.png')`,
+          backgroundImage:
+            'linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)',
+          backgroundSize: '64px 64px',
         }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"></div>
-      </div>
-      
-      <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="text-center text-white max-w-4xl px-6 animate-fade-in">
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-                <span className="block">ALEKSANDR</span>
-                <span className="block text-white/90">TEYMURAZOV</span>
-              </h1>
-              <p className="text-xl md:text-2xl font-light text-white/80 max-w-2xl mx-auto leading-relaxed">
-                Director of Quality Engineering transforming how teams build, test, and deliver software at scale
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <Button 
-                onClick={scrollToSection}
-                size="lg"
-                className="glass-effect text-white border-white/20 hover:bg-white/10 backdrop-blur-sm"
-                variant="outline"
-              >
-                Explore My Work
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button 
-                size="lg"
-                className="bg-white/10 text-white border-white/20 hover:bg-white/20 backdrop-blur-sm"
-                variant="outline"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Let's Connect
-              </Button>
-            </div>
+      />
+
+      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-20">
+        <div className="max-w-5xl animate-blur-in">
+          <div className="section-eyebrow">
+            <Sparkles className="h-3 w-3" />
+            Quality Engineering Leader
+          </div>
+
+          <h1 className="text-[clamp(3rem,9vw,8rem)] font-semibold leading-[0.95] tracking-tight text-foreground mb-8">
+            Building software<br />
+            teams that <span className="gradient-text italic font-medium">ship</span>.
+          </h1>
+
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
+            I'm <span className="text-foreground font-medium">Aleksandr Teymurazov</span> — a Director of Quality
+            Engineering with 25+ years transforming how teams build, test, and deliver software at scale across
+            Shutterfly, Deluxe, Oracle, and beyond.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button
+              onClick={() => scrollTo('experience')}
+              size="lg"
+              className="group bg-foreground text-background hover:bg-foreground/90 rounded-full h-14 px-8 text-base"
+            >
+              Explore my work
+              <ArrowUpRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </Button>
+            <Button
+              onClick={() => scrollTo('contact')}
+              size="lg"
+              variant="outline"
+              className="rounded-full h-14 px-8 text-base border-foreground/20 hover:bg-foreground/5"
+            >
+              Let's talk
+            </Button>
+          </div>
+
+          {/* stats row */}
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl">
+            {[
+              { k: '25+', v: 'Years leading eng' },
+              { k: '200+', v: 'Engineers led' },
+              { k: '50%', v: 'Defect reduction' },
+              { k: '$15M+', v: 'Revenue impact' },
+            ].map((s) => (
+              <div key={s.v} className="border-l border-border pl-4">
+                <div className="text-3xl font-semibold text-foreground tracking-tight">{s.k}</div>
+                <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider font-mono">
+                  {s.v}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-      
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button 
-          onClick={scrollToSection}
-          className="w-12 h-12 rounded-full border-2 border-white/30 flex items-center justify-center hover:border-white/60 transition-all duration-300 hover:bg-white/10"
+
+        <button
+          onClick={() => scrollTo('accomplishments')}
+          className="absolute bottom-10 right-10 hidden md:flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors"
         >
-          <ChevronDown className="h-5 w-5 text-white/80" />
+          Scroll
+          <ArrowDown className="h-4 w-4 animate-bounce" />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

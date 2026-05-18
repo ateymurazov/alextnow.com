@@ -156,50 +156,71 @@ const experiences = [
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
-      <h2 className="section-title">Experience</h2>
-      <Accordion type="multiple" className="w-full">
-        {experiences.map((exp) => (
-          <AccordionItem key={exp.id} value={exp.id} className="border border-border bg-card rounded-lg mb-4 px-6">
-            <AccordionTrigger className="py-6 hover:no-underline [&[data-state=open]>svg]:rotate-90">
-              <div className="flex items-center justify-between w-full">
-                <div className="text-left">
-                  <h3 className="text-lg font-medium text-foreground mb-1">{exp.company}</h3>
-                  <p className="text-sm text-muted-foreground">{exp.period}</p>
-                </div>
-                <a 
-                  href={exp.website} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:text-muted-foreground transition-colors underline"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {exp.website.replace(/^https?:\/\//, '')}
-                </a>
-              </div>
-            </AccordionTrigger>
-            <AccordionContent className="pt-0 pb-6">
-              <div className="space-y-6">
-                {exp.roles.map((role, index) => (
-                  <div key={index} className={index > 0 ? "pt-6 border-t border-border" : ""}>
-                    <div className="mb-4">
-                      <p className="text-base font-medium text-foreground mb-1">{role.position}</p>
-                      <p className="text-sm text-muted-foreground">{role.period}</p>
+      <div className="section-eyebrow">03 — Career</div>
+      <h2 className="section-title">A timeline of building<br />and scaling teams.</h2>
+
+      <div className="relative pl-8 md:pl-12 border-l border-border">
+        <Accordion type="multiple" className="w-full space-y-6">
+          {experiences.map((exp, i) => (
+            <AccordionItem
+              key={exp.id}
+              value={exp.id}
+              className="relative border-none"
+            >
+              <span className="timeline-dot -left-[34px] md:-left-[50px] top-8" />
+              <div className="card-elevated overflow-hidden">
+                <AccordionTrigger className="px-6 md:px-8 py-6 hover:no-underline group">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between w-full gap-2 text-left">
+                    <div>
+                      <div className="flex items-center gap-3 mb-2">
+                        <span className="font-mono text-[10px] tracking-widest uppercase text-accent">
+                          {String(i + 1).padStart(2, '0')}
+                        </span>
+                        <h3 className="text-xl md:text-2xl font-semibold text-foreground tracking-tight">
+                          {exp.company}
+                        </h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground font-mono">{exp.period}</p>
                     </div>
-                    <div className="space-y-4">
-                      <p className="text-sm leading-relaxed text-muted-foreground">
-                        {role.description}
-                      </p>
-                      <p className="text-sm leading-relaxed text-muted-foreground">
-                        {role.details}
-                      </p>
-                    </div>
+                    <a
+                      href={exp.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-muted-foreground hover:text-accent transition-colors font-mono"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {exp.website.replace(/^https?:\/\//, '')} ↗
+                    </a>
                   </div>
-                ))}
+                </AccordionTrigger>
+                <AccordionContent className="px-6 md:px-8 pb-8">
+                  <div className="space-y-8 pt-2">
+                    {exp.roles.map((role, index) => (
+                      <div
+                        key={index}
+                        className={index > 0 ? 'pt-8 border-t border-border' : ''}
+                      >
+                        <div className="mb-5">
+                          <p className="text-lg font-semibold text-foreground mb-1">
+                            {role.position}
+                          </p>
+                          <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider">
+                            {role.period}
+                          </p>
+                        </div>
+                        <div className="space-y-4 text-[15px] leading-relaxed text-muted-foreground">
+                          <p>{role.description}</p>
+                          <p>{role.details}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </AccordionContent>
               </div>
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
     </section>
   );
 };

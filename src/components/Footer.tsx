@@ -1,31 +1,41 @@
-
 import React from 'react';
+import { Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <footer className="bg-gray-100 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <p className="text-gray-600">&copy; {currentYear} John Doe. All rights reserved.</p>
-          </div>
-          
-          <div className="flex space-x-6">
-            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">
-              About
-            </a>
-            <a href="#experience" className="text-gray-600 hover:text-primary transition-colors">
-              Experience
-            </a>
-            <a href="#skills" className="text-gray-600 hover:text-primary transition-colors">
-              Skills
-            </a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">
-              Contact
-            </a>
-          </div>
+    <footer className="border-t border-border mt-12">
+      <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <p className="font-semibold text-foreground">Aleksandr Teymurazov</p>
+          <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider mt-1">
+            © 2026 — Director, Quality Engineering
+          </p>
+        </div>
+        <div className="flex items-center gap-6">
+          <a
+            href="mailto:ateymurazov@gmail.com"
+            className="text-muted-foreground hover:text-accent transition-colors"
+            aria-label="Email"
+          >
+            <Mail className="h-4 w-4" />
+          </a>
+          <a
+            href="https://linkedin.com/in/ateymurazov"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-accent transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-4 w-4" />
+          </a>
+          <button
+            onClick={scrollTop}
+            className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-accent transition-colors"
+          >
+            Back to top <ArrowUp className="h-3 w-3" />
+          </button>
         </div>
       </div>
     </footer>
