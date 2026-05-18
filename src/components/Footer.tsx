@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Linkedin, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
