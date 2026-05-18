@@ -1,4 +1,5 @@
 import React from 'react';
+import OperatingScope from './OperatingScope';
 import {
   Accordion,
   AccordionContent,
@@ -261,6 +262,8 @@ const Experience = () => {
     <section id="experience" className="section-container">
       <div className="section-eyebrow">02 — Career</div>
       <h2 className="section-title">A timeline of building<br />and scaling teams.</h2>
+
+      <OperatingScope />
 
       <div className="relative pl-8 md:pl-12 border-l border-border">
         <Accordion type="multiple" className="w-full space-y-6">

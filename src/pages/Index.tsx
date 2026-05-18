@@ -9,6 +9,7 @@ import Principles from "@/components/Principles";
 import Insight from "@/components/Insight";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import OperatingScope from "@/components/OperatingScope";
 
 const Index = () => {
   return (
@@ -16,9 +17,9 @@ const Index = () => {
       <Sidebar />
       <main className="content-with-sidebar">
         <Hero />
+        <Principles />
         <Accomplishments />
         <Experience />
-        <Principles />
         <Insight />
         <Education />
         <Contact />
