@@ -55,13 +55,25 @@ const Contact = () => {
     }
 
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const idempotencyKey = `contact-${crypto.randomUUID()}`;
+      const { error } = await supabase.functions.invoke('send-transactional-email', {
+        body: {
+          templateName: 'contact-notification',
+          recipientEmail: 'alex@datahum.com',
+          idempotencyKey,
+          templateData: {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          },
+        },
+      });
+      if (error) throw error;
       toast({
-        title: "Success!",
-        description: "Your message has been sent successfully.",
+        title: "Message sent",
+        description: "Thanks for reaching out — I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', message: '' });
       setErrors({ name: '', email: '', message: '' });
