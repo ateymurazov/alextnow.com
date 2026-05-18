@@ -61,7 +61,7 @@ const Contact = () => {
       const { error } = await supabase.functions.invoke('send-transactional-email', {
         body: {
           templateName: 'contact-notification',
-          recipientEmail: 'alex@datahum.com',
+          recipientEmail: 'ateymurazov@gmail.com',
           idempotencyKey,
           templateData: {
             name: formData.name,
