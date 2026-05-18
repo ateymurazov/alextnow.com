@@ -11,7 +11,8 @@ const Accomplishments = () => {
 
   return (
     <section id="accomplishments" className="section-container animate-fade-in">
-      <h2 className="section-title">Career Accomplishments</h2>
+      <div className="section-eyebrow">01 — Impact</div>
+      <h2 className="section-title">Numbers that define<br />the work.</h2>
       
       {/* Key Metrics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
