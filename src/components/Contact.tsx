@@ -104,9 +104,8 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto">
-            If you are looking for a quality engineering leader to scale and elevate your engineering 
-            organization, let's talk! I'm always interested in discussing how we can build exceptional 
-            software together.
+            If you're looking for a quality engineering leader to help scale and sharpen your
+            engineering org, let's talk. Happy to compare notes on what you're trying to build.
           </p>
         </div>
         
