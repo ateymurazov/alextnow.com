@@ -55,7 +55,7 @@ const Accomplishments = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              When I led a division with over 200 developers spread across disparate teams, their two-week sprints were more like wishful thinking. I championed a shift to Scrum, coaching Product Owners, training Scrum Masters, and embedding ceremonies that drove accountability. Simultaneously, I introduced Test-Driven Development: the first few red–green–refactor cycles were awkward, but as engineers saw their code pass tests on every commit, morale and quality soared. Within six months, defect rates plummeted by 50% and release cadence sped up by 40% -- proof that cultural change, when paired with technical rigor, can transform delivery.
+              Inherited 200+ developers running two-week sprints in name only. Rebuilt the operating cadence around Scrum and embedded TDD as a non-negotiable engineering standard. <span className="text-foreground font-medium">Defect rates dropped 50% and release cadence accelerated 40% within six months.</span>
             </p>
           </div>
 
