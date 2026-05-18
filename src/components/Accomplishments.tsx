@@ -78,7 +78,7 @@ const Accomplishments = () => {
                 Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.
               </p>
               <p>
-                <span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on the new stack with 20% faster list uploads and segmentation, and a streamlined creation workflow, with no migration interruption.
+                <span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on the new stack with 20% faster list uploads and segmentation, plus a cleaner creation workflow, with no migration interruption.
               </p>
             </div>
           </div>
