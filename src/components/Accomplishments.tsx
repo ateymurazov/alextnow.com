@@ -35,7 +35,7 @@ const Accomplishments = () => {
             Leadership Journey
           </h3>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            My journey began wearing every hat in the engineering org, from hands-on coding and DevOps scripting to architecting test automation frameworks, long before leadership became my focus. Over the past 15 years, I've steadily climbed the ladder from QA Manager to Development Manager, Director of Engineering, Executive Director of Engineering, and now Director of Quality Engineering. That unique arc, leading both development and quality teams, means I can still roll up my sleeves to debug production issues, author CI/CD pipelines, or design test automation, then switch roles seamlessly to mentor managers, shape strategy, and align C-suite vision with day-to-day execution.
+            My journey began wearing every hat in the engineering org, from hands-on coding and DevOps scripting to architecting test automation frameworks, long before leadership became my focus. Over the past 15 years, I've steadily climbed the ladder from QA Manager to Development Manager, Director of Engineering, Executive Director of Engineering, and now Engineering Quality & Delivery Leader. That unique arc, leading both development and quality teams, means I can still roll up my sleeves to debug production issues, author CI/CD pipelines, or design test automation, then switch roles seamlessly to mentor managers, shape strategy, and align C-suite vision with day-to-day execution.
           </p>
         </div>
 

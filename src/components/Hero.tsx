@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img
                   src={headshot}
-                  alt="Aleksandr Teymurazov — Director of Quality Engineering"
+                  alt="Aleksandr Teymurazov — Engineering Quality & Delivery Leader"
                   className="w-full h-auto object-cover aspect-[4/5]"
                   loading="eager"
                 />
