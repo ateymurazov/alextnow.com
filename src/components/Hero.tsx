@@ -19,9 +19,9 @@ const Hero = () => {
       />
 
       <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-20">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 items-center max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center max-w-7xl mx-auto w-full">
           {/* Text */}
-          <div className="lg:col-span-7 animate-blur-in order-2 lg:order-1">
+          <div className="lg:col-span-6 animate-blur-in order-2 lg:order-1">
             <div className="section-eyebrow">
               <Sparkles className="h-3 w-3" />
               Quality Engineering Leader
@@ -75,8 +75,8 @@ const Hero = () => {
           </div>
 
           {/* Portrait */}
-          <div className="lg:col-span-5 order-1 lg:order-2 animate-fade-in">
-            <div className="relative w-full max-w-lg mx-auto lg:max-w-none lg:scale-110 lg:origin-center">
+          <div className="lg:col-span-6 order-1 lg:order-2 animate-fade-in">
+            <div className="relative w-full max-w-xl mx-auto lg:max-w-none">
               <div className="absolute -inset-6 bg-gradient-to-br from-accent/25 via-transparent to-transparent rounded-3xl blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img

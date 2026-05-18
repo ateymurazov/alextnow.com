@@ -127,7 +127,7 @@ const Sidebar = () => {
             Email me
           </a>
           <p className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60 pt-2">
-            © 2026 — Available for select roles
+            © 2026 Aleksandr Teymurazov
           </p>
         </div>
       </aside>
