@@ -129,7 +129,7 @@ const Accomplishments = () => {
 
         <div className="card-elevated p-8 mt-12 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20">
           <p className="text-lg leading-relaxed font-medium text-foreground">
-            If you're looking for a seasoned technology leader to elevate your engineering organization's performance and drive innovation at scale, I'd welcome the opportunity to discuss how my blend of hands-on execution, strategic vision, and AI-driven processes can help your teams ship faster, smarter, and with greater confidence.
+            Looking for an operating executive who can modernize delivery, unify post-M&A engineering orgs, and embed AI-driven quality at enterprise scale? Let's talk.
           </p>
         </div>
       </div>
