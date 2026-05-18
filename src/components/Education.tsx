@@ -40,8 +40,8 @@ const Education = () => {
       
       <div className="grid gap-8">
         {educationItems.map((item) => (
-          <div key={item.id} className="card-elevated p-8 hover-lift">
-            <div className="flex items-start space-x-6">
+          <div key={item.id} className="card-elevated p-5 sm:p-8 hover-lift">
+            <div className="flex items-start gap-4 sm:gap-6">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
                   <span className="text-primary-foreground font-bold text-sm">{item.abbreviation}</span>
