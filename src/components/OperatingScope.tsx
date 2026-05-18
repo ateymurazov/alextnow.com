@@ -29,7 +29,7 @@ const OperatingScope = () => {
     <div className="mb-16">
       <div className="section-eyebrow mb-4">Operating Scope</div>
       <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-8 tracking-tight">
-        Where I operate — and at what scale.
+        Where I operate, and at what scale.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {items.map((item) => {

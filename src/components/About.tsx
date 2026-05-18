@@ -11,7 +11,7 @@ const About = () => {
             As a senior technology leader with over 20 years of experience, I provide technical, strategic, 
             and operational leadership to manage enterprise-grade SaaS solutions built on private, public, 
             and hybrid cloud infrastructures. My journey began in Quality Assurance, where I discovered my 
-            passion for building robust test automation frameworks from the ground up, and evolved to 
+            passion for building solid test automation frameworks from the ground up, and evolved to 
             leading global engineering organizations spanning development, QA, automation, DevOps, 
             implementation, and support.
           </p>

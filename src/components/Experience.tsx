@@ -55,8 +55,8 @@ const experiences: Experience[] = [
           technologies: ["Playwright", "Docker", "Jenkins", "GitHub Actions", "Splunk", "AWS", "Python", "SeleniumGrid"],
         },
         impact: [
-          "Scope: Inherited 5 siloed QE teams across SnapFish, Lifetouch, Spoonflower, SFLY Business, and SFLY Consumer — 120 engineers, 3 manager reports.",
-          "Action: Designed a unified QE org — product-aligned teams under a central Quality function plus a new Core Automation team owning shared frameworks, metrics, and tooling.",
+          "Scope: Inherited 5 siloed QE teams across SnapFish, Lifetouch, Spoonflower, SFLY Business, and SFLY Consumer, 120 engineers, 3 manager reports.",
+          "Action: Designed a unified QE org, product-aligned teams under a central Quality function plus a new Core Automation team owning shared frameworks, metrics, and tooling.",
           "Action: Rebuilt CI/CD to embed unit, integration, and performance automation at every stage; layered in an AI-assisted Quality Intelligence framework for adaptive test generation and risk-based execution.",
           "Action: Stood up a rolling capacity-planning model with Product, Engineering, and Finance to translate strategy into headcount, budget, and release timelines.",
           "Results: -90% manual regression, +35% release cadence, +40% test execution capacity, and $500K annual savings within 18 months.",
@@ -77,7 +77,7 @@ const experiences: Experience[] = [
           scope: "Engineering leadership across consolidated Small Business Services portfolio + M&A diligence",
           orgSize: "Multi-team engineering org across US, Canada (Toronto), and Bulgaria (Sofia)",
           highlights: [
-            "Stood up an internal incubator for distributed data processing — 2-engineer team delivered a Data Management Platform processing billions of records",
+            "Stood up an internal incubator for distributed data processing, 2-engineer team delivered a Data Management Platform processing billions of records",
             "Generated $15M+ in new revenue in under 3 years from the DMP",
             "Consolidated multiple product teams onto the unified 'One Deluxe' platform with shared CI/CD",
             "Drove $350K+ annual savings by renegotiating tool/license contracts across merged orgs",
@@ -87,10 +87,10 @@ const experiences: Experience[] = [
           technologies: ["Java", "Distributed Systems", "AWS", "GitHub", "Atlassian", "Jenkins"],
         },
         impact: [
-          "Scope: Engineering leadership across the consolidated Small Business Services portfolio spanning US, Toronto (Hostopia), and Sofia (WebBuilder); 30–40% travel.",
-          "Action: Pitched and launched an internal incubator for distributed data processing — hand-picked a 2-engineer team that architected a scalable Data Management Platform.",
+          "Scope: Engineering leadership across the consolidated Small Business Services portfolio spanning US, Toronto (Hostopia), and Sofia (WebBuilder); 30-40% travel.",
+          "Action: Pitched and launched an internal incubator for distributed data processing, hand-picked a 2-engineer team that architected a scalable Data Management Platform.",
           "Action: Consolidated multiple product teams onto the unified 'One Deluxe' platform with standardized practices and shared CI/CD; renegotiated tool and license contracts across merged orgs.",
-          "Action: Led technical due diligence for the MyCorporation acquisition — IP, infrastructure, architecture, security, and integration risk — and represented engineering on Deluxe's corporate leadership team.",
+          "Action: Led technical due diligence for the MyCorporation acquisition, IP, infrastructure, architecture, security, and integration risk, and represented engineering on Deluxe's corporate leadership team.",
           "Results: $15M+ new revenue from the DMP in under 3 years (processing billions of records) and $350K+ annual savings reinvested into innovation.",
         ],
       },
@@ -105,13 +105,13 @@ const experiences: Experience[] = [
             "Standardized SDLC, tooling, and CI/CD templates across 4 acquired products",
             "Boosted development velocity by 20% and reduced production incidents",
             "Built end-to-end automation for capital-expense reporting, replacing manual workflows",
-            "Negotiated enterprise-wide GitHub + Atlassian agreements — 20% OPEX reduction",
+            "Negotiated enterprise-wide GitHub + Atlassian agreements, 20% OPEX reduction",
           ],
           technologies: ["Ruby on Rails", "Java", "GitHub", "Jenkins", "Atlassian"],
         },
         impact: [
-          "Scope: Promoted to Director of Engineering over 4 acquired product orgs — VerticalResponse, Hostopia, Website Builder, and LogoMix.",
-          "Action: Standardized SDLC, tooling, and CI/CD templates across all four products — code-quality gates, shared backlog guidelines, and consistent release mechanics.",
+          "Scope: Promoted to Director of Engineering over 4 acquired product orgs, VerticalResponse, Hostopia, Website Builder, and LogoMix.",
+          "Action: Standardized SDLC, tooling, and CI/CD templates across all four products, code-quality gates, shared backlog guidelines, and consistent release mechanics.",
           "Action: Architected end-to-end automation for capital-expense reporting, replacing error-prone spreadsheets with audit-ready outputs in minutes.",
           "Action: Negotiated enterprise-wide GitHub and Atlassian agreements, consolidating contracts across the portfolio.",
           "Results: -40% time-to-production, +20% development velocity, fewer production incidents, and 20% OPEX reduction on tooling.",
@@ -133,7 +133,7 @@ const experiences: Experience[] = [
           technologies: ["Ruby on Rails", "Microservices", "PCI/HIPAA", "AWS"],
         },
         impact: [
-          "Scope: New role created post-Deluxe acquisition of VerticalResponse — own the 'VR Classic' → VR2 platform rewrite under a hard merger deadline.",
+          "Scope: New role created post-Deluxe acquisition of VerticalResponse, own the 'VR Classic' → VR2 platform rewrite under a hard merger deadline.",
           "Action: Architected and led the full Ruby on Rails rewrite, defining microservices boundaries and agile sprint cadence for the distributed architecture.",
           "Action: Assembled and mentored a cross-functional squad of full-stack, QA, automation, and DevOps engineers; embedded PCI and HIPAA requirements into the build.",
           "Action: Designed a data-analysis framework that stress-tested pipelines against billions of records to validate reliability at scale.",
@@ -155,7 +155,7 @@ const experiences: Experience[] = [
           scope: "Company-wide quality strategy and automation infrastructure",
           orgSize: "QA team supporting full engineering org",
           highlights: [
-            "Championed TDD and authored end-to-end automated suite — unlocked 2–3 deployments/week",
+            "Championed TDD and authored end-to-end automated suite, unlocked 2-3 deployments/week",
             "Built parallelized CI workflow: 4.5 hours sequential → 30 minutes (5x capacity)",
             "Drove test framework to 90% coverage on mission-critical components",
             "Designed GitHub branching strategy supporting parallel feature streams",
@@ -163,10 +163,10 @@ const experiences: Experience[] = [
           technologies: ["Ruby", "RSpec", "Selenium", "Jenkins", "GitHub"],
         },
         impact: [
-          "Scope: Promoted from Senior QA into QA Manager — own company-wide quality strategy and automation infrastructure.",
+          "Scope: Promoted from Senior QA into QA Manager, own company-wide quality strategy and automation infrastructure.",
           "Action: Championed TDD and authored an end-to-end automated test suite covering mission-critical components.",
           "Action: Built a parallelized Continuous Integration workflow and a GitHub branching strategy supporting multiple parallel feature streams.",
-          "Results: CI runtime cut from 4.5 hours to 30 minutes (5x capacity), 90% coverage on critical paths, and release cadence lifted to 2–3 deployments per week.",
+          "Results: CI runtime cut from 4.5 hours to 30 minutes (5x capacity), 90% coverage on critical paths, and release cadence lifted to 2-3 deployments per week.",
         ],
       },
       {
@@ -183,8 +183,8 @@ const experiences: Experience[] = [
           technologies: ["Ruby", "Selenium", "Capybara"],
         },
         impact: [
-          "Scope: First QA hire on the SaaS email marketing platform — no internal network, no existing framework.",
-          "Action: Architected the company's first automated testing framework from scratch and designed comprehensive regression suites.",
+          "Scope: First QA hire on the SaaS email marketing platform, no internal network, no existing framework.",
+          "Action: Built the company's first automated testing framework from scratch and wrote the regression suites that ran on it.",
           "Action: Established the developer-QA handoff model and a repeatable, scalable QA process adopted across engineering.",
           "Results: -60% production defects and promoted from IC to QA Manager in 8 months.",
         ],
@@ -351,7 +351,7 @@ const RoleNarrative: React.FC<{ impact: string[] }> = ({ impact }) => {
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
-      <div className="section-eyebrow">02 — Career</div>
+      <div className="section-eyebrow">02 / Career</div>
       <h2 className="section-title">A timeline of building<br />and scaling teams.</h2>
 
       <OperatingScope />

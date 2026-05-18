@@ -5,7 +5,7 @@ const principles = [
   {
     icon: Layers,
     title: 'Quality is a systems problem.',
-    body: 'Defects aren\'t QA failures — they\'re signals that the engineering system is misaligned. Fix the system, not the symptom.',
+    body: 'Defects aren\'t QA failures, they\'re signals that the engineering system is misaligned. Fix the system, not the symptom.',
   },
   {
     icon: GitBranch,
@@ -20,7 +20,7 @@ const principles = [
   {
     icon: Sparkles,
     title: 'AI augments engineering judgment.',
-    body: 'AI accelerates test generation, triage, and risk scoring — but engineering judgment owns the decision. Augment, never replace.',
+    body: 'AI accelerates test generation, triage, and risk scoring, but engineering judgment owns the decision. Augment, never replace.',
   },
   {
     icon: Activity,
@@ -37,7 +37,7 @@ const principles = [
 const Principles = () => {
   return (
     <section id="principles" className="section-container">
-      <div className="section-eyebrow">03 — Operating Principles</div>
+      <div className="section-eyebrow">03 / Operating Principles</div>
       <h2 className="section-title">How I run<br />engineering orgs.</h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-12">

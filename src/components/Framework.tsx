@@ -6,14 +6,14 @@ const pillars = [
   {
     icon: Wand2,
     title: 'Adaptive Test Generation',
-    summary: 'AI synthesizes tests from PR diffs and incident history — coverage scales with change, not headcount.',
+    summary: 'AI synthesizes tests from PR diffs and incident history, coverage scales with change, not headcount.',
     example:
       'On a multi-brand commerce checkout, meaningful coverage on changed code moved from ~55% to 90%+ without growing the QE org.',
   },
   {
     icon: Target,
     title: 'Risk-Based Execution',
-    summary: 'Every commit is scored by blast-radius and historical failure rate — CI runs only what matters.',
+    summary: 'Every commit is scored by blast-radius and historical failure rate, CI runs only what matters.',
     example:
       'A 9,000-test enterprise SaaS suite: PR feedback cut from 48 minutes to under 9, with escape rate held flat.',
   },
@@ -47,14 +47,14 @@ const Framework = () => {
 
   return (
     <section id="framework" className="section-container">
-      <div className="section-eyebrow">04 — Framework</div>
+      <div className="section-eyebrow">04 / Framework</div>
       <h2 className="section-title">
         AT Quality Intelligence<br />Framework<sup className="text-xl text-accent">™</sup>
       </h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
         A systems-based operating model for embedding AI-driven quality into enterprise-scale
-        engineering — built on observability, adaptive execution, and delivery intelligence.
+        engineering, built on observability, adaptive execution, and delivery intelligence.
       </p>
 
       <div className="mb-12">
