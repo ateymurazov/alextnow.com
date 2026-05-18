@@ -1,4 +1,5 @@
 import React from 'react';
+import OperatingScope from './OperatingScope';
 import {
   Accordion,
   AccordionContent,
