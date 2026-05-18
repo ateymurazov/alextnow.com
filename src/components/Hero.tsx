@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import headshot from '@/assets/aleksandr-headshot.png';
+import headshot from '@/assets/aleksandr-headshot.jpg';
 
 const Hero = () => {
   const scrollTo = (id: string) =>
