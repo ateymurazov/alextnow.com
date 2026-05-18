@@ -1,54 +1,65 @@
 import React from 'react';
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, Calendar } from 'lucide-react';
 
 const Education = () => {
-  const items = [
+  const educationItems = [
     {
-      type: 'degree' as const,
-      institution: 'San Francisco State University',
-      credential: 'BS, Computer Information Systems',
-      period: '2003',
-    },
-    {
-      type: 'certification' as const,
-      institution: 'Scrum Alliance',
-      credential: 'Certified Scrum Master',
-      period: '2020',
-    },
-    {
-      type: 'certification' as const,
-      institution: 'International Institute for Software Testing',
-      credential: 'Certified Software Test Professional (CSTP)',
-      period: '2004',
+      id: 1,
+      institution: "San Francisco State University",
+      degree: "BS Computer Information Systems",
+      period: "1995 - 2003",
+      abbreviation: "SFSU",
+      type: "degree",
+      description: "Comprehensive foundation in computer science, information systems, and business processes."
     },
   ];
 
   return (
     <section id="education" className="section-container">
       <div className="section-eyebrow">04 — Credentials</div>
-      <h2 className="section-title text-2xl sm:text-3xl">Education & certifications.</h2>
+      <h2 className="section-title">Education &<br />Certifications.</h2>
 
-      <div className="card-elevated divide-y divide-border">
-        {items.map((item) => {
-          const Icon = item.type === 'degree' ? GraduationCap : Award;
-          return (
-            <div
-              key={item.credential}
-              className="flex items-center gap-4 px-5 sm:px-6 py-4"
-            >
-              <Icon className="h-4 w-4 text-muted-foreground flex-shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-sm sm:text-base font-medium text-foreground truncate">
-                  {item.credential}
-                </p>
-                <p className="text-xs text-muted-foreground truncate">{item.institution}</p>
+      <div className="grid gap-8">
+        {educationItems.map((item) => (
+          <div key={item.id} className="card-elevated p-5 sm:p-8 hover-lift">
+            <div className="flex items-start gap-4 sm:gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-primary-foreground font-bold text-sm">{item.abbreviation}</span>
+                </div>
               </div>
-              <span className="text-xs font-mono text-muted-foreground tabular-nums">
-                {item.period}
-              </span>
+
+              <div className="flex-1">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">{item.institution}</h3>
+                    <p className="text-lg font-medium text-primary mb-2">{item.degree}</p>
+                    {item.description && (
+                      <p className="text-muted-foreground leading-relaxed mb-3">{item.description}</p>
+                    )}
+                  </div>
+
+                  <div className="flex items-center space-x-2 text-muted-foreground">
+                    <GraduationCap className="h-4 w-4" />
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                    <Calendar className="h-4 w-4" />
+                    <span>{item.period}</span>
+                  </div>
+
+                  <div className="text-sm">
+                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary">
+                      Degree
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </section>
   );
