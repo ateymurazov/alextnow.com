@@ -11,7 +11,7 @@ const Accomplishments = () => {
 
   return (
     <section id="accomplishments" className="section-container animate-fade-in">
-      <div className="section-eyebrow">01 — Impact</div>
+      <div className="section-eyebrow">01 / Impact</div>
       <h2 className="section-title">Numbers that define<br />the work.</h2>
       
       {/* Key Metrics */}
@@ -35,7 +35,7 @@ const Accomplishments = () => {
             Leadership Journey
           </h3>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Fifteen years progressing from QA Manager to Director of Quality Engineering — with stops as Development Manager, Director of Engineering, and Executive Director in between. I've led both development and quality organizations, so I move fluently between C-suite strategy and hands-on execution: debugging production, authoring CI/CD, and shaping the operating model in the same week.
+            Fifteen years progressing from QA Manager to Director of Quality Engineering, with stops as Development Manager, Director of Engineering, and Executive Director in between. I've led both development and quality organizations, so I move fluently between C-suite strategy and hands-on execution: debugging production, authoring CI/CD, and shaping the operating model in the same week.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const Accomplishments = () => {
             </div>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily — including VerticalResponse's monolithic email marketing engine — without losing a single user-facing feature.
+                Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.
               </p>
               <p>
                 <span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on the new stack with 20% faster list uploads and segmentation, and a streamlined creation workflow, with no migration interruption.
@@ -99,7 +99,7 @@ const Accomplishments = () => {
             </div>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                At Deluxe, consolidated five acquired engineering orgs — VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation — into a single "One Deluxe" Engineering organization with shared standards and toolchain.
+                At Deluxe, consolidated five acquired engineering orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation, into a single "One Deluxe" Engineering organization with shared standards and toolchain.
               </p>
               <p>
                 At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test generator and impact-analysis engine. <span className="text-foreground font-medium">Manual testing collapsed 90%, release cycles compressed 35%, validated story throughput rose 50% per sprint.</span>
@@ -122,7 +122,7 @@ const Accomplishments = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models — flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
+              Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models, flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
             </p>
           </div>
         </div>

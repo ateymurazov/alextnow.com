@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    /* Modern editorial palette — warm off-white with electric accent */
+    /* Modern editorial palette, warm off-white with electric accent */
     --background: 30 20% 98%;
     --foreground: 222 30% 8%;
 

@@ -73,7 +73,7 @@ const Contact = () => {
       if (error) throw error;
       toast({
         title: "Message sent",
-        description: "Thanks for reaching out — I'll get back to you soon.",
+        description: "Thanks for reaching out, I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', message: '' });
       setErrors({ name: '', email: '', message: '' });
@@ -98,7 +98,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-container">
-      <div className="section-eyebrow">06 — Contact</div>
+      <div className="section-eyebrow">06 / Contact</div>
       <h2 className="section-title">Let's build something<br />exceptional.</h2>
       
       <div className="max-w-5xl mx-auto">
