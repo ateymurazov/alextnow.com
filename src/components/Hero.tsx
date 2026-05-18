@@ -19,7 +19,7 @@ const Hero = () => {
       />
 
       <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-20">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-10 items-center max-w-7xl mx-auto w-full">
           {/* Text */}
           <div className="lg:col-span-6 animate-blur-in order-2 lg:order-1">
             <div className="section-eyebrow">
