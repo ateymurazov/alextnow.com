@@ -124,7 +124,7 @@ const Sidebar = () => {
             className="flex items-center gap-2 text-xs text-muted-foreground hover:text-accent transition-colors"
           >
             <Mail className="h-3.5 w-3.5" />
-            ateymurazov@gmail.com
+            Email me
           </a>
           <p className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60 pt-2">
             © 2026 — Available for select roles
