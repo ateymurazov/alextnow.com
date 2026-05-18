@@ -311,6 +311,43 @@ const ImpactBullet: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
+const RoleNarrative: React.FC<{ impact: string[] }> = ({ impact }) => {
+  const [open, setOpen] = useState(false);
+  const resultsBullet = impact.find((b) => /^Results:/.test(b));
+  const otherBullets = impact.filter((b) => !/^Results:/.test(b));
+
+  return (
+    <div>
+      {resultsBullet && (
+        <ul className="space-y-3 mb-4">
+          <ImpactBullet text={resultsBullet} />
+        </ul>
+      )}
+
+      {open && otherBullets.length > 0 && (
+        <ul className="space-y-3 mb-4 pt-4 border-t border-border">
+          {otherBullets.map((b, i) => (
+            <ImpactBullet key={i} text={b} />
+          ))}
+        </ul>
+      )}
+
+      {otherBullets.length > 0 && (
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:text-accent/80 transition-colors"
+          aria-expanded={open}
+        >
+          {open ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
+          {open ? 'Hide operating detail' : 'Show operating detail'}
+        </button>
+      )}
+    </div>
+  );
+};
+
+
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
