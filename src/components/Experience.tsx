@@ -377,11 +377,8 @@ const Experience = () => {
                                 </p>
                               </div>
                               {role.snapshot && <SnapshotBlock snapshot={role.snapshot} />}
-                              <ul className="space-y-3">
-                                {role.impact.map((b, i) => (
-                                  <ImpactBullet key={i} text={b} />
-                                ))}
-                              </ul>
+                              <RoleNarrative impact={role.impact} />
+
                             </div>
                           ))}
                         </div>
