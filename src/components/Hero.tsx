@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="lg:col-span-7 animate-blur-in order-2 lg:order-1">
             <div className="section-eyebrow">
               <Sparkles className="h-3 w-3" />
-              Engineering Quality & Delivery Leader
+              Engineering Quality Leader
             </div>
 
             <h1 className="text-[clamp(2.75rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight text-foreground mb-8">
