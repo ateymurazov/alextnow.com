@@ -97,9 +97,14 @@ const Accomplishments = () => {
                 </div>
               </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
-              At Deluxe, I took the merger of VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation and turned five engineering silos into one "One Deluxe" Engineering organization. Later at Shutterfly, I faced five QA teams operating in isolation across multiple brands. I created a "Quality Intelligence" organization, deploying an AI-powered test-case generator that adapted to code changes and an impact-analysis engine that recommended which tests to run. Manual testing hours collapsed by 90%, release cycles shrank by 35%, and the unified QE team delivered 50% more validated stories each sprint.
-            </p>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                At Deluxe, consolidated five acquired engineering orgs — VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation — into a single "One Deluxe" Engineering organization with shared standards and toolchain.
+              </p>
+              <p>
+                At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test generator and impact-analysis engine. <span className="text-foreground font-medium">Manual testing collapsed 90%, release cycles compressed 35%, validated story throughput rose 50% per sprint.</span>
+              </p>
+            </div>
           </div>
 
           <div className="card-elevated p-8 hover-lift">
