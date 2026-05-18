@@ -72,84 +72,42 @@ const experiences = [
     company: "DeepDyve",
     period: "October 2007 - August 2009",
     website: "https://www.deepdyve.com",
-    roles: [
-      {
-        position: "Principal Test Engineer",
-        period: "October 2007 - August 2009",
-        description: "At Infovell, I took ownership of the end-to-end testing and deployment of the company's WebSearch Engine—an ambitious project that required optimizing both content crawling and indexing to deliver fast, accurate results. I instituted a robust quality-engineering framework, defining processes that flagged reliability risks early and drove efficiency across the team.",
-        details: "To further bolster our coverage and performance, I designed and rolled out innovative test-automation strategies—leveraging shell scripting and CI/CD pipelines—to catch edge-case failures before they ever reached production. The result was a search engine that not only scaled with growing data volumes but consistently met stringent uptime and response-time targets."
-      }
-    ]
+    roles: []
   },
   {
     id: "5",
     company: "iPass",
     period: "August 2002 - September 2007",
     website: "http://ipass.com",
-    roles: [
-      {
-        position: "Automation Test Lead",
-        period: "August 2002 - September 2007",
-        description: "At iPass, I recognized that our manual testing backlog was creating critical bottlenecks, so I designed and implemented a SilkTest-based automation framework that slashed manual QA effort by 70%. I personally owned the end-to-end integration testing process—defining API and backend test suites, orchestrating performance benchmarks, and refining build-deployment scripts to accelerate release cycles.",
-        details: "To keep stakeholders informed, I overhauled our reporting pipeline: automating data collection and visualization to deliver real-time dashboards that guided prioritization and decision-making. These initiatives not only boosted our release cadence but also ensured the stability and scalability of our global connectivity platform."
-      }
-    ]
+    roles: []
   },
   {
     id: "6",
     company: "Onepage",
     period: "October 2000 - April 2002",
     website: "http://onepage.com",
-    roles: [
-      {
-        position: "Software QA Team Lead",
-        period: "October 2000 - April 2002",
-        description: "At OnePage, I was tasked with transforming our release cycle into a predictable, quality-driven engine. I began by crafting and rolling out a comprehensive QA strategy—defining test plans, coverage goals, and automation roadmaps—that lifted our regression coverage by over 50% and caught more defects earlier in the cycle.",
-        details: "To scale that vision, I built and mentored an offshore QA team, establishing daily stand-ups and pairing sessions that blended integration testing with automated suites. Together, we replaced manual handoffs with continuous feedback loops and self-serving dashboards, accelerating releases without sacrificing quality. My hands-on approach—leveraging PHP for backend validation, database sniffers for data integrity, and custom scripts for automation—ensured every product milestone shipped with confidence."
-      }
-    ]
+    roles: []
   },
   {
     id: "7",
     company: "Saba Software",
     period: "July 1999 - October 2000",
     website: "http://sabasoftware.com",
-    roles: [
-      {
-        position: "Sr. SQA Engineer",
-        period: "July 1999 - October 2000",
-        description: "At Saba Software, I stepped into a pivotal role overseeing integration testing and automation for the company's flagship enterprise applications. From day one, I recognized that our sprawling Learning Management and Talent suite—comprising modules for course delivery, performance management, and analytics—needed a cohesive testing strategy.",
-        details: "I partnered with Product and Development leads to map out critical end-to-end workflows, then architected an automated integration test framework using Selenium WebDriver and REST-based API scripts. Building on that foundation, I wove those tests into our continuous integration pipeline, so every code check-in triggered a full regression pass against dozens of user scenarios. What had once taken three days of manual effort now ran overnight, catching edge-case failures early and giving developers fast feedback. I worked closely with our data-engineering team to feed synthetic user data into test runs, ensuring our scenarios closely mirrored production realities. To keep everyone aligned, I introduced a weekly \"Quality Metrics\" review, presenting dashboards that tracked pass/fail trends, test coverage, and defect density. Those insights guided our prioritization—whether tuning a new API endpoint or hardening our OAuth flows—and helped the team reduce post-release incidents by 45% over six months. Throughout, I mentored junior engineers on test architecture best practices and led bi-weekly automation workshops, embedding a culture of quality and continuous improvement across the organization."
-      }
-    ]
+    roles: []
   },
   {
     id: "8",
     company: "Oracle",
     period: "March 1998 - July 1999",
     website: "http://oracle.com",
-    roles: [
-      {
-        position: "Software Quality Assurance Engineer",
-        period: "March 1998 - July 1999",
-        description: "At Oracle, I saw an opportunity to elevate our enterprise applications' stability by embedding automation deep into the testing lifecycle. I authored Java-based automated test suites—leveraging JDBC for backend data validation and JSP-driven UI scripts—that executed end-to-end scenarios across complex workflows.",
-        details: "By integrating these tests into our nightly builds, I caught critical defects before they reached QA, significantly boosting product reliability and accelerating release confidence. My work laid the groundwork for a culture of continuous quality, where automated checks became an integral part of every development sprint."
-      }
-    ]
+    roles: []
   },
   {
     id: "9",
     company: "C-ATS Software Inc.",
     period: "June 1997 - March 1998",
     website: "http://www.cats.com",
-    roles: [
-      {
-        position: "Software Quality Assurance Engineer",
-        period: "June 1997 - March 1998",
-        description: "Joining CATS Software straight out of school was my first immersion into the tech world—and it felt like stepping onto a rocket ship. I started as a hands-on tester on their proprietary risk-management platform, diving into requirements documentation and mapping out complex use cases for financial institutions.",
-        details: "My days were spent meticulously crafting and executing test cases—manually validating calculation engines, stress-testing data imports, and verifying UI workflows under shifting market conditions. Early on, I noticed that our regression cycles were eating up valuable release time. On my own initiative, I wrote simple scripts to automate repetitive test steps, cutting down manual effort and freeing the team to focus on deeper exploratory testing. I also instituted a daily \"bug scrub\" ritual: gathering developers, product managers, and support engineers to triage issues, prioritize fixes, and align on the next day's test targets. That collaborative cadence not only improved our defect turnaround but also built strong cross-functional trust. By the end of my first year, I had expanded my remit beyond execution to owning quality processes: defining entry and exit criteria for releases, mentoring junior testers on best practices, and presenting test-coverage metrics in weekly leadership reviews. Those experiences laid the foundation for every subsequent role—teaching me how curiosity, persistence, and early automation can transform a fledgling QA effort into a strategic advantage."
-      }
-    ]
+    roles: []
   }
 ];
 
