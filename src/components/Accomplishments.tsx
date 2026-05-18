@@ -3,7 +3,7 @@ import { Zap, Code, Users, TrendingUp, Shield, Rocket } from 'lucide-react';
 
 const Accomplishments = () => {
   const highlights = [
-    { icon: TrendingUp, metric: "50%", label: "Defect Rate Reduction" },
+    { icon: TrendingUp, metric: "100K+", label: "Automated Tests / Day" },
     { icon: Rocket, metric: "40%", label: "Release Cycle Acceleration" },
     { icon: Shield, metric: "90%", label: "Manual Testing Reduction" },
     { icon: Users, metric: "200+", label: "Engineers Led" },
