@@ -18,8 +18,7 @@ type Role = {
   position: string;
   period: string;
   snapshot?: Snapshot;
-  description: string;
-  details: string;
+  impact: string[];
 };
 
 type Experience = {
@@ -53,8 +52,13 @@ const experiences: Experience[] = [
           ],
           technologies: ["Playwright", "Docker", "Jenkins", "GitHub Actions", "Splunk", "AWS", "Python", "SeleniumGrid"],
         },
-        description: "Joined Shutterfly in December 2020 inheriting five independent Quality teams—SnapFish, Lifetouch, Spoonflower, SFLY Business, and SFLY Consumer—each with its own processes, tools, and priorities. Designed and executed a unified Quality Engineering organization: product-aligned teams under a central Quality function, plus a new Core Automation team owning common frameworks, metrics, and tooling across every brand.",
-        details: "With 120 engineers and three direct manager reports, I built a rolling capacity-planning model with Product, Engineering, and Finance—translating strategic objectives into headcount forecasts, budgets, and release timelines. Revamped CI/CD by embedding unit, integration, and performance automation into every stage, cutting manual regression 90% and accelerating deployments 35%. Layered in an AI-assisted Quality Intelligence framework for adaptive test generation and risk-based execution. In 18 months, the reorganized QE org delivered $500K in annual cost savings, 40% more test execution capacity, and a durable culture of shared ownership."
+        impact: [
+          "Scope: Inherited 5 siloed QE teams across SnapFish, Lifetouch, Spoonflower, SFLY Business, and SFLY Consumer — 120 engineers, 3 manager reports.",
+          "Action: Designed a unified QE org — product-aligned teams under a central Quality function plus a new Core Automation team owning shared frameworks, metrics, and tooling.",
+          "Action: Rebuilt CI/CD to embed unit, integration, and performance automation at every stage; layered in an AI-assisted Quality Intelligence framework for adaptive test generation and risk-based execution.",
+          "Action: Stood up a rolling capacity-planning model with Product, Engineering, and Finance to translate strategy into headcount, budget, and release timelines.",
+          "Results: -90% manual regression, +35% release cadence, +40% test execution capacity, and $500K annual savings within 18 months.",
+        ],
       }
     ]
   },
@@ -80,8 +84,13 @@ const experiences: Experience[] = [
           ],
           technologies: ["Java", "Distributed Systems", "AWS", "GitHub", "Atlassian", "Jenkins"],
         },
-        description: "Promoted to Executive Director of Engineering, balancing hands-on innovation with strategic leadership. Pitched and launched an internal incubator for distributed data processing—hand-picked a two-engineer team that architected a scalable Data Management Platform processing billions of records and generating $15M+ in new revenue within three years.",
-        details: "Consolidated multiple product teams onto the unified \"One Deluxe\" platform with standardized practices and a shared CI/CD workflow. Renegotiated tool and license agreements across the merged orgs for $350K+ in annual savings, reinvested into innovation. On the M&A side, served on Deluxe's corporate leadership team and led technical due diligence for the MyCorporation acquisition—IP, infrastructure, architecture, security, and integration risk—giving executives the read needed to close and integrate cleanly. Role required 30–40% travel across US, Toronto (Hostopia), and Sofia (WebBuilder) to keep global teams aligned."
+        impact: [
+          "Scope: Engineering leadership across the consolidated Small Business Services portfolio spanning US, Toronto (Hostopia), and Sofia (WebBuilder); 30–40% travel.",
+          "Action: Pitched and launched an internal incubator for distributed data processing — hand-picked a 2-engineer team that architected a scalable Data Management Platform.",
+          "Action: Consolidated multiple product teams onto the unified 'One Deluxe' platform with standardized practices and shared CI/CD; renegotiated tool and license contracts across merged orgs.",
+          "Action: Led technical due diligence for the MyCorporation acquisition — IP, infrastructure, architecture, security, and integration risk — and represented engineering on Deluxe's corporate leadership team.",
+          "Results: $15M+ new revenue from the DMP in under 3 years (processing billions of records) and $350K+ annual savings reinvested into innovation.",
+        ],
       },
       {
         position: "Director Software Engineering",
@@ -98,8 +107,13 @@ const experiences: Experience[] = [
           ],
           technologies: ["Ruby on Rails", "Java", "GitHub", "Jenkins", "Atlassian"],
         },
-        description: "Promoted to Director of Engineering over four product teams—VerticalResponse, Hostopia, Website Builder, and LogoMix. Unified workflows and drove time-to-production down 40% via automated deployment pipelines and embedded agile practices.",
-        details: "Standardized SDLC, tooling, and CI/CD templates across all four acquired products—code-quality gates, shared backlog guidelines, and consistent release mechanics—lifting development velocity 20% and reducing production incidents. Architected end-to-end automation for capital-expense reporting, replacing error-prone spreadsheets with validated, audit-ready outputs in minutes. Negotiated enterprise-wide GitHub and Atlassian agreements, consolidating contracts for a 20% OPEX reduction."
+        impact: [
+          "Scope: Promoted to Director of Engineering over 4 acquired product orgs — VerticalResponse, Hostopia, Website Builder, and LogoMix.",
+          "Action: Standardized SDLC, tooling, and CI/CD templates across all four products — code-quality gates, shared backlog guidelines, and consistent release mechanics.",
+          "Action: Architected end-to-end automation for capital-expense reporting, replacing error-prone spreadsheets with audit-ready outputs in minutes.",
+          "Action: Negotiated enterprise-wide GitHub and Atlassian agreements, consolidating contracts across the portfolio.",
+          "Results: -40% time-to-production, +20% development velocity, fewer production incidents, and 20% OPEX reduction on tooling.",
+        ],
       },
       {
         position: "Software Engineering Manager",
@@ -116,8 +130,13 @@ const experiences: Experience[] = [
           ],
           technologies: ["Ruby on Rails", "Microservices", "PCI/HIPAA", "AWS"],
         },
-        description: "When Deluxe Corp acquired VerticalResponse, I stepped into the newly created role of Software Engineering Manager—charged with transforming the legacy \"VR Classic\" platform into the next-generation VR2. With Ruby on Rails gaining momentum, I architected and led a full rewrite under razor-tight deadlines: my team rebuilt core functionality, integrated PCI compliance requirements for credit-card processing, and secured HIPAA readiness—all while racing to meet our merger timetable.",
-        details: "I assembled and mentored a cross-functional squad of full-stack, QA, automation, and DevOps engineers, defining microservices boundaries and guiding them through agile sprints. As we rolled out VR2's distributed architecture, I also designed a data-analysis framework that stress-tested pipelines against billions of records—ensuring reliability at scale. By launch, VR2 delivered a 50% boost in platform scalability and email-delivery performance, and passed all PCI audits on the first submission. Stepping up from QA Manager into this engineering leadership position, I proved that even under acquisition pressure, clear vision and relentless execution can turn monumental challenges into lasting success."
+        impact: [
+          "Scope: New role created post-Deluxe acquisition of VerticalResponse — own the 'VR Classic' → VR2 platform rewrite under a hard merger deadline.",
+          "Action: Architected and led the full Ruby on Rails rewrite, defining microservices boundaries and agile sprint cadence for the distributed architecture.",
+          "Action: Assembled and mentored a cross-functional squad of full-stack, QA, automation, and DevOps engineers; embedded PCI and HIPAA requirements into the build.",
+          "Action: Designed a data-analysis framework that stress-tested pipelines against billions of records to validate reliability at scale.",
+          "Results: +50% platform scalability and email-delivery performance, zero-downtime cutover, and passed PCI audit on first submission with HIPAA readiness secured.",
+        ],
       }
     ]
   },
@@ -141,8 +160,12 @@ const experiences: Experience[] = [
           ],
           technologies: ["Ruby", "RSpec", "Selenium", "Jenkins", "GitHub"],
         },
-        description: "At VerticalResponse, I quickly moved from Senior QA Engineer into the QA Manager seat—entrusted with shaping quality strategy across the entire company. Early on, I championed Test-Driven Development, personally authoring an end-to-end automated test suite that unlocked deployments two to three times per week. To keep pace, I built a parallelized Continuous Integration workflow: what once took 4½ hours of sequential tests now ran in just 30 minutes, multiplying our test capacity fivefold.",
-        details: "I set a team goal of 90% coverage for our mission-critical components and designed the test framework to reach it, catching bugs before they ever hit production. Finally, I architected a GitHub branching strategy that let multiple feature streams progress in parallel—eliminating merge nightmares and boosting developer productivity company-wide. Together, these efforts transformed VerticalResponse's release cadence and laid a foundation for scalable, reliable software delivery."
+        impact: [
+          "Scope: Promoted from Senior QA into QA Manager — own company-wide quality strategy and automation infrastructure.",
+          "Action: Championed TDD and authored an end-to-end automated test suite covering mission-critical components.",
+          "Action: Built a parallelized Continuous Integration workflow and a GitHub branching strategy supporting multiple parallel feature streams.",
+          "Results: CI runtime cut from 4.5 hours to 30 minutes (5x capacity), 90% coverage on critical paths, and release cadence lifted to 2–3 deployments per week.",
+        ],
       },
       {
         position: "Senior QA Engineer",
@@ -157,8 +180,12 @@ const experiences: Experience[] = [
           ],
           technologies: ["Ruby", "Selenium", "Capybara"],
         },
-        description: "Joining VerticalResponse was my first role landed entirely on my own—no network referrals or professor introductions to lean on—so I walked in with zero internal contacts and a determination to prove myself. I dove headfirst into the Quality Assurance team, writing test cases by day and learning the product's every edge by night.",
-        details: "Within weeks, I saw an opportunity to raise the bar: I architected the company's very first automated testing framework from scratch, laying the groundwork for a repeatable, scalable QA process. As that framework took shape, I designed comprehensive regression suites that drove a 60% drop in production defects—feedback loops that saved wasted hours and shored up customer confidence. My close partnership with developers smoothed release handoffs, and I became the go-to person for tough bug hunts and process improvements. In just eight months, that momentum carried me from hands-on tester to QA Manager, where I continued shaping our quality culture and mentoring the next wave of QA engineers."
+        impact: [
+          "Scope: First QA hire on the SaaS email marketing platform — no internal network, no existing framework.",
+          "Action: Architected the company's first automated testing framework from scratch and designed comprehensive regression suites.",
+          "Action: Established the developer-QA handoff model and a repeatable, scalable QA process adopted across engineering.",
+          "Results: -60% production defects and promoted from IC to QA Manager in 8 months.",
+        ],
       }
     ]
   },
@@ -257,6 +284,31 @@ const SnapshotBlock: React.FC<{ snapshot: Snapshot }> = ({ snapshot }) => (
   </div>
 );
 
+const ImpactBullet: React.FC<{ text: string }> = ({ text }) => {
+  const match = text.match(/^(Scope|Action|Results):\s*(.*)$/);
+  const label = match?.[1];
+  const body = match?.[2] ?? text;
+  const labelColor =
+    label === 'Results'
+      ? 'text-accent'
+      : label === 'Scope'
+        ? 'text-foreground'
+        : 'text-foreground/80';
+  return (
+    <li className="flex gap-3 text-[15px] leading-relaxed text-muted-foreground">
+      <span className="mt-2 h-1 w-1 rounded-full bg-accent flex-shrink-0" />
+      <span>
+        {label && (
+          <span className={`font-mono text-[10px] uppercase tracking-widest mr-2 ${labelColor}`}>
+            {label}
+          </span>
+        )}
+        {body}
+      </span>
+    </li>
+  );
+};
+
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
@@ -323,10 +375,11 @@ const Experience = () => {
                                 </p>
                               </div>
                               {role.snapshot && <SnapshotBlock snapshot={role.snapshot} />}
-                              <div className="space-y-4 text-[15px] leading-relaxed text-muted-foreground">
-                                <p>{role.description}</p>
-                                <p>{role.details}</p>
-                              </div>
+                              <ul className="space-y-3">
+                                {role.impact.map((b, i) => (
+                                  <ImpactBullet key={i} text={b} />
+                                ))}
+                              </ul>
                             </div>
                           ))}
                         </div>
