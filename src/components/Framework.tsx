@@ -6,22 +6,22 @@ const pillars = [
   {
     icon: Wand2,
     title: 'Adaptive Test Generation',
-    body: 'AI-assisted synthesis of unit, integration, and contract tests from code diffs, telemetry, and incident history — closing coverage gaps where risk actually lives.',
+    body: 'Example: on a multi-brand commerce checkout, AI synthesizes unit, contract, and edge-case tests from each PR diff plus production incident history — lifting meaningful coverage on changed code from ~55% to 90%+ without growing the QE headcount.',
   },
   {
     icon: Target,
     title: 'Risk-Based Execution',
-    body: 'CI selects, orders, and parallelizes tests based on change blast-radius, historical failure data, and production usage — not by running everything, every time.',
+    body: 'Example: a 9,000-test enterprise SaaS suite is scored per-commit by change blast-radius and historical failure rate; CI runs only the top-risk slice in pre-merge — cutting PR feedback from 48 minutes to under 9 while holding escape rate flat.',
   },
   {
     icon: Activity,
     title: 'Quality Observability',
-    body: 'Pipeline, test, and release telemetry unified into a single signal layer: flakiness, drift, escape rate, and lead time as first-class metrics with ownership.',
+    body: 'Example: pipeline, test, and release telemetry unified into a single signal layer across 120+ engineers and 5 product lines — surfacing flakiness, drift, and escape rate by owner and driving production defect escape down 60% quarter-over-quarter.',
   },
   {
     icon: Brain,
     title: 'AI-Assisted Failure Analysis',
-    body: 'Automated triage clusters failures, ranks probable causes, and routes to the right team — collapsing mean-time-to-diagnose from hours to minutes.',
+    body: 'Example: on a regulated payments platform, failed runs are clustered and ranked by probable root cause, then auto-routed to the owning service team — collapsing mean-time-to-diagnose from ~4 hours to under 20 minutes and unblocking release trains same-day.',
   },
 ];
 
