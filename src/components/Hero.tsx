@@ -58,10 +58,10 @@ const Hero = () => {
 
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl">
               {[
-                { k: '25+', v: 'Years leading eng' },
+                { k: '250+', v: 'Releases / year' },
                 { k: '200+', v: 'Engineers led' },
-                { k: '50%', v: 'Defect reduction' },
-                { k: '$15M+', v: 'Revenue impact' },
+                { k: '90%', v: 'Regression reduction' },
+                { k: '100K+', v: 'Automated tests / day' },
               ].map((s) => (
                 <div key={s.v} className="border-l border-border pl-4">
                   <div className="text-2xl md:text-3xl font-semibold text-foreground tracking-tight">{s.k}</div>
