@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <p className="font-semibold text-foreground">Aleksandr Teymurazov</p>
           <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider mt-1">
-            © 2026 — Director, Quality Engineering
+            © 2026 — Engineering Quality & Delivery Leader
           </p>
         </div>
         <div className="flex items-center gap-6">
