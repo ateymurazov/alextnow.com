@@ -103,7 +103,7 @@ const Sidebar = () => {
             Aleksandr<br />Teymurazov
           </h1>
           <div className="mt-4 space-y-1">
-            <p className="text-sm font-medium text-foreground">Engineering Quality Leader</p>
+            <p className="text-sm font-medium text-foreground">Engineering Transformation & Quality Leader</p>
             <p className="text-xs text-muted-foreground">Scaling engineering orgs with rigor.</p>
           </div>
         </div>
