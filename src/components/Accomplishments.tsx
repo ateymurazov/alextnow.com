@@ -122,7 +122,7 @@ const Accomplishments = () => {
               </div>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Anticipating the limits of manual script-writing, I spearheaded an AI test-generation program that scanned our codebase, produced targeted test cases, and classified results with machine-learned models. Within three months, overall test coverage jumped by 30% and the system flagged the riskiest code areas before developers even committed code changes. QA engineers reclaimed hundreds of hours otherwise spent on repetitive tasks, focusing instead on exploratory testing and UX edge cases.
+              Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models — flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
             </p>
           </div>
         </div>
