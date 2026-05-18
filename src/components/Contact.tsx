@@ -120,37 +120,37 @@ const Contact = () => {
               </h3>
               
               <div className="space-y-6">
-                <div className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors">
+                <a
+                  href="mailto:ateymurazov@gmail.com"
+                  className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
+                >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Email</p>
-                    <a 
-                      href="mailto:ateymurazov@gmail.com" 
-                      className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    >
-                      ateymurazov@gmail.com
-                    </a>
+                    <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+                      Email me
+                    </span>
                   </div>
-                </div>
-                
-                <div className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors">
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/ateymurazov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
+                >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Linkedin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">LinkedIn</p>
-                    <a 
-                      href="https://linkedin.com/in/ateymurazov" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-lg font-medium text-foreground hover:text-primary transition-colors"
-                    >
-                      linkedin.com/in/ateymurazov
-                    </a>
+                    <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+                      Connect on LinkedIn
+                    </span>
                   </div>
-                </div>
+                </a>
               </div>
               
             </div>
