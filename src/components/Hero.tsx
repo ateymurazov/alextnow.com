@@ -76,8 +76,8 @@ const Hero = () => {
 
           {/* Portrait */}
           <div className="lg:col-span-5 order-1 lg:order-2 animate-fade-in">
-            <div className="relative w-full max-w-xl mx-auto lg:max-w-none lg:scale-[1.15] lg:origin-left lg:-ml-4">
-              <div className="absolute -inset-8 bg-gradient-to-br from-accent/25 via-transparent to-transparent rounded-3xl blur-3xl" />
+            <div className="relative w-full max-w-md sm:max-w-lg mx-auto lg:max-w-none">
+              <div className="absolute -inset-6 bg-gradient-to-br from-accent/25 via-transparent to-transparent rounded-3xl blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img
                   src={headshot}
