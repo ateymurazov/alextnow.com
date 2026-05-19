@@ -82,7 +82,7 @@ const Hero = () => {
                   src={headshot}
                   alt="Aleksandr Teymurazov, Engineering Quality & Delivery Leader"
                   className="w-full h-auto object-cover aspect-[3/4]"
-                  style={{ objectPosition: '50% 25%' }}
+                  style={{ objectPosition: '50% 45%' }}
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent pointer-events-none" />
