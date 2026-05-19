@@ -189,6 +189,7 @@ const Contact = () => {
                   placeholder="name@company.com"
                   value={formData.email}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 ${
                     errors.email 
                       ? 'border-destructive focus:border-destructive' 
