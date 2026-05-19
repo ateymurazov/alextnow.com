@@ -123,12 +123,9 @@ const Contact = () => {
                 >
                   <div className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/70">Email</span>
-                      <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
-                        ateymurazov@gmail.com
-                      </span>
-                    </div>
+                    <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
+                      Email
+                    </span>
                   </div>
                 </a>
 
