@@ -146,11 +146,6 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-border/40">
-                <p className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground/60">
-                  San Francisco Bay Area
-                </p>
-              </div>
             </div>
           </div>
 
