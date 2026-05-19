@@ -14,11 +14,11 @@ const insights = [
   {
     icon: GitMerge,
     tag: 'M&A',
-    title: 'M&A Integration: The Hidden Technology Challenge',
+    title: 'Most M&A strategies underestimate the cost of technical integration.',
     summary:
-      "Deal economics live or die on tech integration speed, not on the synergies in the pitch deck.",
+      "The real success metric isn't the synergy model in the deck, it's how quickly engineering systems converge after the acquisition closes.",
     body:
-      "Most acquisitions underprice integration cost. Toolchains, CI, on-call, and ownership have to converge in the first 90 days or productivity collapses. Move fast on the technical merge and the modeled synergies actually show up.",
+      "CI/CD pipelines, ownership boundaries, tooling, on-call structures, and delivery workflows need alignment early or engineering velocity drops fast. When integration stalls, productivity erodes and projected synergies rarely materialize.",
   },
   {
     icon: Brain,
