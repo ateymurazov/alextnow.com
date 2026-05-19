@@ -44,7 +44,7 @@ const transformations = [
   {
     icon: Shield,
     title: "Pioneering AI-Driven Quality Automation",
-    chips: ["30% Coverage Increase", "ML-Powered", "Predictive Testing"],
+    chips: ["ML-Powered", "Predictive Testing"],
     body: (
       <p>
         Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models, flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
