@@ -29,7 +29,7 @@ const Hero = () => {
 
             <h1 className="text-[clamp(2.75rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight text-foreground mb-8">
               Building software<br />
-              teams that <span className="gradient-text italic font-medium">ship</span>.
+              teams that <span className="gradient-text italic font-medium pr-2">ship</span>.
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-10">
@@ -56,11 +56,12 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-16 grid grid-cols-3 gap-6 max-w-2xl">
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl">
               {[
                 { k: '250+', v: 'Releases / year' },
                 { k: '200+', v: 'Engineers led' },
                 { k: '90%', v: 'Regression reduction' },
+                { k: '5', v: 'Engineering orgs unified' },
               ].map((s) => (
                 <div key={s.v} className="border-l border-border pl-4">
                   <div className="text-2xl md:text-3xl font-semibold text-foreground tracking-tight">{s.k}</div>
