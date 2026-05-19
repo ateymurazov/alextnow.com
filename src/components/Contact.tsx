@@ -166,6 +166,7 @@ const Contact = () => {
                   placeholder="How should I address you"
                   value={formData.name}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 ${
                     errors.name 
                       ? 'border-destructive focus:border-destructive' 
@@ -188,6 +189,7 @@ const Contact = () => {
                   placeholder="name@company.com"
                   value={formData.email}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 ${
                     errors.email 
                       ? 'border-destructive focus:border-destructive' 
@@ -210,6 +212,7 @@ const Contact = () => {
                   placeholder="Tell me about your engineering, delivery, or organizational challenge."
                   value={formData.message}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 resize-none ${
                     errors.message 
                       ? 'border-destructive focus:border-destructive' 
