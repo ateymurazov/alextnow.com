@@ -10,12 +10,12 @@ const principles = [
   {
     icon: GitBranch,
     title: 'Every change produces automated validation.',
-    body: "If a change can ship without its own automated proof, the pipeline isn't really done. I don't make exceptions for hotfixes or small refactors, because that's exactly where regressions hide.",
+    body: "Every code change must be accompanied by its own automated test, otherwise pipe is incomplete. No exceptions, no manual gates.",
   },
   {
     icon: Workflow,
     title: 'CI/CD is the organizational nervous system.',
-    body: "You can usually predict engineering dysfunction long before it shows up in production. CI/CD latency, flaky validation, and unclear pipeline ownership are almost always the first warning signs.",
+    body: "Most AI testing initiatives fail because the underlying CI telemetry is already unreliable. AI amplifies signal quality, it doesn't create it.",
   },
   {
     icon: Sparkles,
