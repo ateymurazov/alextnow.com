@@ -99,13 +99,12 @@ const Contact = () => {
   return (
     <section id="contact" className="section-container">
       <div className="section-eyebrow">06 / Contact</div>
-      <h2 className="section-title">Let's build something<br />exceptional.</h2>
+      <h2 className="section-title">Let's Build Better<br />Engineering Organizations.</h2>
       
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto">
-            If you're looking for a quality engineering leader to help scale and sharpen your
-            engineering org, let's talk. Happy to compare notes on what you're trying to build.
+            Focused on engineering transformation, delivery systems, AI-enabled quality, and operational scale.
           </p>
         </div>
         
