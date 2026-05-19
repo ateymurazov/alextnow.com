@@ -22,7 +22,7 @@ const transformations = [
   {
     icon: Rocket,
     title: "Dual Application Rewrites with Zero Downtime",
-    chips: ["Zero Downtime", "20% Performance Boost", "Billions of Records"],
+    chips: ["Zero Downtime", "Billions of Records"],
     body: (
       <div className="space-y-4">
         <p>Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.</p>
