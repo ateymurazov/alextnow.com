@@ -100,13 +100,12 @@ const Contact = () => {
     <section id="contact" className="section-container">
       <div className="section-eyebrow">06 / Contact</div>
       <h2 className="section-title">Let's Build Better<br />Engineering Organizations.</h2>
-      
+
+      <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
+        Focused on engineering transformation, delivery systems, AI-enabled quality, and operational scale.
+      </p>
+
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-xl leading-relaxed text-muted-foreground max-w-3xl mx-auto">
-            Focused on engineering transformation, delivery systems, AI-enabled quality, and operational scale.
-          </p>
-        </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
