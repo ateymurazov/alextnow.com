@@ -145,7 +145,12 @@ const Contact = () => {
                   <ArrowUpRight className="h-4 w-4 text-muted-foreground/50 group-hover:text-primary transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </a>
               </div>
-              
+
+              <div className="mt-8 pt-6 border-t border-border/40">
+                <p className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground/60">
+                  San Francisco Bay Area
+                </p>
+              </div>
             </div>
           </div>
 
