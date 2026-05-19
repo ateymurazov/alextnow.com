@@ -1,11 +1,11 @@
-import React from 'react';
-import { Layers, GitBranch, Activity, Sparkles, Gauge, Workflow } from 'lucide-react';
+import React, { useState } from 'react';
+import { Layers, GitBranch, Activity, Sparkles, Gauge, Workflow, Plus, Minus } from 'lucide-react';
 
 const principles = [
   {
     icon: Layers,
     title: 'Quality is a systems problem.',
-    body: 'Defects aren\'t QA failures, they\'re signals that the engineering system is misaligned. Fix the system, not the symptom.',
+    body: "Defects aren't QA failures, they're signals that the engineering system is misaligned. Fix the system, not the symptom.",
   },
   {
     icon: GitBranch,
@@ -35,6 +35,8 @@ const principles = [
 ];
 
 const Principles = () => {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
     <section id="principles" className="section-container">
       <div className="section-eyebrow">03 / Operating Principles</div>
@@ -47,11 +49,9 @@ const Principles = () => {
       <div className="grid md:grid-cols-2 gap-6">
         {principles.map((p, i) => {
           const Icon = p.icon;
+          const isOpen = open === i;
           return (
-            <article
-              key={i}
-              className="card-elevated p-7 hover-lift flex flex-col"
-            >
+            <article key={i} className="card-elevated p-7 hover-lift flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Icon className="h-5 w-5 text-primary" />
@@ -60,10 +60,25 @@ const Principles = () => {
                   {String(i + 1).padStart(2, '0')}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2 leading-snug">
+              <h3 className="text-lg font-semibold text-foreground mb-4 leading-snug">
                 {p.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{p.body}</p>
+
+              {isOpen && (
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4 pt-4 border-t border-border">
+                  {p.body}
+                </p>
+              )}
+
+              <button
+                type="button"
+                onClick={() => setOpen(isOpen ? null : i)}
+                className="mt-auto inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-accent hover:text-accent/80 transition-colors"
+                aria-expanded={isOpen}
+              >
+                {isOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
+                {isOpen ? 'Collapse' : 'Why it matters'}
+              </button>
             </article>
           );
         })}
