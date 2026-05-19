@@ -158,17 +158,17 @@ const Contact = () => {
           <div className="card-elevated p-8">
             <h3 className="text-xl font-semibold mb-6 flex items-center">
               <Send className="h-5 w-5 mr-2 text-primary" />
-              Send a Message
+              Start a Conversation
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="name" className="text-sm font-medium">Name *</Label>
+                <Label htmlFor="name" className="text-sm font-medium">Your Name *</Label>
                 <Input
                   id="name"
                   name="name"
                   type="text"
-                  placeholder="Your full name"
+                  placeholder="How should I address you"
                   value={formData.name}
                   onChange={handleChange}
                   className={`transition-all duration-200 ${
@@ -185,12 +185,12 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-sm font-medium">Email *</Label>
+                <Label htmlFor="email" className="text-sm font-medium">Work Email *</Label>
                 <Input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="your.email@example.com"
+                  placeholder="name@company.com"
                   value={formData.email}
                   onChange={handleChange}
                   className={`transition-all duration-200 ${
@@ -207,12 +207,12 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium">Message *</Label>
+                <Label htmlFor="message" className="text-sm font-medium">What are you trying to improve? *</Label>
                 <Textarea
                   id="message"
                   name="message"
                   rows={5}
-                  placeholder="Tell me about your engineering challenges and how I can help..."
+                  placeholder="Tell me about your engineering, delivery, or organizational challenge."
                   value={formData.message}
                   onChange={handleChange}
                   className={`transition-all duration-200 resize-none ${
