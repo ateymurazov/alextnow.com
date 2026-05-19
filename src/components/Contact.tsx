@@ -166,6 +166,7 @@ const Contact = () => {
                   placeholder="How should I address you"
                   value={formData.name}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 ${
                     errors.name 
                       ? 'border-destructive focus:border-destructive' 
