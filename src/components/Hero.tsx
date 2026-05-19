@@ -29,7 +29,7 @@ const Hero = () => {
 
             <h1 className="text-[clamp(2.75rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight text-foreground mb-8">
               Building software<br />
-              teams that <span className="gradient-text italic font-medium">ship</span>.
+              teams that <span className="gradient-text italic font-medium pr-2">ship</span>.
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-10">
