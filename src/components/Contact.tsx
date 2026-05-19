@@ -212,6 +212,7 @@ const Contact = () => {
                   placeholder="Tell me about your engineering, delivery, or organizational challenge."
                   value={formData.message}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                   className={`transition-all duration-200 resize-none ${
                     errors.message 
                       ? 'border-destructive focus:border-destructive' 
