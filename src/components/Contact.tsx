@@ -150,13 +150,13 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="card-elevated p-8">
-            <h3 className="text-xl font-semibold mb-6 flex items-center">
+          <div className="card-elevated p-6">
+            <h3 className="text-xl font-semibold mb-5 flex items-center">
               <Send className="h-5 w-5 mr-2 text-primary" />
-              Start a Conversation
+              Discuss an Initiative
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-sm font-medium">Your Name *</Label>
                 <Input
