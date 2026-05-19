@@ -206,7 +206,7 @@ const Contact = () => {
                 <Textarea
                   id="message"
                   name="message"
-                  rows={5}
+                  rows={4}
                   placeholder="Tell me about your engineering, delivery, or organizational challenge."
                   value={formData.message}
                   onChange={handleChange}
