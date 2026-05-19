@@ -137,12 +137,9 @@ const Contact = () => {
                 >
                   <div className="flex items-center space-x-3">
                     <Linkedin className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/70">LinkedIn</span>
-                      <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
-                        Connect on LinkedIn
-                      </span>
-                    </div>
+                    <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
+                      LinkedIn
+                    </span>
                   </div>
                 </a>
               </div>
