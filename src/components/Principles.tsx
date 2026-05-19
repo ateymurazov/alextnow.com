@@ -5,34 +5,35 @@ const principles = [
   {
     icon: Layers,
     title: 'Quality is a systems problem.',
-    body: "Most defects aren't really QA failures. They're a tell that something upstream, in design, ownership, or process, has drifted. Fixing the symptom keeps you busy; fixing the system is what actually moves the numbers.",
+    body: "Most defects aren't QA failures. They're upstream drift in design, ownership, or process. Fix the system, not the symptom.",
   },
   {
     icon: GitBranch,
     title: 'Every change produces automated validation.',
-    body: "Every code change must be accompanied by its own automated test, otherwise pipe is incomplete. No exceptions, no manual gates.",
+    body: "Every code change ships with its own automated test. No exceptions, no manual gates.",
   },
   {
     icon: Workflow,
     title: 'CI/CD is the organizational nervous system.',
-    body: "Most AI testing initiatives fail because the underlying CI telemetry is already unreliable. AI amplifies signal quality, it doesn't create it.",
+    body: "Most AI testing initiatives fail because the underlying CI telemetry is unreliable. AI amplifies signal quality, it doesn't create it.",
   },
   {
     icon: Sparkles,
     title: 'AI augments engineering judgment.',
-    body: "AI is genuinely good at test generation, triage, and risk scoring. It's not good at owning the call. I use it to give engineers leverage, not to take the decision out of their hands.",
+    body: "AI is good at test generation, triage, and risk scoring. It's not good at owning the call. Use it for leverage, not for decisions.",
   },
   {
     icon: Activity,
     title: 'Observability beats raw test volume.',
-    body: "A million tests with no signal is just noise dressed up as coverage. The interesting investment is in telemetry and impact analysis, so the system can tell you what to actually run and what to actually trust.",
+    body: "A million tests with no signal is noise dressed as coverage. Invest in telemetry and impact analysis instead.",
   },
   {
     icon: Gauge,
     title: 'Fast feedback outperforms large QA teams.',
-    body: "Minutes-to-feedback is probably the single most leveraged metric in engineering. Shrink it and a lot of things you thought were headcount problems quietly stop being headcount problems.",
+    body: "Minutes-to-feedback is the most leveraged metric in engineering. Shrink it and most headcount problems quietly go away.",
   },
 ];
+
 
 const Principles = () => {
   const [open, setOpen] = useState<number | null>(null);
