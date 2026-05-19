@@ -84,6 +84,47 @@ Deno.serve(async (req) => {
     )
   }
 
+  // Server-side input validation (client validation can be bypassed)
+  const MAX_TEMPLATE_NAME = 100
+  const MAX_EMAIL = 254
+  const MAX_NAME = 200
+  const MAX_SUBJECT_FIELD = 300
+  const MAX_MESSAGE = 5000
+  const MAX_GENERIC_STRING = 1000
+
+  if (typeof templateName !== 'string' || templateName.length > MAX_TEMPLATE_NAME) {
+    return new Response(
+      JSON.stringify({ error: 'Invalid templateName' }),
+      { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    )
+  }
+  if (recipientEmail && (typeof recipientEmail !== 'string' || recipientEmail.length > MAX_EMAIL)) {
+    return new Response(
+      JSON.stringify({ error: 'Invalid recipientEmail' }),
+      { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+    )
+  }
+  if (templateData && typeof templateData === 'object') {
+    const limits: Record<string, number> = {
+      name: MAX_NAME,
+      email: MAX_EMAIL,
+      subject: MAX_SUBJECT_FIELD,
+      message: MAX_MESSAGE,
+    }
+    for (const [key, val] of Object.entries(templateData)) {
+      if (typeof val === 'string') {
+        const max = limits[key] ?? MAX_GENERIC_STRING
+        if (val.length > max) {
+          return new Response(
+            JSON.stringify({ error: `templateData.${key} exceeds max length of ${max}` }),
+            { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+          )
+        }
+      }
+    }
+  }
+
+
   // 1. Look up template from registry (early — needed to resolve recipient)
   const template = TEMPLATES[templateName]
 
