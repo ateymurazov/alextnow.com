@@ -33,7 +33,7 @@ const transformations = [
   {
     icon: Users,
     title: "Post M&A Unifications: Deluxe & Shutterfly",
-    chips: ["5 Teams Unified", "90% Manual Testing Reduction", "AI-Powered Automation"],
+    chips: ["5 Teams Unified", "AI-Powered Automation"],
     body: (
       <div className="space-y-4">
         <p>At Deluxe, consolidated five acquired engineering orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation, into a single "One Deluxe" Engineering organization with shared standards and toolchain.</p>
