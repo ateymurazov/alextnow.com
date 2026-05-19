@@ -119,7 +119,7 @@ const Contact = () => {
               <div className="space-y-3">
                 <a
                   href="mailto:ateymurazov@gmail.com"
-                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 transition-all duration-300"
+                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] transition-all duration-300 ease-out"
                 >
                   <div className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
@@ -127,13 +127,14 @@ const Contact = () => {
                       Email
                     </span>
                   </div>
+                  <ArrowUpRight className="h-4 w-4 text-muted-foreground/50 group-hover:text-primary transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </a>
 
                 <a
                   href="https://linkedin.com/in/ateymurazov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 transition-all duration-300"
+                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] transition-all duration-300 ease-out"
                 >
                   <div className="flex items-center space-x-3">
                     <Linkedin className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
@@ -141,6 +142,7 @@ const Contact = () => {
                       LinkedIn
                     </span>
                   </div>
+                  <ArrowUpRight className="h-4 w-4 text-muted-foreground/50 group-hover:text-primary transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </a>
               </div>
               
