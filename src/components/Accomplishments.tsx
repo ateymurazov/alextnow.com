@@ -12,7 +12,7 @@ const transformations = [
   {
     icon: Zap,
     title: "Agile Transformation & TDD Rollout",
-    chips: ["200+ Developers", "50% Defect Reduction", "40% Faster Releases"],
+    chips: ["200+ Developers", "TDD as standard"],
     body: (
       <p>
         Inherited 200+ developers running two-week sprints in name only. Rebuilt the operating cadence around Scrum and embedded TDD as a non-negotiable engineering standard. <span className="text-foreground font-medium">Defect rates dropped 50% and release cadence accelerated 40% within six months.</span>
@@ -22,7 +22,7 @@ const transformations = [
   {
     icon: Rocket,
     title: "Dual Application Rewrites with Zero Downtime",
-    chips: ["Zero Downtime", "20% Performance Boost", "Billions of Records"],
+    chips: ["Zero Downtime", "Billions of Records"],
     body: (
       <div className="space-y-4">
         <p>Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.</p>
@@ -33,7 +33,7 @@ const transformations = [
   {
     icon: Users,
     title: "Post M&A Unifications: Deluxe & Shutterfly",
-    chips: ["5 Teams Unified", "90% Manual Testing Reduction", "AI-Powered Automation"],
+    chips: ["5 Teams Unified", "AI-Powered Automation"],
     body: (
       <div className="space-y-4">
         <p>At Deluxe, consolidated five acquired engineering orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation, into a single "One Deluxe" Engineering organization with shared standards and toolchain.</p>
@@ -44,7 +44,7 @@ const transformations = [
   {
     icon: Shield,
     title: "Pioneering AI-Driven Quality Automation",
-    chips: ["30% Coverage Increase", "ML-Powered", "Predictive Testing"],
+    chips: ["ML-Powered", "Predictive Testing"],
     body: (
       <p>
         Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models, flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
