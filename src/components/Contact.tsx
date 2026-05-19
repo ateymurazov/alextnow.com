@@ -116,19 +116,19 @@ const Contact = () => {
                 Get In Touch
               </h3>
               
-              <div className="space-y-6">
+              <div className="space-y-3">
                 <a
                   href="mailto:ateymurazov@gmail.com"
-                  className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
+                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-1">Email</p>
-                    <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
-                      Email me
-                    </span>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/70">Email</span>
+                      <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
+                        ateymurazov@gmail.com
+                      </span>
+                    </div>
                   </div>
                 </a>
 
@@ -136,16 +136,16 @@ const Contact = () => {
                   href="https://linkedin.com/in/ateymurazov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
+                  className="group flex items-center justify-between px-4 py-3 rounded-md bg-background/40 border border-border/60 hover:border-primary/40 hover:bg-background/60 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Linkedin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-1">LinkedIn</p>
-                    <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
-                      Connect on LinkedIn
-                    </span>
+                  <div className="flex items-center space-x-3">
+                    <Linkedin className="h-4 w-4 text-primary/70 group-hover:text-primary transition-colors" />
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground/70">LinkedIn</span>
+                      <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground transition-colors">
+                        Connect on LinkedIn
+                      </span>
+                    </div>
                   </div>
                 </a>
               </div>
