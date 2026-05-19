@@ -7,18 +7,18 @@ const insights = [
     tag: 'Quality',
     title: 'The Evolution of Quality Engineering',
     summary:
-      "QA is no longer a downstream checkpoint, it's a strategic function that shapes how fast and how safely an org can ship.",
+      "QA is no longer a downstream checkpoint. It sets how fast and how safely an org can ship.",
     body:
-      "Today's quality engineers must be strategic partners, not just testers. They need to understand the business impact of quality decisions, implement AI-driven testing strategies, and lead cross-functional initiatives that prevent defects rather than just finding them. The future belongs to quality leaders who can bridge technical execution with business outcomes.",
+      "Quality engineers should own prevention, not detection. That means shaping CI signals, ownership models, and release gates, not writing more tests after the fact. The leaders worth hiring tie quality decisions directly to delivery speed and revenue risk.",
   },
   {
     icon: GitMerge,
     tag: 'M&A',
     title: 'M&A Integration: The Hidden Technology Challenge',
     summary:
-      "Deal economics live or die on tech integration speed, not on the synergies modeled in the pitch deck.",
+      "Deal economics live or die on tech integration speed, not on the synergies in the pitch deck.",
     body:
-      "Most M&A deals focus on financial synergies but underestimate technology integration complexity. Having led multiple post-acquisition technology unifications, I've learned that success requires immediate cultural alignment, standardized toolchains, and clear migration roadmaps. The companies that move fast on technical integration realize value faster and avoid the productivity losses that can derail deal economics.",
+      "Most acquisitions underprice integration cost. Toolchains, CI, on-call, and ownership have to converge in the first 90 days or productivity collapses. Move fast on the technical merge and the modeled synergies actually show up.",
   },
   {
     icon: Brain,
@@ -27,7 +27,7 @@ const insights = [
     summary:
       "More AI-generated tests don't fix quality. Better signal, ownership, and telemetry do.",
     body:
-      "Most organizations applying AI to testing are optimizing the wrong layer. Generating more tests is meaningless if your CI pipeline, ownership model, and telemetry systems cannot identify which signals actually matter. AI only becomes valuable when paired with disciplined engineering systems.",
+      "Generating more tests on top of a noisy pipeline just produces noisier noise. AI is a multiplier on signal quality, not a substitute for it. Fix ownership and telemetry first, then let AI compound the gains.",
   },
 ];
 
