@@ -237,7 +237,7 @@ const Contact = () => {
                 ) : (
                   <div className="flex items-center space-x-2">
                     <Send className="h-4 w-4" />
-                    <span>Send Message</span>
+                    <span>Start the Conversation</span>
                   </div>
                 )}
               </Button>
