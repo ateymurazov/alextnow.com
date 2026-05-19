@@ -8,40 +8,25 @@ import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const validateForm = () => {
     const newErrors = { name: '', email: '', message: '' };
-
     if (!formData.name.trim()) newErrors.name = 'Name is required.';
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required.';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address.';
-    }
+    if (!formData.email.trim()) newErrors.email = 'Email is required.';
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Please enter a valid email address.';
     if (!formData.message.trim()) newErrors.message = 'Message is required.';
-
     setErrors(newErrors);
-    return !Object.values(newErrors).some(error => error !== '');
+    return !Object.values(newErrors).some(e => e !== '');
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
-
     setIsSubmitting(true);
-
     try {
       const idempotencyKey = `contact-${crypto.randomUUID()}`;
       const { error } = await supabase.functions.invoke('send-transactional-email', {
@@ -49,26 +34,15 @@ const Contact = () => {
           templateName: 'contact-notification',
           recipientEmail: 'ateymurazov@gmail.com',
           idempotencyKey,
-          templateData: {
-            name: formData.name,
-            email: formData.email,
-            message: formData.message,
-          },
+          templateData: { name: formData.name, email: formData.email, message: formData.message },
         },
       });
       if (error) throw error;
-      toast({
-        title: "Message sent",
-        description: "Thanks for reaching out, I'll get back to you soon.",
-      });
+      toast({ title: 'Message sent', description: "Thanks for reaching out, I'll get back to you soon." });
       setFormData({ name: '', email: '', message: '' });
       setErrors({ name: '', email: '', message: '' });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
+    } catch {
+      toast({ title: 'Error', description: 'Failed to send message. Please try again.', variant: 'destructive' });
     } finally {
       setIsSubmitting(false);
     }
@@ -83,135 +57,160 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-container">
+    <section id="contact" className="relative section-container overflow-hidden">
+      {/* Ambient depth */}
+      <div className="pointer-events-none absolute inset-0 -z-10 mesh-bg opacity-60" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
       <div className="section-eyebrow">06 / Contact</div>
-      <h2 className="section-title">Let's build something<br />exceptional.</h2>
+      <h2 className="section-title">
+        Engineering transformation<br />starts with a conversation.
+      </h2>
 
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20">
-          <p className="text-lg leading-relaxed text-muted-foreground max-w-2xl mx-auto">
-            For engineering leadership conversations, advisory work, or M&amp;A integration discussions.
-          </p>
-        </div>
+      <div className="max-w-3xl">
+        <p className="text-lg leading-relaxed text-muted-foreground mb-20 max-w-2xl">
+          For leaders rethinking delivery systems, scaling engineering organizations through
+          inflection points, or modernizing platforms after acquisition. If that's the work
+          on your desk, I'd like to hear about it.
+        </p>
+      </div>
 
-        <div className="grid lg:grid-cols-5 gap-16 lg:gap-20">
-          {/* Direct channels */}
-          <div className="lg:col-span-2 space-y-10">
+      {/* Unified composed surface */}
+      <div className="relative">
+        <div className="absolute -inset-x-4 -inset-y-2 -z-10 rounded-3xl bg-gradient-to-br from-card via-card to-secondary/40 border border-border/60 shadow-[0_24px_80px_-32px_hsl(222_30%_8%/0.18)]" />
+
+        <div className="grid lg:grid-cols-[1fr_1.6fr] gap-0">
+          {/* Channels rail */}
+          <div className="p-10 lg:p-12 lg:border-r border-border/60 flex flex-col justify-between gap-12">
             <div>
-              <p className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-6">
-                Direct
+              <p className="text-[10px] font-mono uppercase tracking-[0.24em] text-muted-foreground mb-8">
+                Direct channels
               </p>
-              <div className="space-y-5">
+
+              <div className="space-y-1">
                 <a
                   href="mailto:ateymurazov@gmail.com"
-                  className="group flex items-center justify-between py-3 border-b border-border/60 hover:border-accent/60 transition-colors"
+                  className="group flex items-center justify-between py-4 border-b border-border/60 hover:border-accent/50 transition-colors"
                 >
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors" />
-                    <span className="text-sm text-foreground">ateymurazov@gmail.com</span>
+                  <div className="flex items-center gap-3 min-w-0">
+                    <Mail className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors flex-shrink-0" />
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground mb-0.5">Email</p>
+                      <p className="text-sm text-foreground truncate">ateymurazov@gmail.com</p>
+                    </div>
                   </div>
-                  <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+                  <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all flex-shrink-0 ml-3" />
                 </a>
+
                 <a
                   href="https://linkedin.com/in/ateymurazov"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between py-3 border-b border-border/60 hover:border-accent/60 transition-colors"
+                  className="group flex items-center justify-between py-4 border-b border-border/60 hover:border-accent/50 transition-colors"
                 >
-                  <div className="flex items-center gap-3">
-                    <Linkedin className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors" />
-                    <span className="text-sm text-foreground">LinkedIn</span>
+                  <div className="flex items-center gap-3 min-w-0">
+                    <Linkedin className="h-4 w-4 text-muted-foreground group-hover:text-accent transition-colors flex-shrink-0" />
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground mb-0.5">LinkedIn</p>
+                      <p className="text-sm text-foreground truncate">/in/ateymurazov</p>
+                    </div>
                   </div>
-                  <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+                  <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all flex-shrink-0 ml-3" />
                 </a>
               </div>
             </div>
 
-            <p className="text-sm leading-relaxed text-muted-foreground/80">
-              Responses typically within two business days.
-            </p>
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
+                </span>
+                <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground">
+                  Currently available
+                </p>
+              </div>
+              <p className="text-sm leading-relaxed text-muted-foreground/90">
+                Selective engagements with leadership teams navigating engineering scale,
+                quality, and integration. Responses within two business days.
+              </p>
+            </div>
           </div>
 
-          {/* Form */}
-          <div className="lg:col-span-3">
-            <p className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-8">
-              Or send a note
-            </p>
+          {/* Form panel */}
+          <div className="p-10 lg:p-12 bg-gradient-to-br from-background/40 to-transparent">
+            <form onSubmit={handleSubmit} className="space-y-7">
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground">
+                    Name
+                  </Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className={`h-12 bg-secondary/40 border rounded-lg px-4 text-sm shadow-none focus-visible:ring-0 focus-visible:border-accent/70 focus-visible:bg-secondary/60 transition-all ${
+                      errors.name ? 'border-destructive' : 'border-border/60 hover:border-border'
+                    }`}
+                  />
+                  {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
+                </div>
 
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                  Name
-                </Label>
-                <Input
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`h-11 bg-transparent border-0 border-b rounded-none px-0 text-base shadow-none focus-visible:ring-0 focus-visible:border-accent transition-colors ${
-                    errors.name ? 'border-destructive' : 'border-border'
-                  }`}
-                />
-                {errors.name && (
-                  <p className="text-xs text-destructive">{errors.name}</p>
-                )}
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground">
+                    Email
+                  </Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className={`h-12 bg-secondary/40 border rounded-lg px-4 text-sm shadow-none focus-visible:ring-0 focus-visible:border-accent/70 focus-visible:bg-secondary/60 transition-all ${
+                      errors.email ? 'border-destructive' : 'border-border/60 hover:border-border'
+                    }`}
+                  />
+                  {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
+                </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="email" className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`h-11 bg-transparent border-0 border-b rounded-none px-0 text-base shadow-none focus-visible:ring-0 focus-visible:border-accent transition-colors ${
-                    errors.email ? 'border-destructive' : 'border-border'
-                  }`}
-                />
-                {errors.email && (
-                  <p className="text-xs text-destructive">{errors.email}</p>
-                )}
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-xs font-mono uppercase tracking-wider text-muted-foreground">
-                  Message
+                <Label htmlFor="message" className="text-[10px] font-mono uppercase tracking-[0.2em] text-muted-foreground">
+                  Context
                 </Label>
                 <Textarea
                   id="message"
                   name="message"
-                  rows={4}
+                  rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className={`bg-transparent border-0 border-b rounded-none px-0 text-base shadow-none focus-visible:ring-0 focus-visible:border-accent transition-colors resize-none ${
-                    errors.message ? 'border-destructive' : 'border-border'
+                  className={`bg-secondary/40 border rounded-lg px-4 py-3 text-sm shadow-none focus-visible:ring-0 focus-visible:border-accent/70 focus-visible:bg-secondary/60 transition-all resize-none ${
+                    errors.message ? 'border-destructive' : 'border-border/60 hover:border-border'
                   }`}
                 />
-                {errors.message && (
-                  <p className="text-xs text-destructive">{errors.message}</p>
-                )}
+                {errors.message && <p className="text-xs text-destructive">{errors.message}</p>}
               </div>
 
-              <div className="pt-6">
+              <div className="flex items-center justify-between pt-4 border-t border-border/60">
+                <p className="text-xs text-muted-foreground/80 hidden sm:block">
+                  Replies typically within two business days.
+                </p>
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  variant="outline"
-                  className="group bg-transparent border border-border hover:border-accent hover:bg-accent/5 text-foreground hover:text-foreground font-medium tracking-wide transition-all duration-300 px-8 h-11"
+                  className="group bg-foreground hover:bg-foreground/90 text-background font-medium tracking-wide transition-all duration-300 px-6 h-11 rounded-lg shadow-sm hover:shadow-md ml-auto"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
-                      <div className="w-3 h-3 border border-foreground/30 border-t-foreground rounded-full animate-spin" />
+                      <div className="w-3 h-3 border border-background/40 border-t-background rounded-full animate-spin" />
                       Sending
                     </span>
                   ) : (
                     <span className="flex items-center gap-2">
                       Send message
-                      <ArrowUpRight className="h-4 w-4 group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
+                      <ArrowUpRight className="h-4 w-4 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" />
                     </span>
                   )}
                 </Button>
