@@ -4,33 +4,33 @@ import { Layers, GitBranch, Activity, Sparkles, Gauge, Workflow, Plus, Minus } f
 const principles = [
   {
     icon: Layers,
-    title: 'Quality is a systems problem.',
-    body: "Most defects aren't really QA failures. They're a tell that something upstream, in design, ownership, or process, has drifted. Fixing the symptom keeps you busy; fixing the system is what actually moves the numbers.",
-  },
-  {
-    icon: GitBranch,
-    title: 'Every change produces automated validation.',
-    body: "Every code change must be accompanied by its own automated test, otherwise pipe is incomplete. No exceptions, no manual gates.",
+    title: 'Quality is a systems problem',
+    body: "Defects aren't QA failures, they're signals that the engineering system is misaligned. Fix the system, not the symptom.",
   },
   {
     icon: Workflow,
-    title: 'CI/CD is the organizational nervous system.',
-    body: "Most AI testing initiatives fail because the underlying CI telemetry is already unreliable. AI amplifies signal quality, it doesn't create it.",
-  },
-  {
-    icon: Sparkles,
-    title: 'AI augments engineering judgment.',
-    body: "AI is genuinely good at test generation, triage, and risk scoring. It's not good at owning the call. I use it to give engineers leverage, not to take the decision out of their hands.",
+    title: 'CI/CD is the organizational nervous system',
+    body: "Pipeline health is org health. Latency, flakiness, and ownership gaps in CI/CD are leading indicators of delivery risk.",
   },
   {
     icon: Activity,
     title: 'Observability beats raw test volume.',
-    body: "A million tests with no signal is just noise dressed up as coverage. The interesting investment is in telemetry and impact analysis, so the system can tell you what to actually run and what to actually trust.",
+    body: "A million tests with no signal is noise. Invest in telemetry and impact analysis so the system tells you what to run and what to trust.",
+  },
+  {
+    icon: GitBranch,
+    title: 'Every change produces automation validation.',
+    body: "If a code change can be merged and ships without its own automated test, the pipeline is incomplete. No exceptions, no manual gates.",
+  },
+  {
+    icon: Sparkles,
+    title: 'AI augments engineering judgement.',
+    body: "AI accelerates test generation, triage, and risk scoring, but engineering judgement owns the decision. Augment, never replace.",
   },
   {
     icon: Gauge,
     title: 'Fast feedback outperforms large QA teams.',
-    body: "Minutes-to-feedback is probably the single most leveraged metric in engineering. Shrink it and a lot of things you thought were headcount problems quietly stop being headcount problems.",
+    body: "Minutes to feedback is the single most leveraged metric in engineering. Shrink it relentlessly, headcount follows.",
   },
 ];
 
