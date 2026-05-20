@@ -8,24 +8,24 @@ const principles = [
     body: "Defects aren't QA failures, they're signals that the engineering system is misaligned. Fix the system, not the symptom.",
   },
   {
+    icon: GitBranch,
+    title: 'Every change produces automated validation.',
+    body: "If a code change can be merged and ships without its own automated test, the pipeline is incomplete. No exceptions, no manual gates.",
+  },
+  {
     icon: Workflow,
     title: 'CI/CD is the organizational nervous system',
     body: "Pipeline health is org health. Latency, flakiness, and ownership gaps in CI/CD are leading indicators of delivery risk.",
   },
   {
-    icon: Activity,
-    title: 'Observability beats raw test volume.',
-    body: "A million tests with no signal is noise. Invest in telemetry and impact analysis so the system tells you what to run and what to trust.",
-  },
-  {
-    icon: GitBranch,
-    title: 'Every change produces automation validation.',
-    body: "If a code change can be merged and ships without its own automated test, the pipeline is incomplete. No exceptions, no manual gates.",
-  },
-  {
     icon: Sparkles,
     title: 'AI augments engineering judgement.',
     body: "AI accelerates test generation, triage, and risk scoring, but engineering judgement owns the decision. Augment, never replace.",
+  },
+  {
+    icon: Activity,
+    title: 'Observability beats raw test volume.',
+    body: "A million tests with no signal is noise. Invest in telemetry and impact analysis so the system tells you what to run and what to trust.",
   },
   {
     icon: Gauge,
