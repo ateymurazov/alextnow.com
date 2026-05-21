@@ -51,6 +51,12 @@ const Unsubscribe = () => {
 
   return (
     <main className="min-h-screen flex items-center justify-center px-6 bg-background">
+      <Helmet>
+        <title>Email preferences | Aleksandr Teymurazov</title>
+        <meta name="description" content="Manage your email subscription preferences for updates from Aleksandr Teymurazov." />
+        <meta name="robots" content="noindex,follow" />
+        <link rel="canonical" href="https://alextnow.com/unsubscribe" />
+      </Helmet>
       <div className="max-w-md w-full text-center space-y-6">
         <h1 className="text-3xl font-semibold tracking-tight">Email preferences</h1>
         {state === 'loading' && <p className="text-muted-foreground">Checking your link…</p>}
