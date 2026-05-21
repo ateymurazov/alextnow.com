@@ -1,0 +1,9 @@
+# Aleksandr Teymurazov
+
+> Engineering leader building trusted CI/CD, Quality Intelligence, AI-driven validation, and delivery observability for enterprise software organizations.
+
+Personal site of Aleksandr Teymurazov — covering operating principles, work experience, accomplishments, and an engineering quality framework for modern delivery systems.
+
+## Pages
+
+- [Home](/): Overview, hero, principles, accomplishments, experience, framework, insight, education, and contact.
