@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
 import Accomplishments from "@/components/Accomplishments";
@@ -15,6 +16,9 @@ import Framework from "@/components/Framework";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <link rel="canonical" href="https://alextnow.com/" />
+      </Helmet>
       <Sidebar />
       <main className="content-with-sidebar">
         <Hero />
