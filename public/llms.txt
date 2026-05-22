@@ -2,8 +2,15 @@
 
 > Engineering leader building trusted CI/CD, Quality Intelligence, AI-driven validation, and delivery observability for enterprise software organizations.
 
-Personal site of Aleksandr Teymurazov — covering operating principles, work experience, accomplishments, and an engineering quality framework for modern delivery systems.
+Personal site of Aleksandr Teymurazov — operating principles, work experience, accomplishments, an engineering quality framework (ATQI), and a journal of essays on modern software quality engineering.
 
 ## Pages
 
 - [Home](/): Overview, hero, principles, accomplishments, experience, framework, insight, education, and contact.
+- [Blog](/blog): Engineering Quality Journal — essays on the ATQI framework, CI/CD, AI-assisted validation, and software quality engineering.
+
+## Posts
+
+- [Introducing the AT Quality Intelligence Framework](/blog/atqi-framework-introduction): The four-pillar operating model for AI-driven enterprise quality.
+- [Risk-Based Test Execution](/blog/risk-based-test-execution): Scoring commits by blast-radius and history to cut CI time without losing coverage.
+- [AI-Assisted Failure Analysis](/blog/ai-failure-analysis): Clustering, ranking, and routing failures so on-call triage takes minutes instead of hours.

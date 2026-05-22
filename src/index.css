@@ -188,6 +188,34 @@
     @apply absolute left-0 w-3 h-3 rounded-full bg-accent ring-4 ring-background;
     box-shadow: 0 0 0 1px hsl(var(--accent) / 0.3);
   }
+
+  .prose-article {
+    @apply text-foreground/90 leading-relaxed;
+    font-size: 1.0625rem;
+  }
+  .prose-article > * + * { margin-top: 1.25rem; }
+  .prose-article h2 {
+    @apply font-heading text-2xl md:text-3xl font-semibold text-foreground tracking-tight;
+    margin-top: 2.5rem;
+  }
+  .prose-article h3 {
+    @apply font-heading text-xl font-semibold text-foreground;
+    margin-top: 2rem;
+  }
+  .prose-article a {
+    @apply text-accent underline underline-offset-4 decoration-accent/40 hover:decoration-accent transition-colors;
+  }
+  .prose-article strong { @apply text-foreground font-semibold; }
+  .prose-article ul, .prose-article ol { @apply pl-6 space-y-2; }
+  .prose-article ul { @apply list-disc; }
+  .prose-article ol { @apply list-decimal; }
+  .prose-article li::marker { @apply text-accent; }
+  .prose-article code {
+    @apply font-mono text-[0.9em] bg-secondary px-1.5 py-0.5 rounded;
+  }
+  .prose-article blockquote {
+    @apply border-l-2 border-accent pl-5 italic text-muted-foreground;
+  }
 }
 
 @layer utilities {
