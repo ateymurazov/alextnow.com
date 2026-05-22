@@ -116,15 +116,28 @@ const Blog = () => {
                     <ArrowUpRight className="h-3 w-3" />
                   </span>
                 </div>
-                  <span className="inline-flex items-center gap-1 text-xs font-mono uppercase tracking-widest text-accent">
-                    Read
-                    <ArrowUpRight className="h-3 w-3" />
-                  </span>
-                </div>
               </Link>
             </li>
           ))}
         </ul>
+
+        <section className="mt-14">
+          <div className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Browse by tag
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {allTags.map((t) => (
+              <Link
+                key={t.slug}
+                to={`/blog/tag/${t.slug}`}
+                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2.5 py-1 rounded-md bg-secondary hover:text-accent transition-colors"
+              >
+                {t.tag} <span className="text-accent/70">· {t.posts.length}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
 
         <Footer />
       </main>
