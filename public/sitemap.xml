@@ -7,32 +7,7 @@
   </url>
   <url>
     <loc>https://alextnow.com/blog</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://alextnow.com/blog/atqi-framework-introduction</loc>
-    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://alextnow.com/blog/risk-based-test-execution</loc>
-    <lastmod>2026-04-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alextnow.com/blog/ai-failure-analysis</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url><loc>https://alextnow.com/blog/tag/atqi-framework</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/quality-engineering</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/ai-in-testing</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/ci-cd</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/test-selection</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/observability</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://alextnow.com/blog/tag/incident-response</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
