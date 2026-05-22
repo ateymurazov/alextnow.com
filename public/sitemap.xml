@@ -28,4 +28,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://alextnow.com/blog/tag/atqi-framework</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/quality-engineering</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/ai-in-testing</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/ci-cd</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/test-selection</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/observability</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://alextnow.com/blog/tag/incident-response</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
