@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Linkedin } from 'lucide-react';
-import { getPost, posts } from '@/content/posts';
+import { getPost, posts, tagToSlug } from '@/content/posts';
 import Footer from '@/components/Footer';
 import NotFound from './NotFound';
 
@@ -117,12 +117,13 @@ const BlogPost = () => {
 
           <div className="mt-12 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary"
+                to={`/blog/tag/${tagToSlug(tag)}`}
+                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary hover:text-accent transition-colors"
               >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
 

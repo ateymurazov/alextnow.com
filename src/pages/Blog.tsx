@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
-import { posts } from '@/content/posts';
+import { posts, allTags, tagToSlug } from '@/content/posts';
 import Footer from '@/components/Footer';
 
 const formatDate = (iso: string) =>
@@ -101,12 +101,14 @@ const Blog = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
                     {post.tags.map((tag) => (
-                      <span
+                      <Link
                         key={tag}
-                        className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary"
+                        to={`/blog/tag/${tagToSlug(tag)}`}
+                        onClick={(e) => e.stopPropagation()}
+                        className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary hover:text-accent transition-colors"
                       >
                         {tag}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                   <span className="inline-flex items-center gap-1 text-xs font-mono uppercase tracking-widest text-accent">
@@ -118,6 +120,24 @@ const Blog = () => {
             </li>
           ))}
         </ul>
+
+        <section className="mt-14">
+          <div className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-4">
+            Browse by tag
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {allTags.map((t) => (
+              <Link
+                key={t.slug}
+                to={`/blog/tag/${t.slug}`}
+                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2.5 py-1 rounded-md bg-secondary hover:text-accent transition-colors"
+              >
+                {t.tag} <span className="text-accent/70">· {t.posts.length}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
 
         <Footer />
       </main>
