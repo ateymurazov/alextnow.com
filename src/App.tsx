@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Unsubscribe from "./pages/Unsubscribe";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BlogTag from "./pages/BlogTag";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/tag/:tag" element={<BlogTag />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
