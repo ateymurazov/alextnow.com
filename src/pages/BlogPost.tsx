@@ -117,12 +117,13 @@ const BlogPost = () => {
 
           <div className="mt-12 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary"
+                to={`/blog/tag/${tagToSlug(tag)}`}
+                className="text-[10px] font-mono uppercase tracking-wider text-muted-foreground px-2 py-1 rounded-md bg-secondary hover:text-accent transition-colors"
               >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
 
