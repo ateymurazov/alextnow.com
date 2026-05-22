@@ -15,6 +15,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center gap-6">
+          <Link
+            to="/blog"
+            className="text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-accent transition-colors"
+          >
+            Blog
+          </Link>
           <a
             href="https://linkedin.com/in/ateymurazov"
             target="_blank"
