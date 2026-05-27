@@ -13,11 +13,16 @@ const transformations = [
   {
     icon: Zap,
     title: "Agile Transformation & TDD Rollout",
-    chips: ["200+ Developers", "TDD as standard"],
+    chips: ["200+ Developers", "TDD as standard", "CI/CD Quality Gates"],
     body: (
-      <p>
-        Inherited 200+ developers running two-week sprints in name only. Rebuilt the operating cadence around Scrum and embedded TDD as a non-negotiable engineering standard. <span className="text-foreground font-medium">Defect rates dropped 50% and release cadence accelerated 40% within six months.</span>
-      </p>
+      <div className="space-y-4">
+        <p>
+          Rebuilt operating cadence around Scrum, introduced mandatory TDD practices, and implemented fully automated CI/CD pipelines with quality gates spanning Git pull request validation through production deployment.
+        </p>
+        <p>
+          <span className="text-foreground font-medium">Reduced manual regression effort by 90%, compressed release validation cycles from 7 days to ~4 hours,</span> and enabled reliable same-day software delivery.
+        </p>
+      </div>
     ),
   },
   {
