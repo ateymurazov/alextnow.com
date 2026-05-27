@@ -106,7 +106,7 @@ const Sidebar = () => {
           </h1>
           <div className="mt-4 space-y-1">
             <p className="text-sm font-medium text-foreground">Building Trusted Software Delivery Systems</p>
-            <p className="text-xs text-muted-foreground">Enterprise Quality Intelligence.</p>
+            <p className="text-xs text-muted-foreground">Quality Intelligence Leader.</p>
           </div>
         </div>
 
