@@ -120,8 +120,8 @@ const Insight = () => {
               Latest from the Engineering Quality Journal
             </h3>
             <p className="text-muted-foreground mt-2 max-w-2xl">
-              Long-form essays on the AT Quality Intelligence Framework™,
-              AI-driven validation, and CI/CD trust — published at{' '}
+              Long-form articles on the AT Quality Intelligence Framework™,
+              AI-driven validation, and CI/CD trust, published at{' '}
               <a href={BLOG_URL} className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">
                 atqi.dev
               </a>.
