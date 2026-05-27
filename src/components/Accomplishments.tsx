@@ -49,7 +49,7 @@ const transformations = [
   },
   {
     icon: Shield,
-    title: "Rebuilding Trust in Automated Delivery",
+    title: "AI-Enabled Quality Intelligence",
     chips: ["ML-Powered", "Predictive Testing"],
     body: (
       <div className="space-y-4">
@@ -57,7 +57,7 @@ const transformations = [
           Built an AI test-generation system that scans the codebase, authors targeted cases, and classifies results with ML models, flagging the riskiest code paths before commit. <span className="text-foreground font-medium">Test coverage climbed 30% in 90 days</span>, and QA engineers reclaimed hundreds of hours per sprint for exploratory and edge-case work.
         </p>
         <p>
-          Leveraged machine learning models (Random Forest) to identify flaky test behavior, <span className="text-foreground font-medium">reducing false positives by 90%+</span>, eliminating delivery noise, and rebuilding engineering trust in automated validation systems.
+          Leveraged machine learning model (Random Forest) to identify flaky test behavior, <span className="text-foreground font-medium">reducing false positives by 90%+</span>, eliminating delivery noise, and rebuilding engineering trust in automated validation systems.
         </p>
       </div>
     ),
