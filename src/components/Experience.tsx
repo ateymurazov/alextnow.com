@@ -190,48 +190,6 @@ const experiences: Experience[] = [
         ],
       }
     ]
-  },
-  {
-    id: "4",
-    company: "DeepDyve",
-    period: "October 2007 - August 2009",
-    website: "https://www.deepdyve.com",
-    roles: []
-  },
-  {
-    id: "5",
-    company: "iPass",
-    period: "August 2002 - September 2007",
-    website: "http://ipass.com",
-    roles: []
-  },
-  {
-    id: "6",
-    company: "Onepage",
-    period: "October 2000 - April 2002",
-    website: "http://onepage.com",
-    roles: []
-  },
-  {
-    id: "7",
-    company: "Saba Software",
-    period: "July 1999 - October 2000",
-    website: "http://sabasoftware.com",
-    roles: []
-  },
-  {
-    id: "8",
-    company: "Oracle",
-    period: "March 1998 - July 1999",
-    website: "http://oracle.com",
-    roles: []
-  },
-  {
-    id: "9",
-    company: "C-ATS Software Inc.",
-    period: "June 1997 - March 1998",
-    website: "http://www.cats.com",
-    roles: []
   }
 ];
 
