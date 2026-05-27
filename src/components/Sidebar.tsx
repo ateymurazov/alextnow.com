@@ -63,15 +63,6 @@ const Sidebar = () => {
           </button>
         );
       })}
-      <Link
-        to="/blog"
-        onClick={() => setMobileOpen(false)}
-        className="group flex items-center gap-4 w-full px-3 py-3 rounded-xl transition-all duration-300 text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-      >
-        <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60">08</span>
-        <BookOpen className="h-4 w-4" />
-        <span className="text-sm font-medium">Blog</span>
-      </Link>
     </nav>
   );
 
