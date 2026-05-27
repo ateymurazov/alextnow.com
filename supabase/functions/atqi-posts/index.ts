@@ -48,7 +48,7 @@ async function fetchPost(loc: string, lastmod?: string): Promise<Post | null> {
       pick(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i, html) ||
         pick(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i, html),
     );
-    const slug = loc.replace(/^.*\/post\//, "").replace(/\/$/, "");
+    const slug = loc.replace(/^.*\/notes\//, "").replace(/\/$/, "");
     if (!title) return null;
     return { url: loc, slug, title, description: desc, lastmod };
   } catch {
@@ -66,7 +66,7 @@ async function loadPosts(): Promise<Post[]> {
   while ((m = re.exec(xml))) {
     const loc = pick(/<loc>([^<]+)<\/loc>/, m[1]);
     const lastmod = pick(/<lastmod>([^<]+)<\/lastmod>/, m[1]) || undefined;
-    if (loc.includes("/post/")) urls.push({ loc, lastmod });
+    if (loc.includes("/notes/")) urls.push({ loc, lastmod });
   }
   urls.sort((a, b) => (b.lastmod ?? "").localeCompare(a.lastmod ?? ""));
   const out = await Promise.all(urls.slice(0, 20).map((u) => fetchPost(u.loc, u.lastmod)));
