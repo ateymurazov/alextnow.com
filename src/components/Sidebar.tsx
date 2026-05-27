@@ -104,9 +104,16 @@ const Sidebar = () => {
           <h1 className="text-2xl font-semibold text-foreground leading-tight">
             Aleksandr<br />Teymurazov
           </h1>
-          <div className="mt-4 space-y-1">
-            <p className="text-sm font-medium text-foreground">Building Trusted Software Delivery Systems</p>
-            <p className="text-xs text-muted-foreground">Quality Intelligence Leader.</p>
+          <div className="mt-5 space-y-2">
+            <p className="text-sm font-medium text-foreground leading-snug">
+              Building Trusted Software Delivery Systems
+            </p>
+            <div className="flex items-center gap-2 pt-1">
+              <span className="h-px w-6 bg-accent" />
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
+                Quality Intelligence Leader
+              </p>
+            </div>
           </div>
         </div>
 
