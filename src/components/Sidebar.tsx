@@ -7,7 +7,7 @@ const menuItems = [
   { id: 'principles', label: 'Principles', icon: Compass, num: '02' },
   { id: 'experience', label: 'Experience', icon: Briefcase, num: '03' },
   { id: 'framework', label: 'Framework', icon: Cpu, num: '04' },
-  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '05' },
+  { id: 'insight', label: 'Insights', icon: Lightbulb, num: '05' },
   { id: 'education', label: 'Education', icon: GraduationCap, num: '06' },
   { id: 'contact', label: 'Contact', icon: Mail, num: '07' },
 ];
