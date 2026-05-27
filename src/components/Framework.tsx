@@ -53,8 +53,8 @@ const Framework = () => {
       </h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
-        A systems-based operating model for embedding AI-driven quality into enterprise-scale
-        engineering, built on observability, adaptive execution, and delivery intelligence.
+        An operating model for building trusted software delivery systems through Quality
+        Intelligence, observability, and deterministic CI/CD execution.
       </p>
 
       <div className="mb-12">
