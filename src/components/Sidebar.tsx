@@ -73,7 +73,7 @@ const Sidebar = () => {
         <div className="flex items-center justify-between px-5 py-4">
           <div>
             <p className="text-sm font-semibold text-foreground leading-tight">Aleksandr Teymurazov</p>
-            <p className="text-[11px] text-muted-foreground">QUALITY INTELLIGENCE LEADER</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent mt-0.5">Quality Intelligence Leader</p>
           </div>
           <button
             onClick={() => setMobileOpen((v) => !v)}
