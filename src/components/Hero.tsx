@@ -10,7 +10,7 @@ const Hero = () => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="relative min-h-screen overflow-hidden mesh-bg grain pt-24 lg:pt-0">
+    <section id="hero" className="relative min-h-screen overflow-hidden mesh-bg grain pt-24 lg:pt-0">
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
