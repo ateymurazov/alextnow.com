@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen, Home } from 'lucide-react';
 
 const menuItems = [
-  { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
-  { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
+  { id: 'hero', label: 'Hero', icon: Home, num: '01' },
+  { id: 'accomplishments', label: 'Numbers That Define the Work', icon: Trophy, num: '02' },
   { id: 'principles', label: 'Principles', icon: Compass, num: '03' },
-  { id: 'framework', label: 'Framework', icon: Cpu, num: '04' },
-  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '05' },
-  { id: 'education', label: 'Education', icon: GraduationCap, num: '06' },
-  { id: 'contact', label: 'Contact', icon: Mail, num: '07' },
+  { id: 'experience', label: 'Leadership Journey', icon: Briefcase, num: '04' },
+  { id: 'framework', label: 'ATQI Framework', icon: Cpu, num: '05' },
+  { id: 'education', label: 'Education & Certifications', icon: GraduationCap, num: '07' },
+  { id: 'contact', label: 'Contact', icon: Mail, num: '08' },
 ];
 
 const Sidebar = () => {
