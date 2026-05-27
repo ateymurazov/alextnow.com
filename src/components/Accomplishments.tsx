@@ -42,8 +42,8 @@ const transformations = [
     chips: ["5 Teams Unified", "AI-Powered Automation"],
     body: (
       <div className="space-y-4">
-        <p>At Deluxe, consolidated five acquired engineering orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, MyCorporation, into a single "One Deluxe" Engineering organization with shared standards and toolchain. <span className="text-foreground font-medium">Consolidated tools, licenses and optimized QA infra, reducing operational costs by over $500K annually.</span></p>
-        <p>At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test generator and impact-analysis engine. <span className="text-foreground font-medium">Manual testing collapsed 90%, release cycles compressed 35%, validated story throughput rose 50% per sprint.</span></p>
+        <p>At Deluxe, merged five acquired orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation, into a single "One Deluxe" Engineering org with shared standards and toolchain. <span className="text-foreground font-medium">Consolidated tooling and QA infra cut operational costs by $500K+ annually.</span></p>
+        <p>At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test generator and impact-analysis engine. <span className="text-foreground font-medium">Manual testing dropped 90%, release cycles compressed 35%, and validated story throughput rose 50% per sprint.</span></p>
       </div>
     ),
   },
