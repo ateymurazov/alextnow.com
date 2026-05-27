@@ -53,7 +53,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Engineering Quality Journal → atqi.dev | Aleksandr Teymurazov</title>
+        <title>Engineering Insights | Aleksandr Teymurazov</title>
         <meta
           name="description"
           content="The Engineering Quality Journal — essays on the ATQI framework, AI-driven validation, and CI/CD trust — now lives at atqi.dev."
