@@ -73,7 +73,7 @@ const Sidebar = () => {
         <div className="flex items-center justify-between px-5 py-4">
           <div>
             <p className="text-sm font-semibold text-foreground leading-tight">Aleksandr Teymurazov</p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent mt-0.5">Quality Intelligence Leader</p>
+            <p className="text-[11px] text-muted-foreground">QUALITY INTELLIGENCE LEADER</p>
           </div>
           <button
             onClick={() => setMobileOpen((v) => !v)}
@@ -104,16 +104,9 @@ const Sidebar = () => {
           <h1 className="text-2xl font-semibold text-foreground leading-tight">
             Aleksandr<br />Teymurazov
           </h1>
-          <div className="mt-5 space-y-2">
-            <p className="text-sm font-medium text-foreground leading-snug">
-              Building Trusted Software Delivery Systems
-            </p>
-            <div className="flex items-center gap-2 pt-1">
-              <span className="h-px w-6 bg-accent" />
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-accent">
-                Quality Intelligence Leader
-              </p>
-            </div>
+          <div className="mt-4 space-y-1">
+            <p className="text-sm font-medium text-foreground">Building Trusted Software Delivery Systems</p>
+            <p className="text-xs text-muted-foreground">Quality Intelligence Leader.</p>
           </div>
         </div>
 
