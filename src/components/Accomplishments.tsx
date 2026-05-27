@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Zap, Code, Users, TrendingUp, Shield, Rocket, Plus, Minus } from 'lucide-react';
 
 const highlights = [
-  { icon: Shield, metric: "90%", label: "Manual Regression Effort Reduced" },
+  { icon: Shield, metric: "90 - 95%", label: "Automated Coverage" },
   { icon: Zap, metric: "7d → 4h", label: "Regression Cycle Compression" },
   { icon: TrendingUp, metric: "100K+", label: "Automated Validations / Day" },
   { icon: Rocket, metric: "35%", label: "Faster Deployment Velocity" },
