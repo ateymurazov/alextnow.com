@@ -22,8 +22,25 @@ const Index = () => {
       <Sidebar />
       <main className="content-with-sidebar">
         <Hero />
-        <Principles />
         <Accomplishments />
+        <Principles />
+        <section className="section-container">
+          <div className="card-elevated p-8 md:p-10 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <p className="text-lg md:text-xl leading-relaxed font-medium text-foreground max-w-3xl">
+              Looking for an operating executive who can modernize delivery, unify post-M&amp;A engineering orgs, and embed AI-driven quality at enterprise scale? Let's talk.
+            </p>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-foreground text-background text-sm font-medium hover:bg-accent transition-colors whitespace-nowrap"
+            >
+              Let's talk
+            </a>
+          </div>
+        </section>
         <Experience />
         <Framework />
         <Insight />
