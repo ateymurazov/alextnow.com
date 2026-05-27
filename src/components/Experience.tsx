@@ -310,7 +310,7 @@ const Experience = () => {
   return (
     <section id="experience" className="section-container">
       <div className="section-eyebrow">03 / Career</div>
-      <h2 className="section-title">A timeline of building<br />and scaling teams.</h2>
+      <h2 className="section-title">A timeline of building<br />and scaling modern software.</h2>
 
       <OperatingScope />
 
