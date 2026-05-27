@@ -39,7 +39,7 @@ const Principles = () => {
 
   return (
     <section id="principles" className="section-container">
-      <div className="section-eyebrow">03 / Operating Principles</div>
+      <div className="section-eyebrow">02 / Operating Principles</div>
       <h2 className="section-title">How I run<br />engineering orgs.</h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">

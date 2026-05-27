@@ -140,11 +140,6 @@ const Accomplishments = () => {
         })}
       </div>
 
-      <div className="card-elevated p-8 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20">
-        <p className="text-lg leading-relaxed font-medium text-foreground">
-          Looking for an operating executive who can modernize delivery, unify post-M&A engineering orgs, and embed AI-driven quality at enterprise scale? Let's talk.
-        </p>
-      </div>
     </section>
   );
 };

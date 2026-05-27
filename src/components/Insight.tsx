@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import { Brain, GitMerge, Sparkles, Plus, Minus } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Brain, GitMerge, Sparkles, Plus, Minus, ArrowUpRight, Loader2 } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+
+const BLOG_URL = 'https://atqi.dev';
 
 const insights = [
   {
@@ -31,15 +34,39 @@ const insights = [
   },
 ];
 
+type Post = {
+  url: string;
+  slug: string;
+  title: string;
+  description: string;
+  lastmod?: string;
+};
+
 const Insight = () => {
   const [open, setOpen] = useState<number | null>(null);
+  const [posts, setPosts] = useState<Post[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    supabase.functions
+      .invoke('atqi-posts')
+      .then(({ data }) => {
+        if (cancelled) return;
+        const list = (data as { posts?: Post[] } | null)?.posts ?? [];
+        setPosts(list.slice(0, 5));
+      })
+      .catch(() => !cancelled && setPosts([]));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   return (
     <section id="insight" className="section-container">
-      <div className="section-eyebrow">04 / Perspective</div>
+      <div className="section-eyebrow">05 / Perspective</div>
       <h2 className="section-title">Thoughts on building<br />better engineering orgs.</h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 mb-16">
         {insights.map((item, i) => {
           const Icon = item.icon;
           const isOpen = open === i;
@@ -81,6 +108,76 @@ const Insight = () => {
             </article>
           );
         })}
+      </div>
+
+      <div className="card-elevated p-8">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+          <div>
+            <div className="text-xs font-mono uppercase tracking-[0.2em] text-accent mb-3">
+              Journal / atqi.dev
+            </div>
+            <h3 className="text-2xl font-semibold text-foreground tracking-tight">
+              Latest from the Engineering Quality Journal
+            </h3>
+            <p className="text-muted-foreground mt-2 max-w-2xl">
+              Long-form essays on the AT Quality Intelligence Framework™,
+              AI-driven validation, and CI/CD trust — published at{' '}
+              <a href={BLOG_URL} className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">
+                atqi.dev
+              </a>.
+            </p>
+          </div>
+          <a
+            href={BLOG_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-background text-sm font-medium hover:bg-accent transition-colors whitespace-nowrap"
+          >
+            Visit atqi.dev
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+        </div>
+
+        {posts === null ? (
+          <div className="flex items-center gap-2 text-sm text-muted-foreground py-8">
+            <Loader2 className="h-4 w-4 animate-spin" />
+            Loading latest posts from atqi.dev…
+          </div>
+        ) : posts.length === 0 ? (
+          <p className="text-sm text-muted-foreground py-8">
+            Couldn't load posts. Visit{' '}
+            <a href={BLOG_URL} className="text-accent underline">
+              atqi.dev
+            </a>{' '}
+            directly.
+          </p>
+        ) : (
+          <ul className="divide-y divide-border border-t border-border">
+            {posts.map((t) => (
+              <li key={t.url}>
+                <a
+                  href={t.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block py-5 hover:bg-secondary/40 -mx-3 px-3 rounded-lg transition-colors"
+                >
+                  <h4 className="text-base md:text-lg font-semibold text-foreground leading-snug mb-1 group-hover:text-accent transition-colors">
+                    {t.title}
+                  </h4>
+                  {t.description && (
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                      {t.description}
+                    </p>
+                  )}
+                  <span className="mt-2 inline-flex items-center gap-1 text-[11px] font-mono uppercase tracking-widest text-accent">
+                    Read on atqi.dev
+                    <ArrowUpRight className="h-3 w-3" />
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

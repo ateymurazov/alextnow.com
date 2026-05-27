@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen } from 'lucide-react';
+
+import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu } from 'lucide-react';
 
 const menuItems = [
   { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
-  { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
-  { id: 'principles', label: 'Principles', icon: Compass, num: '03' },
+  { id: 'principles', label: 'Principles', icon: Compass, num: '02' },
+  { id: 'experience', label: 'Experience', icon: Briefcase, num: '03' },
   { id: 'framework', label: 'Framework', icon: Cpu, num: '04' },
   { id: 'insight', label: 'Insight', icon: Lightbulb, num: '05' },
   { id: 'education', label: 'Education', icon: GraduationCap, num: '06' },
@@ -63,15 +63,6 @@ const Sidebar = () => {
           </button>
         );
       })}
-      <Link
-        to="/blog"
-        onClick={() => setMobileOpen(false)}
-        className="group flex items-center gap-4 w-full px-3 py-3 rounded-xl transition-all duration-300 text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-      >
-        <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60">08</span>
-        <BookOpen className="h-4 w-4" />
-        <span className="text-sm font-medium">Blog</span>
-      </Link>
     </nav>
   );
 
