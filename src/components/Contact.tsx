@@ -98,7 +98,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-container">
-      <div className="section-eyebrow">06 / Contact</div>
+      <div className="section-eyebrow">07 / Contact</div>
       <h2 className="section-title">Let's Build Better<br />Engineering Organizations.</h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
