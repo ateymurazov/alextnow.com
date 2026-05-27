@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, GraduationCap, Trophy, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen, Home } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen } from 'lucide-react';
 
 const menuItems = [
-  { id: 'hero', label: 'Hero', icon: Home, num: '01' },
-  { id: 'accomplishments', label: 'Numbers That Define the Work', icon: Trophy, num: '02' },
+  { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
+  { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
   { id: 'principles', label: 'Principles', icon: Compass, num: '03' },
-  { id: 'experience', label: 'Leadership Journey', icon: Briefcase, num: '04' },
-  { id: 'framework', label: 'ATQI Framework', icon: Cpu, num: '05' },
-  { id: 'education', label: 'Education & Certifications', icon: GraduationCap, num: '07' },
-  { id: 'contact', label: 'Contact', icon: Mail, num: '08' },
+  { id: 'framework', label: 'Framework', icon: Cpu, num: '04' },
+  { id: 'insight', label: 'Insight', icon: Lightbulb, num: '05' },
+  { id: 'education', label: 'Education', icon: GraduationCap, num: '06' },
+  { id: 'contact', label: 'Contact', icon: Mail, num: '07' },
 ];
 
 const Sidebar = () => {
@@ -43,10 +43,10 @@ const Sidebar = () => {
 
   const NavList = () => (
     <nav className="space-y-1">
-      {menuItems.map((item, idx) => {
+      {menuItems.map((item) => {
         const Icon = item.icon;
         const isActive = active === item.id;
-        const button = (
+        return (
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
@@ -62,25 +62,16 @@ const Sidebar = () => {
             {isActive && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-accent" />}
           </button>
         );
-        // Insert "Insights" (Blog) link between Framework (05) and Education (07)
-        if (item.id === 'framework') {
-          return (
-            <React.Fragment key={item.id}>
-              {button}
-              <Link
-                to="/blog"
-                onClick={() => setMobileOpen(false)}
-                className="group flex items-center gap-4 w-full px-3 py-3 rounded-xl transition-all duration-300 text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-              >
-                <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60">06</span>
-                <BookOpen className="h-4 w-4" />
-                <span className="text-sm font-medium">Insights</span>
-              </Link>
-            </React.Fragment>
-          );
-        }
-        return button;
       })}
+      <Link
+        to="/blog"
+        onClick={() => setMobileOpen(false)}
+        className="group flex items-center gap-4 w-full px-3 py-3 rounded-xl transition-all duration-300 text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+      >
+        <span className="font-mono text-[10px] tracking-wider text-muted-foreground/60">08</span>
+        <BookOpen className="h-4 w-4" />
+        <span className="text-sm font-medium">Blog</span>
+      </Link>
     </nav>
   );
 
