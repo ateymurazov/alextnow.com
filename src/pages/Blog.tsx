@@ -1,31 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Loader2 } from 'lucide-react';
 import Footer from '@/components/Footer';
+import { supabase } from '@/integrations/supabase/client';
 
 const BLOG_URL = 'https://atqi.dev';
 
-const teasers = [
-  {
-    title: 'Introducing the AT Quality Intelligence Framework',
-    description:
-      'The four-pillar operating model for AI-driven enterprise quality.',
-    href: `${BLOG_URL}/post/atqi-framework-introduction`,
-  },
-  {
-    title: 'Risk-Based Test Execution',
-    description:
-      'Scoring commits by blast-radius and history to cut CI time without losing coverage.',
-    href: `${BLOG_URL}/post/risk-based-test-execution`,
-  },
-  {
-    title: 'AI-Assisted Failure Analysis',
-    description:
-      'Clustering, ranking, and routing failures so on-call triage takes minutes instead of hours.',
-    href: `${BLOG_URL}/post/ai-failure-analysis`,
-  },
-];
+type Post = {
+  url: string;
+  slug: string;
+  title: string;
+  description: string;
+  lastmod?: string;
+};
+
 
 const Blog = () => {
   const jsonLd = {
