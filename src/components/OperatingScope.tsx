@@ -15,12 +15,12 @@ const items = [
   {
     icon: Building2,
     label: 'Domains',
-    body: 'Enterprise SaaS, commerce, and regulated platforms.',
+    body: 'SaaS, commerce, and regulated software platforms.',
   },
   {
     icon: Cog,
     label: 'Focus areas',
-    body: 'CI/CD modernization, AI-enabled quality systems, and M&A integration.',
+    body: 'CI/CD modernization, Quality Intelligence, and engineering integration.',
   },
 ];
 
