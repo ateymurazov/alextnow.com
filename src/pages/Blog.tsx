@@ -17,6 +17,23 @@ type Post = {
 
 
 const Blog = () => {
+  const [posts, setPosts] = useState<Post[] | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    supabase.functions
+      .invoke('atqi-posts')
+      .then(({ data }) => {
+        if (cancelled) return;
+        const list = (data as { posts?: Post[] } | null)?.posts ?? [];
+        setPosts(list);
+      })
+      .catch(() => !cancelled && setPosts([]));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
