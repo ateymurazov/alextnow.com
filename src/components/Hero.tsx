@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import headshot from '@/assets/aleksandr-headshot.jpg';
+import headshotLg from '@/assets/aleksandr-headshot-lg.webp';
+import headshotMd from '@/assets/aleksandr-headshot-md.webp';
+import headshotSm from '@/assets/aleksandr-headshot-sm.webp';
 
 const Hero = () => {
   const scrollTo = (id: string) =>
@@ -79,7 +81,9 @@ const Hero = () => {
               <div className="absolute -inset-6 bg-gradient-to-br from-accent/25 via-transparent to-transparent rounded-3xl blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img
-                  src={headshot}
+                  src={headshotLg}
+                  srcSet={`${headshotSm} 420w, ${headshotMd} 600w, ${headshotLg} 900w`}
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 60vw, 480px"
                   alt="Aleksandr Teymurazov, Engineering Quality & Delivery Leader"
                   width={900}
                   height={1200}
