@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Wand2, Target, Activity, Brain, Plus, Minus } from 'lucide-react';
-import frameworkImg from '@/assets/atqi-framework.png';
+import frameworkImg from '@/assets/atqi-framework.webp';
 
 const pillars = [
   {
