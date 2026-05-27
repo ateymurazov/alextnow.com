@@ -25,20 +25,45 @@ const Index = () => {
         <Accomplishments />
         <Principles />
         <section className="section-container">
-          <div className="card-elevated p-8 md:p-10 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <p className="text-lg md:text-xl leading-relaxed font-medium text-foreground max-w-3xl">
-              Looking for an operating executive who can modernize delivery, unify post-M&amp;A engineering orgs, and embed AI-driven quality at enterprise scale? Let's talk.
-            </p>
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-foreground text-background text-sm font-medium hover:bg-accent transition-colors whitespace-nowrap"
-            >
-              Let's talk
-            </a>
+          <div className="card-elevated p-8 md:p-10 bg-gradient-to-r from-primary/5 to-accent/10 border-primary/20">
+            <div className="max-w-3xl">
+              <p className="text-lg md:text-xl leading-relaxed font-medium text-foreground">
+                Modern software delivery depends on trusted quality systems.
+              </p>
+              <p className="mt-3 text-base md:text-lg leading-relaxed text-muted-foreground">
+                Specializing in CI/CD modernization, Quality Intelligence, release governance, and post M&amp;A engineering integration.
+              </p>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://linkedin.com/in/ateymurazov"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-border/60 bg-background/40 text-sm font-medium text-foreground/80 hover:text-foreground hover:border-primary/40 hover:bg-background/60 transition-all"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-border/60 bg-background/40 text-sm font-medium text-foreground/80 hover:text-foreground hover:border-primary/40 hover:bg-background/60 transition-all"
+              >
+                Contact
+              </a>
+              <a
+                href="#insight"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('insight')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-border/60 bg-background/40 text-sm font-medium text-foreground/80 hover:text-foreground hover:border-primary/40 hover:bg-background/60 transition-all"
+              >
+                Insights
+              </a>
+            </div>
           </div>
         </section>
         <Experience />
