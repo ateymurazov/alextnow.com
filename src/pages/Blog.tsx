@@ -118,30 +118,48 @@ const Blog = () => {
 
         <section className="border-t border-border pt-10">
           <div className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-6">
-            Featured essays
+            Latest essays
           </div>
-          <ul className="divide-y divide-border border-y border-border">
-            {teasers.map((t) => (
-              <li key={t.href}>
-                <a
-                  href={t.href}
-                  className="group block py-7 hover:bg-secondary/40 -mx-4 px-4 rounded-xl transition-colors"
-                >
-                  <h2 className="font-heading text-xl md:text-2xl font-semibold text-foreground leading-snug mb-2 group-hover:text-accent transition-colors">
-                    {t.title}
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed mb-3">
-                    {t.description}
-                  </p>
-                  <span className="inline-flex items-center gap-1 text-xs font-mono uppercase tracking-widest text-accent">
-                    Read on atqi.dev
-                    <ArrowUpRight className="h-3 w-3" />
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
+          {posts === null ? (
+            <div className="flex items-center gap-2 text-sm text-muted-foreground py-10">
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Loading latest posts from atqi.dev…
+            </div>
+          ) : posts.length === 0 ? (
+            <p className="text-sm text-muted-foreground py-10">
+              Couldn't load posts. Visit{' '}
+              <a href={BLOG_URL} className="text-accent underline">
+                atqi.dev
+              </a>{' '}
+              directly.
+            </p>
+          ) : (
+            <ul className="divide-y divide-border border-y border-border">
+              {posts.map((t) => (
+                <li key={t.url}>
+                  <a
+                    href={t.url}
+                    className="group block py-7 hover:bg-secondary/40 -mx-4 px-4 rounded-xl transition-colors"
+                  >
+                    <h2 className="font-heading text-xl md:text-2xl font-semibold text-foreground leading-snug mb-2 group-hover:text-accent transition-colors">
+                      {t.title}
+                    </h2>
+                    {t.description && (
+                      <p className="text-muted-foreground leading-relaxed mb-3">
+                        {t.description}
+                      </p>
+                    )}
+                    <span className="inline-flex items-center gap-1 text-xs font-mono uppercase tracking-widest text-accent">
+                      Read on atqi.dev
+                      <ArrowUpRight className="h-3 w-3" />
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
+
 
         <p className="mt-10 text-sm text-muted-foreground">
           Old links like <code className="font-mono text-xs">/blog/&lt;slug&gt;</code>{' '}
