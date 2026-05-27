@@ -1,17 +1,16 @@
-
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
-import Accomplishments from "@/components/Accomplishments";
-import Education from "@/components/Education";
-import Experience from "@/components/Experience";
-import Principles from "@/components/Principles";
-import Insight from "@/components/Insight";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import OperatingScope from "@/components/OperatingScope";
-import Framework from "@/components/Framework";
+
+const Accomplishments = lazy(() => import("@/components/Accomplishments"));
+const Education = lazy(() => import("@/components/Education"));
+const Experience = lazy(() => import("@/components/Experience"));
+const Principles = lazy(() => import("@/components/Principles"));
+const Insight = lazy(() => import("@/components/Insight"));
+const Contact = lazy(() => import("@/components/Contact"));
+const Footer = lazy(() => import("@/components/Footer"));
+const Framework = lazy(() => import("@/components/Framework"));
 
 const Index = () => {
   return (
@@ -22,14 +21,16 @@ const Index = () => {
       <Sidebar />
       <main className="content-with-sidebar">
         <Hero />
-        <Accomplishments />
-        <Principles />
-        <Experience />
-        <Framework />
-        <Insight />
-        <Education />
-        <Contact />
-        <Footer />
+        <Suspense fallback={<div className="min-h-screen" />}>
+          <Accomplishments />
+          <Principles />
+          <Experience />
+          <Framework />
+          <Insight />
+          <Education />
+          <Contact />
+          <Footer />
+        </Suspense>
       </main>
     </div>
   );
