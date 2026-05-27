@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Zap, Code, Users, TrendingUp, Shield, Rocket, Plus, Minus } from 'lucide-react';
 
 const highlights = [
-  { icon: TrendingUp, metric: "100K+", label: "Automated Tests / Day" },
-  { icon: Rocket, metric: "40%", label: "Release Cycle Acceleration" },
-  { icon: Shield, metric: "90%", label: "Manual Testing Reduction" },
-  { icon: Users, metric: "200+", label: "Engineers Led" },
+  { icon: Shield, metric: "90%", label: "Manual Regression Effort Reduced" },
+  { icon: Zap, metric: "7d → 4h", label: "Regression Cycle Compression" },
+  { icon: TrendingUp, metric: "100K+", label: "Automated Validations / Day" },
+  { icon: Rocket, metric: "35%", label: "Faster Deployment Velocity" },
+  { icon: Users, metric: "120+", label: "Global QE Org Led" },
 ];
 
 const transformations = [
