@@ -16,6 +16,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
+        <title>Aleksandr Teymurazov | Quality Intelligence</title>
         <link rel="canonical" href="https://alextnow.com/" />
       </Helmet>
       <Sidebar />
