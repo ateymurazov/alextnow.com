@@ -114,7 +114,7 @@ const Insight = () => {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
           <div>
             <div className="text-xs font-mono uppercase tracking-[0.2em] text-accent mb-3">
-              Journal / atqi.dev
+              Insights / atqi.dev
             </div>
             <h3 className="text-2xl font-semibold text-foreground tracking-tight">
               Latest from the Engineering Quality Journal
