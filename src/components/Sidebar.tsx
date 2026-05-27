@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu } from 'lucide-react';
 
 const menuItems = [
