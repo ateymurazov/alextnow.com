@@ -63,7 +63,7 @@ const Accomplishments = () => {
       <div className="section-eyebrow">01 / Impact</div>
       <h2 className="section-title">Numbers that define<br />the work.</h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
         {highlights.map((item, index) => {
           const Icon = item.icon;
           return (
