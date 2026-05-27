@@ -39,7 +39,7 @@ const transformations = [
   {
     icon: Users,
     title: "Post M&A Unifications: Deluxe & Shutterfly",
-    chips: ["5 Teams Unified", "$500K Annual Savings"],
+    chips: ["5 Teams Unified", "$500K Annual Savings", "AI-Powered Automation"],
     body: (
       <div className="space-y-4">
         <p>At Deluxe, merged five acquired orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation, into a single "One Deluxe" Engineering org with shared standards and toolchain. <span className="text-foreground font-medium">Consolidated tooling and QA infra cut operational costs by $500K+ annually.</span></p>
