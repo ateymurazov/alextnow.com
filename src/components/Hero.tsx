@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="lg:col-span-7 animate-blur-in order-2 lg:order-1">
             <div className="section-eyebrow">
               <Sparkles className="h-3 w-3" />
-              Engineering Quality & Delivery Leader
+              EQUALITY INTELLIGENCE LEADER
             </div>
 
             <h1 className="text-[clamp(2.75rem,7vw,6.5rem)] font-semibold leading-[0.95] tracking-tight text-foreground mb-8">
@@ -35,8 +35,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed mb-10">
-              I lead engineering transformation initiatives that modernize delivery systems, unify organizations
-              after M&A, and embed AI-driven quality into enterprise-scale software development.
+              Executive engineering leader specializing in Quality Intelligence, CI/CD modernization, AI-enabled quality systems, and enterprise scale delivery transformation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
