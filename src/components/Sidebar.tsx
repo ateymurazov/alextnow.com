@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu, BookOpen } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu } from 'lucide-react';
 
 const menuItems = [
   { id: 'accomplishments', label: 'Accomplishments', icon: Trophy, num: '01' },
-  { id: 'experience', label: 'Experience', icon: Briefcase, num: '02' },
-  { id: 'principles', label: 'Principles', icon: Compass, num: '03' },
+  { id: 'principles', label: 'Principles', icon: Compass, num: '02' },
+  { id: 'experience', label: 'Experience', icon: Briefcase, num: '03' },
   { id: 'framework', label: 'Framework', icon: Cpu, num: '04' },
   { id: 'insight', label: 'Insight', icon: Lightbulb, num: '05' },
   { id: 'education', label: 'Education', icon: GraduationCap, num: '06' },
