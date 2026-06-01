@@ -1,9 +1,10 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import headshotLg from '@/assets/aleksandr-headshot-lg.webp';
-import headshotMd from '@/assets/aleksandr-headshot-md.webp';
-import headshotSm from '@/assets/aleksandr-headshot-sm.webp';
+
+const headshotSm = '/headshot-sm.webp';
+const headshotMd = '/headshot-md.webp';
+const headshotLg = '/headshot-lg.webp';
 
 const Hero = () => {
   const scrollTo = (id: string) =>
