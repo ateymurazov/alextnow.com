@@ -12,6 +12,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload LCP hero image so it downloads in parallel, not after React renders -->
+    <link
+      rel="preload"
+      as="image"
+      href="/headshot-sm.webp"
+      imagesrcset="/headshot-sm.webp 420w, /headshot-md.webp 600w, /headshot-lg.webp 900w"
+      imagesizes="(max-width: 640px) 90vw, (max-width: 1024px) 60vw, 480px"
+      fetchpriority="high"
+    />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
