@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Brain, GitMerge, Sparkles, Plus, Minus, ArrowUpRight, Loader2 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 
-const BLOG_URL = 'https://atqi.dev';
+const INSIGHTS_URL = 'https://atqi.dev';
 
 const insights = [
   {
@@ -122,13 +122,13 @@ const Insight = () => {
             <p className="text-muted-foreground mt-2 max-w-2xl">
               Long-form articles on the AT Quality Intelligence Framework™,
               AI-driven validation, and CI/CD trust, published at{' '}
-              <a href={BLOG_URL} className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">
+              <a href={INSIGHTS_URL} className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent">
                 atqi.dev
               </a>.
             </p>
           </div>
           <a
-            href={BLOG_URL}
+            href={INSIGHTS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-foreground text-background text-sm font-medium hover:bg-accent transition-colors whitespace-nowrap"
@@ -146,7 +146,7 @@ const Insight = () => {
         ) : posts.length === 0 ? (
           <p className="text-sm text-muted-foreground py-8">
             Couldn't load posts. Visit{' '}
-            <a href={BLOG_URL} className="text-accent underline">
+            <a href={INSIGHTS_URL} className="text-accent underline">
               atqi.dev
             </a>{' '}
             directly.

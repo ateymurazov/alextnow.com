@@ -38,7 +38,7 @@ function decode(s: string): string {
 
 async function fetchPost(loc: string, lastmod?: string): Promise<Post | null> {
   try {
-    const res = await fetch(loc, { headers: { "User-Agent": "alextnow-blog-bridge/1.0" } });
+    const res = await fetch(loc, { headers: { "User-Agent": "alextnow-insights-bridge/1.0" } });
     if (!res.ok) return null;
     const html = await res.text();
     const ogTitle = pick(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i, html);

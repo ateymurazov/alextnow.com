@@ -6,8 +6,7 @@ Personal site of Aleksandr Teymurazov — operating principles, work experience,
 
 ## Pages
 
-- [Home](/): Overview, hero, principles, accomplishments, experience, framework, insight, education, and contact.
-- [Blog](/blog): Teaser index pointing to the Engineering Quality Journal now hosted at https://atqi.dev.
+- [Home](/): Overview, hero, principles, accomplishments, experience, framework, insights, education, and contact.
 
 ## Related sites
 
