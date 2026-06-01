@@ -7,6 +7,7 @@ Personal site of Aleksandr Teymurazov — operating principles, work experience,
 ## Pages
 
 - [Home](/): Overview, hero, principles, accomplishments, experience, framework, insights, education, and contact.
+- [Insights](/insights): Perspectives on quality engineering, M&A technical integration, and AI in engineering, with the latest long-form essays from https://atqi.dev.
 
 ## Related sites
 

@@ -8,6 +8,7 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 import Index from "./pages/Index";
 
 const Unsubscribe = lazy(() => import("./pages/Unsubscribe"));
+const Insights = lazy(() => import("./pages/Insights"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Suspense fallback={null}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/insights" element={<Insights />} />
               <Route path="/unsubscribe" element={<Unsubscribe />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
