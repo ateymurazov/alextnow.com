@@ -16,6 +16,9 @@ const menuItems = [
 const Sidebar = () => {
   const [active, setActive] = useState<string>('');
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const onHome = location.pathname === '/';
 
   useEffect(() => {
     const onScroll = () => {
