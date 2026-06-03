@@ -41,7 +41,11 @@ const Sidebar = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    if (onHome) {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(`/#${sectionId}`);
+    }
     setMobileOpen(false);
   };
 
