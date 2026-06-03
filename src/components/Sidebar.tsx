@@ -20,7 +20,16 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const onHome = location.pathname === '/';
 
+  // Map non-home routes to the sidebar item they correspond to
+  const routeActiveId: Record<string, string> = {
+    '/insights': 'insight',
+  };
+
   useEffect(() => {
+    if (!onHome) {
+      setActive(routeActiveId[location.pathname] ?? '');
+      return;
+    }
     const onScroll = () => {
       const offsets = menuItems
         .map((m) => {
@@ -38,7 +47,7 @@ const Sidebar = () => {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [onHome, location.pathname]);
 
   const scrollToSection = (sectionId: string) => {
     if (onHome) {
