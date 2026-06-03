@@ -20,14 +20,20 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const onHome = location.pathname === '/';
 
-  // Map non-home routes to the sidebar item they correspond to
-  const routeActiveId: Record<string, string> = {
-    '/insights': 'insight',
-  };
+  // Map non-home route prefixes to the sidebar item they correspond to.
+  // Ordered longest-first so the most specific prefix wins on nested routes.
+  const routePrefixActiveId: { prefix: string; id: string }[] = [
+    { prefix: '/insights', id: 'insight' },
+  ];
+
+  const getRouteActiveId = (pathname: string) =>
+    routePrefixActiveId.find(
+      ({ prefix }) => pathname === prefix || pathname.startsWith(`${prefix}/`),
+    )?.id ?? '';
 
   useEffect(() => {
     if (!onHome) {
-      setActive(routeActiveId[location.pathname] ?? '');
+      setActive(getRouteActiveId(location.pathname));
       return;
     }
     const onScroll = () => {
