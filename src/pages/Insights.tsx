@@ -41,18 +41,22 @@ const Insights = () => {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      <main className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 pt-16 lg:pt-20 pb-12">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors mb-6"
-        >
-          <ArrowLeft className="h-3 w-3" />
-          Back to portfolio
-        </Link>
+      <Sidebar />
 
-        <Insight />
+      <main className="content-with-sidebar">
+        <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 pt-20 lg:pt-20 pb-12">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors mb-6"
+          >
+            <ArrowLeft className="h-3 w-3" />
+            Back to portfolio
+          </Link>
 
-        <Footer />
+          <Insight />
+
+          <Footer />
+        </div>
       </main>
     </div>
   );
