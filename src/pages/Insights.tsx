@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowLeft } from 'lucide-react';
 import Insight from '@/components/Insight';
 import Footer from '@/components/Footer';
+import Sidebar from '@/components/Sidebar';
 
 const Insights = () => {
   const jsonLd = {
