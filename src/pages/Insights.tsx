@@ -13,7 +13,7 @@ const Insights = () => {
     name: 'Engineering Insights — Aleksandr Teymurazov',
     url: 'https://alextnow.com/insights',
     description:
-      'Perspectives on quality engineering, M&A technical integration, and AI in engineering, with long-form essays published at atqi.dev.',
+      'Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev.',
     author: {
       '@type': 'Person',
       name: 'Aleksandr Teymurazov',
@@ -28,7 +28,7 @@ const Insights = () => {
         <title>Engineering Insights | Aleksandr Teymurazov</title>
         <meta
           name="description"
-          content="Perspectives on quality engineering, M&A technical integration, and AI in engineering — with long-form essays published at atqi.dev."
+          content="Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev."
         />
         <link rel="canonical" href="https://alextnow.com/insights" />
         <meta property="og:type" content="website" />
@@ -36,7 +36,7 @@ const Insights = () => {
         <meta property="og:title" content="Engineering Insights | Aleksandr Teymurazov" />
         <meta
           property="og:description"
-          content="Perspectives on quality engineering, M&A technical integration, and AI in engineering — with essays at atqi.dev."
+          content="Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev."
         />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
