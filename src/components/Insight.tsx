@@ -117,7 +117,7 @@ const Insight = () => {
               Insights / atqi.dev
             </div>
             <h3 className="text-2xl font-semibold text-foreground tracking-tight">
-              Latest from the Engineering Quality Journal
+              Latest from ATQI Insights
             </h3>
             <p className="text-muted-foreground mt-2 max-w-2xl">
               Long-form articles on the AT Quality Intelligence Framework™,
@@ -141,7 +141,7 @@ const Insight = () => {
         {posts === null ? (
           <div className="flex items-center gap-2 text-sm text-muted-foreground py-8">
             <Loader2 className="h-4 w-4 animate-spin" />
-            Loading latest posts from atqi.dev…
+            Loading latest from ATQI Insights…
           </div>
         ) : posts.length === 0 ? (
           <p className="text-sm text-muted-foreground py-8">
