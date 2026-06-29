@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const headshotSm = '/headshot-sm.webp';
 const headshotMd = '/headshot-md.webp';
+const headshot640 = '/headshot-640.webp';
 const headshotLg = '/headshot-lg.webp';
 
 const Hero = () => {
@@ -82,7 +83,7 @@ const Hero = () => {
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img
                   src={headshotMd}
-                  srcSet={`${headshotSm} 373w, ${headshotMd} 533w, ${headshotLg} 800w`}
+                  srcSet={`${headshotSm} 373w, ${headshotMd} 533w, ${headshot640} 640w, ${headshotLg} 800w`}
                   sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 440px"
                   alt="Aleksandr Teymurazov, Engineering Quality & Delivery Leader"
                   width={800}
