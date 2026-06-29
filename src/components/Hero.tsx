@@ -81,11 +81,11 @@ const Hero = () => {
               <div className="absolute -inset-6 bg-gradient-to-br from-accent/25 via-transparent to-transparent rounded-3xl blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden border border-border shadow-glow bg-card">
                 <img
-                  src={headshotLg}
-                  srcSet={`${headshotSm} 420w, ${headshotMd} 600w, ${headshotLg} 900w`}
-                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 60vw, 480px"
+                  src={headshotMd}
+                  srcSet={`${headshotSm} 373w, ${headshotMd} 533w, ${headshotLg} 800w`}
+                  sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 440px"
                   alt="Aleksandr Teymurazov, Engineering Quality & Delivery Leader"
-                  width={900}
+                  width={800}
                   height={1200}
                   className="w-full h-auto object-cover aspect-[3/4]"
                   style={{ objectPosition: '50% 45%' }}
