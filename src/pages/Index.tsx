@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
+import InView from "@/components/InView";
 
 const Accomplishments = lazy(() => import("@/components/Accomplishments"));
 const Education = lazy(() => import("@/components/Education"));
@@ -40,9 +41,13 @@ const Index = () => {
           <Principles />
           <Experience />
           <Framework />
-          <Insight />
+          <InView>
+            <Insight />
+          </InView>
           <Education />
-          <Contact />
+          <InView>
+            <Contact />
+          </InView>
           <Footer />
         </Suspense>
       </main>
