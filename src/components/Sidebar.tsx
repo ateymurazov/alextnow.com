@@ -36,7 +36,9 @@ const Sidebar = () => {
       setActive(getRouteActiveId(location.pathname));
       return;
     }
-    const onScroll = () => {
+    let ticking = false;
+    const measure = () => {
+      ticking = false;
       const offsets = menuItems
         .map((m) => {
           const el = document.getElementById(m.id);
@@ -50,7 +52,12 @@ const Sidebar = () => {
         .pop();
       setActive(current?.id ?? '');
     };
-    onScroll();
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(measure);
+    };
+    measure();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, [onHome, location.pathname]);
