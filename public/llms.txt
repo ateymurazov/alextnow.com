@@ -2,13 +2,13 @@
 
 > Engineering leader building trusted CI/CD, Quality Intelligence, AI-driven validation, and delivery observability for enterprise software organizations.
 
-Personal site of Aleksandr Teymurazov — operating principles, work experience, accomplishments, and the AT Quality Intelligence (ATQI) framework. Long-form essays live on the companion site at https://atqi.dev.
+Personal site of Aleksandr Teymurazov — operating principles, work experience, accomplishments, and the AT Quality Intelligence (ATQI) framework. Long-form articles live on the companion site at https://atqi.dev.
 
 ## Pages
 
 - [Home](/): Overview, hero, principles, accomplishments, experience, framework, insights, education, and contact.
-- [Insights](/insights): Perspectives on quality engineering, M&A technical integration, and AI in engineering, with the latest long-form essays from https://atqi.dev.
+- [Insights](/insights): Perspectives on quality engineering, M&A technical integration, and AI in engineering, with the latest long-form articles from https://atqi.dev.
 
 ## Related sites
 
-- [atqi.dev](https://atqi.dev): The Engineering Quality Journal — essays on the ATQI framework, CI/CD trust, AI-assisted validation, and software quality engineering, authored by Aleksandr Teymurazov.
+- [atqi.dev](https://atqi.dev): ATQI Insights — articles on the ATQI framework, CI/CD trust, AI-assisted validation, and software quality engineering, authored by Aleksandr Teymurazov.

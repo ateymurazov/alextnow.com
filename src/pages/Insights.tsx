@@ -10,10 +10,10 @@ const Insights = () => {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Engineering Insights — Aleksandr Teymurazov',
+    name: 'ATQI Insights — Aleksandr Teymurazov',
     url: 'https://alextnow.com/insights',
     description:
-      'Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev.',
+      'ATQI Insights — engineering articles from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader, on quality, CI/CD, and AI-enabled validation at atqi.dev.',
     author: {
       '@type': 'Person',
       name: 'Aleksandr Teymurazov',
@@ -25,18 +25,18 @@ const Insights = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Engineering Insights | Aleksandr Teymurazov</title>
+        <title>ATQI Insights | Aleksandr Teymurazov</title>
         <meta
           name="description"
-          content="Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev."
+          content="ATQI Insights — engineering articles from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader, on quality, CI/CD, and AI-enabled validation at atqi.dev."
         />
         <link rel="canonical" href="https://alextnow.com/insights" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://alextnow.com/insights" />
-        <meta property="og:title" content="Engineering Insights | Aleksandr Teymurazov" />
+        <meta property="og:title" content="ATQI Insights | Aleksandr Teymurazov" />
         <meta
           property="og:description"
-          content="Engineering insights from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader — long-form articles on quality, CI/CD, and AI-enabled validation at atqi.dev."
+          content="ATQI Insights — engineering articles from Aleksandr Teymurazov, Director of Quality Engineering and Quality Intelligence Leader, on quality, CI/CD, and AI-enabled validation at atqi.dev."
         />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
