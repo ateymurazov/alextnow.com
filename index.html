@@ -10,6 +10,18 @@
     <meta name="author" content="Aleksandr Teymurazov" />
     <link rel="canonical" href="https://alextnow.com/" />
 
+    <!-- Block the lovable.app subdomain from being indexed while keeping the custom domain indexable -->
+    <script>
+      (function () {
+        if (window.location.hostname === 'alextnow.lovable.app') {
+          var meta = document.createElement('meta');
+          meta.name = 'robots';
+          meta.content = 'noindex, nofollow';
+          document.head.appendChild(meta);
+        }
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
