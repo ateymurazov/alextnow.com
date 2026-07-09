@@ -41,11 +41,11 @@ const Index = () => {
           <Principles />
           <Experience />
           <Framework />
-          <InView>
+          <InView id="insight">
             <Insight />
           </InView>
           <Education />
-          <InView>
+          <InView id="contact">
             <Contact />
           </InView>
           <Footer />
