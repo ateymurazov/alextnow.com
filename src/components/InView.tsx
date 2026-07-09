@@ -40,7 +40,11 @@ const InView = ({
     return () => obs.disconnect();
   }, [show, rootMargin]);
 
-  return <div ref={ref}>{show ? children : <div style={{ minHeight }} />}</div>;
+  return (
+    <div ref={ref}>
+      {show ? children : <div id={id} style={{ minHeight }} />}
+    </div>
+  );
 };
 
 export default InView;
