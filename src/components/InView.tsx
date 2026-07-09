@@ -9,10 +9,12 @@ const InView = ({
   children,
   rootMargin = "400px",
   minHeight = "60vh",
+  id,
 }: {
   children: React.ReactNode;
   rootMargin?: string;
   minHeight?: string;
+  id?: string;
 }) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [show, setShow] = useState(false);
@@ -38,7 +40,11 @@ const InView = ({
     return () => obs.disconnect();
   }, [show, rootMargin]);
 
-  return <div ref={ref}>{show ? children : <div style={{ minHeight }} />}</div>;
+  return (
+    <div ref={ref}>
+      {show ? children : <div id={id} style={{ minHeight }} />}
+    </div>
+  );
 };
 
 export default InView;
