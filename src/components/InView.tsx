@@ -9,10 +9,12 @@ const InView = ({
   children,
   rootMargin = "400px",
   minHeight = "60vh",
+  id,
 }: {
   children: React.ReactNode;
   rootMargin?: string;
   minHeight?: string;
+  id?: string;
 }) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [show, setShow] = useState(false);
