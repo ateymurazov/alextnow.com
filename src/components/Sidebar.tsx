@@ -65,7 +65,7 @@ const Sidebar = () => {
 
   const scrollToSection = (sectionId: string) => {
     if (onHome) {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      smoothScrollToSection(sectionId);
     } else {
       navigate(`/#${sectionId}`);
     }
