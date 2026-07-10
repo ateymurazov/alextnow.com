@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
 import InView from "@/components/InView";
+import { scrollToSection } from "@/lib/scroll";
 
 const Accomplishments = lazy(() => import("@/components/Accomplishments"));
 const Education = lazy(() => import("@/components/Education"));
@@ -21,9 +22,7 @@ const Index = () => {
     if (location.hash) {
       const id = location.hash.slice(1);
       // wait for lazy sections to mount before scrolling
-      const t = setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+      const t = setTimeout(() => scrollToSection(id), 300);
       return () => clearTimeout(t);
     }
   }, [location.hash]);

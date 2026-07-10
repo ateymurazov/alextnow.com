@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { scrollToSection as smoothScrollToSection } from '@/lib/scroll';
 
 import { Briefcase, GraduationCap, Trophy, Lightbulb, Mail, Menu, X, Linkedin, Compass, Cpu } from 'lucide-react';
 
@@ -64,7 +65,7 @@ const Sidebar = () => {
 
   const scrollToSection = (sectionId: string) => {
     if (onHome) {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      smoothScrollToSection(sectionId);
     } else {
       navigate(`/#${sectionId}`);
     }
