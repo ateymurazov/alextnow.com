@@ -1,44 +1,43 @@
-import React, { useState } from 'react';
-import { Wand2, Target, Activity, Brain, Plus, Minus } from 'lucide-react';
-import frameworkImg from '@/assets/atqi-framework.webp';
+import React, { useState } from "react";
+import { Wand2, Target, Activity, Brain, Plus, Minus } from "lucide-react";
+import frameworkImg from "@/assets/atqi-framework.webp";
 
 const pillars = [
   {
     icon: Wand2,
-    title: 'Adaptive Test Generation',
-    summary: 'AI synthesizes tests from PR diffs and incident history, coverage scales with change, not headcount.',
+    title: "Adaptive Test Generation",
+    summary: "AI synthesizes tests from PR diffs and incident history, coverage scales with change, not headcount.",
     example:
-      'On a multi-brand commerce checkout, meaningful coverage on changed code moved from ~55% to 90%+ without growing the QE org.',
+      "On a multi-brand commerce checkout, meaningful coverage on changed code moved from ~55% to 90%+ without growing the QE org.",
   },
   {
     icon: Target,
-    title: 'Risk-Based Execution',
-    summary: 'Every commit is scored by blast-radius and historical failure rate, CI runs only what matters.',
+    title: "Risk-Based Execution",
+    summary: "Every commit is scored by blast-radius and historical failure rate, CI runs only what matters.",
     example:
-      'A 9,000-test enterprise SaaS suite: PR feedback cut from 48 minutes to under 9, with escape rate held flat.',
+      "A 9,000-test enterprise SaaS suite: PR feedback cut from 48 minutes to under 9, with escape rate held flat.",
   },
   {
     icon: Activity,
-    title: 'Quality Observability',
-    summary: 'Pipeline, test, and release telemetry unified into one signal layer with clear ownership.',
-    example:
-      'Across 120+ engineers and 5 product lines, production defect escape dropped 60% quarter-over-quarter.',
+    title: "Quality Observability",
+    summary: "Pipeline, test, and release telemetry unified into one signal layer with clear ownership.",
+    example: "Across 120+ engineers and 5 product lines, production defect escape dropped 60% quarter-over-quarter.",
   },
   {
     icon: Brain,
-    title: 'AI-Assisted Failure Analysis',
-    summary: 'Failures clustered, ranked by probable root cause, and auto-routed to the owning service team.',
+    title: "AI-Assisted Failure Analysis",
+    summary: "Failures clustered, ranked by probable root cause, and auto-routed to the owning service team.",
     example:
-      'On a regulated payments platform, mean-time-to-diagnose collapsed from ~4 hours to under 20 minutes.',
+      "Led GenAI red-teaming on a production LLM system that surfaced race-based model bias before release, driving a model retraining cycle and new bias-detection checks in the CI pipeline.",
   },
 ];
 
 const outcomes = [
-  { metric: '-90%', label: 'Regression cycle reduction' },
-  { metric: '+35%', label: 'Release cadence acceleration' },
-  { metric: 'Predictive', label: 'Flaky-test detection' },
-  { metric: 'Adaptive', label: 'CI execution & test selection' },
-  { metric: 'Telemetry', label: 'Driven release validation' },
+  { metric: "-90%", label: "Regression cycle reduction" },
+  { metric: "+35%", label: "Release cadence acceleration" },
+  { metric: "Predictive", label: "Flaky-test detection" },
+  { metric: "Adaptive", label: "CI execution & test selection" },
+  { metric: "Telemetry", label: "Driven release validation" },
 ];
 
 const Framework = () => {
@@ -49,12 +48,14 @@ const Framework = () => {
     <section id="framework" className="section-container">
       <div className="section-eyebrow">04 / Framework</div>
       <h2 className="section-title">
-        AT Quality Intelligence<br />Framework<sup className="text-xl text-accent">™</sup>
+        AT Quality Intelligence
+        <br />
+        Framework<sup className="text-xl text-accent">™</sup>
       </h2>
 
       <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
-        An operating model for building trusted software delivery systems through Quality
-        Intelligence, observability, and deterministic CI/CD execution.
+        An operating model for building trusted software delivery systems through Quality Intelligence, observability,
+        and deterministic CI/CD execution.
       </p>
 
       <div className="mb-12">
@@ -65,7 +66,7 @@ const Framework = () => {
           aria-expanded={diagramOpen}
         >
           {diagramOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-          {diagramOpen ? 'Hide framework diagram' : 'View framework diagram'}
+          {diagramOpen ? "Hide framework diagram" : "View framework diagram"}
         </button>
         {diagramOpen && (
           <div className="card-elevated p-4 md:p-6 overflow-hidden">
@@ -90,12 +91,10 @@ const Framework = () => {
                   <Icon className="h-5 w-5 text-primary" />
                 </div>
                 <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
-                  Pillar {String(i + 1).padStart(2, '0')}
+                  Pillar {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2 leading-snug">
-                {p.title}
-              </h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2 leading-snug">{p.title}</h3>
               <p className="text-sm text-foreground/90 leading-relaxed mb-4">{p.summary}</p>
 
               {isOpen && (
@@ -114,7 +113,7 @@ const Framework = () => {
                 aria-expanded={isOpen}
               >
                 {isOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-                {isOpen ? 'Collapse' : 'See enterprise example'}
+                {isOpen ? "Collapse" : "See enterprise example"}
               </button>
             </article>
           );
@@ -127,20 +126,13 @@ const Framework = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {outcomes.map((o, i) => (
-            <div
-              key={i}
-              className="card-elevated p-5 flex flex-col gap-2 hover-lift"
-            >
-              <div className="text-2xl font-semibold text-accent leading-none">
-                {o.metric}
-              </div>
+            <div key={i} className="card-elevated p-5 flex flex-col gap-2 hover-lift">
+              <div className="text-2xl font-semibold text-accent leading-none">{o.metric}</div>
               <div className="text-xs text-muted-foreground leading-snug">{o.label}</div>
             </div>
           ))}
         </div>
-        <p className="mt-6 text-xs text-muted-foreground/70 italic">
-          Deeper write-up of the framework coming soon.
-        </p>
+        <p className="mt-6 text-xs text-muted-foreground/70 italic">Deeper write-up of the framework coming soon.</p>
       </div>
     </section>
   );
