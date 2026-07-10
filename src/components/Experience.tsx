@@ -153,7 +153,7 @@ const experiences: Experience[] = [
   {
     id: "3",
     company: "VerticalResponse",
-    period: "January 2009 - July 2013",
+    period: "August 2009 - July 2013",
     website: "http://verticalresponse.com",
     roles: [
       {
