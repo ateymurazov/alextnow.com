@@ -99,14 +99,10 @@ const Contact = () => {
   return (
     <section id="contact" className="section-container">
       <div className="section-eyebrow">07 / Contact</div>
-      <h2 className="section-title">Let's Build Better<br />Engineering Organizations.</h2>
+      <h2 className="section-title">Let's Talk About Your Next<br />Quality Engineering Leader.</h2>
 
-      <p className="max-w-2xl text-foreground text-lg leading-relaxed mb-2">
-        Currently exploring senior Quality Engineering leadership roles, and open to strategic advisory conversations.
-      </p>
-
-      <p className="max-w-2xl text-muted-foreground text-lg leading-relaxed mb-10">
-        Helping organizations modernize delivery, unify engineering teams, and operationalize AI at scale.
+      <p className="max-w-2xl text-foreground text-lg leading-relaxed mb-10">
+        Currently exploring senior Quality Engineering leadership roles. Open to full-time positions and select advisory conversations.
       </p>
 
       <div className="max-w-5xl mx-auto">
@@ -157,7 +153,7 @@ const Contact = () => {
           <div className="card-elevated p-6">
             <h3 className="text-xl font-semibold mb-5 flex items-center">
               <Send className="h-5 w-5 mr-2 text-primary" />
-              Discuss an Initiative
+              Start a Conversation
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -208,12 +204,12 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium">What are you trying to improve? *</Label>
+                <Label htmlFor="message" className="text-sm font-medium">Tell me about the role or team *</Label>
                 <Textarea
                   id="message"
                   name="message"
                   rows={4}
-                  placeholder="Tell me about your engineering, delivery, or organizational challenge."
+                  placeholder="Share the role, team, or challenge you're hiring for."
                   value={formData.message}
                   onChange={handleChange}
                   disabled={isSubmitting}
@@ -244,7 +240,7 @@ const Contact = () => {
                 ) : (
                   <div className="flex items-center space-x-2">
                     <Send className="h-4 w-4" />
-                    <span>Start the Conversation</span>
+                    <span>Send Message</span>
                   </div>
                 )}
               </Button>
