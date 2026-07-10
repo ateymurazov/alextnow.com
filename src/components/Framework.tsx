@@ -27,8 +27,7 @@ const pillars = [
     icon: Brain,
     title: "AI-Assisted Failure Analysis",
     summary: "Failures clustered, ranked by probable root cause, and auto-routed to the owning service team.",
-    example:
-      "Led GenAI red-teaming on a production LLM system that surfaced race-based model bias before release, driving a model retraining cycle and new bias-detection checks in the CI pipeline.",
+    example: "On a regulated payments platform, mean-time-to-diagnose collapsed from ~4 hours to under 20 minutes.",
   },
 ];
 
