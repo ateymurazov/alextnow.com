@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Linkedin, ArrowUp } from 'lucide-react';
+import { scrollToSection } from '@/lib/scroll';
 
 const Footer = () => {
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
