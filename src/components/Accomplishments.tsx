@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Zap, Code, Users, TrendingUp, Shield, Rocket, Plus, Minus } from 'lucide-react';
+import React, { useState } from "react";
+import { Zap, Code, Users, TrendingUp, Shield, Rocket, Plus, Minus } from "lucide-react";
 
 const highlights = [
   { icon: Shield, metric: "90 - 95%", label: "Automated Coverage" },
@@ -17,10 +17,14 @@ const transformations = [
     body: (
       <div className="space-y-4">
         <p>
-          Rebuilt operating cadence around Scrum, introduced mandatory TDD practices, and implemented fully automated CI/CD pipelines with quality gates spanning Git pull request validation through production deployment.
+          Rebuilt operating cadence around Scrum, introduced mandatory TDD practices, and implemented fully automated
+          CI/CD pipelines with quality gates spanning Git pull request validation through production deployment.
         </p>
         <p>
-          <span className="text-foreground font-medium">Reduced manual regression effort by 90%, compressed release validation cycles from 7 days to ~4 hours,</span> and enabled reliable same-day software delivery.
+          <span className="text-foreground font-medium">
+            Reduced manual regression effort by 90%, compressed release validation cycles from 7 days to ~4 hours,
+          </span>{" "}
+          and enabled reliable same-day software delivery.
         </p>
       </div>
     ),
@@ -31,8 +35,15 @@ const transformations = [
     chips: ["Zero Downtime", "Billions of Records"],
     body: (
       <div className="space-y-4">
-        <p>Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.</p>
-        <p><span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on the new stack with 20% faster list uploads and segmentation, plus a cleaner creation workflow, with no migration interruption.</p>
+        <p>
+          Led back-to-back rewrites of two flagship SaaS platforms processing billions of records daily, including
+          VerticalResponse's monolithic email marketing engine, without losing a single user-facing feature.
+        </p>
+        <p>
+          <span className="text-foreground font-medium">Cutover executed with zero downtime.</span> Customers landed on
+          the new stack with 20% faster list uploads and segmentation, plus a cleaner creation workflow, with no
+          migration interruption.
+        </p>
       </div>
     ),
   },
@@ -42,8 +53,21 @@ const transformations = [
     chips: ["5 Teams Unified", "$500K Annual Savings", "AI-Powered Automation"],
     body: (
       <div className="space-y-4">
-        <p>At Deluxe, merged five acquired orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation, into a single "One Deluxe" Engineering org with shared standards and toolchain. <span className="text-foreground font-medium">Consolidated tooling and QA infra cut operational costs by $500K+ annually.</span></p>
-        <p>At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test generator and impact-analysis engine. <span className="text-foreground font-medium">Manual testing dropped 90%, release cycles compressed 35%, and validated story throughput rose 50% per sprint.</span></p>
+        <p>
+          At Deluxe, merged five acquired orgs, VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation, into
+          a single "One Deluxe" Engineering org with shared standards and toolchain.{" "}
+          <span className="text-foreground font-medium">
+            Consolidated tooling and QA infra cut operational costs by $500K+ annually.
+          </span>
+        </p>
+        <p>
+          At Shutterfly, unified five siloed QA teams into a "Quality Intelligence" org powered by an adaptive AI test
+          generator and impact-analysis engine.{" "}
+          <span className="text-foreground font-medium">
+            Manual testing dropped 90%, release cycles compressed 35%, and validated story throughput rose 50% per
+            sprint.
+          </span>
+        </p>
       </div>
     ),
   },
@@ -54,10 +78,21 @@ const transformations = [
     body: (
       <div className="space-y-4">
         <p>
-          Built an AI test-generation engine that scans code, authors targeted cases, and flags the riskiest paths pre-commit. <span className="text-foreground font-medium">Coverage climbed 30% in 90 days</span>, freeing QA for exploratory and edge-case work.
+          Built an AI test-generation engine that scans code, authors targeted cases, and flags the riskiest paths
+          pre-commit. <span className="text-foreground font-medium">Coverage climbed 30% in 90 days</span>, freeing QA
+          for exploratory and edge-case work.
         </p>
         <p>
-          Paired it with a Random Forest classifier that detects flaky tests, <span className="text-foreground font-medium">cutting false positives 90%+</span> and restoring engineering trust in automated validation.
+          Paired it with a Random Forest classifier that detects flaky tests,{" "}
+          <span className="text-foreground font-medium">cutting false positives 90%+</span> and restoring engineering
+          trust in automated validation.
+        </p>
+        <p>
+          Red-teamed a production GenAI feature with varied adversarial inputs,{" "}
+          <span className="text-foreground font-medium">
+            surfacing race-based bias in model responses before release
+          </span>
+          , and prompting a retraining cycle.
         </p>
       </div>
     ),
@@ -71,7 +106,11 @@ const Accomplishments = () => {
   return (
     <section id="accomplishments" className="section-container animate-fade-in">
       <div className="section-eyebrow">01 / Impact</div>
-      <h2 className="section-title">Numbers that define<br />the work.</h2>
+      <h2 className="section-title">
+        Numbers that define
+        <br />
+        the work.
+      </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
         {highlights.map((item, index) => {
@@ -92,11 +131,14 @@ const Accomplishments = () => {
           Leadership Journey
         </h3>
         <p className="text-muted-foreground leading-relaxed">
-          Fifteen years progressing from QA Manager to Director of Quality Engineering, moving fluently between C-suite strategy and hands-on execution.
+          Fifteen years progressing from QA Manager to Director of Quality Engineering, moving fluently between C-suite
+          strategy and hands-on execution.
         </p>
         {journeyOpen && (
           <p className="text-sm text-muted-foreground leading-relaxed mt-4 pt-4 border-t border-border">
-            With stops as Development Manager, Director of Engineering, and Executive Director in between, I've led both development and quality organizations, debugging production, authoring CI/CD, and shaping the operating model in the same week.
+            With stops as Development Manager, Director of Engineering, and Executive Director in between, I've led both
+            development and quality organizations, debugging production, authoring CI/CD, and shaping the operating
+            model in the same week.
           </p>
         )}
         <button
@@ -106,7 +148,7 @@ const Accomplishments = () => {
           aria-expanded={journeyOpen}
         >
           {journeyOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-          {journeyOpen ? 'Collapse' : 'Read full arc'}
+          {journeyOpen ? "Collapse" : "Read full arc"}
         </button>
       </div>
 
@@ -124,16 +166,16 @@ const Accomplishments = () => {
                   <h3 className="text-xl font-semibold mb-3">{t.title}</h3>
                   <div className="flex flex-wrap gap-2 text-sm text-muted-foreground">
                     {t.chips.map((c) => (
-                      <span key={c} className="bg-secondary px-2 py-1 rounded">{c}</span>
+                      <span key={c} className="bg-secondary px-2 py-1 rounded">
+                        {c}
+                      </span>
                     ))}
                   </div>
                 </div>
               </div>
 
               {isOpen && (
-                <div className="text-muted-foreground leading-relaxed pt-4 mt-4 border-t border-border">
-                  {t.body}
-                </div>
+                <div className="text-muted-foreground leading-relaxed pt-4 mt-4 border-t border-border">{t.body}</div>
               )}
 
               <button
@@ -143,13 +185,12 @@ const Accomplishments = () => {
                 aria-expanded={isOpen}
               >
                 {isOpen ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-                {isOpen ? 'Collapse' : 'Read transformation'}
+                {isOpen ? "Collapse" : "Read transformation"}
               </button>
             </article>
           );
         })}
       </div>
-
     </section>
   );
 };
