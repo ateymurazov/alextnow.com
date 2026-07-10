@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { scrollToSection } from '@/lib/scroll';
 
 const headshotSm = '/headshot-sm.webp';
 const headshotMd = '/headshot-md.webp';
@@ -8,8 +9,7 @@ const headshot640 = '/headshot-640.webp';
 const headshotLg = '/headshot-lg.webp';
 
 const Hero = () => {
-  const scrollTo = (id: string) =>
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  const scrollTo = (id: string) => scrollToSection(id);
 
   return (
     <section className="relative min-h-screen overflow-hidden mesh-bg grain pt-24 lg:pt-0">
