@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import Hero from "@/components/Hero";
 import Sidebar from "@/components/Sidebar";
 import InView from "@/components/InView";
+import { scrollToSection } from "@/lib/scroll";
 
 const Accomplishments = lazy(() => import("@/components/Accomplishments"));
 const Education = lazy(() => import("@/components/Education"));
