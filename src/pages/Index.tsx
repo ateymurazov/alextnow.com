@@ -22,9 +22,7 @@ const Index = () => {
     if (location.hash) {
       const id = location.hash.slice(1);
       // wait for lazy sections to mount before scrolling
-      const t = setTimeout(() => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+      const t = setTimeout(() => scrollToSection(id), 300);
       return () => clearTimeout(t);
     }
   }, [location.hash]);
