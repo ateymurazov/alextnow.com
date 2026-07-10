@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import { Plus, Minus } from 'lucide-react';
-import OperatingScope from './OperatingScope';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import React, { useState } from "react";
+import { Plus, Minus } from "lucide-react";
+import OperatingScope from "./OperatingScope";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 type Snapshot = {
   scope: string;
@@ -49,13 +43,22 @@ const experiences: Experience[] = [
             "Built an AI-assisted Quality Intelligence framework for adaptive test generation and risk-based execution",
             "Reduced manual regression effort by 90% and accelerated release cadence by 35%",
             "Embedded automated unit, integration, and performance tests across every CI/CD stage",
-            "Delivered $500K annual cost savings and 40% increase in test execution capacity in 18 months",
+            "Delivered $500K annual cost savings in 18 months",
             "Stood up a rolling capacity-planning model with Product, Engineering, and Finance",
             "Rebuilt the Shutterfly Consumer/Business content-creator upload pipeline as event-driven microservices, replacing a brittle, queue-prone workflow",
             "Cut image processing to sub-2-second loads at 10x peak seasonal volume via async processing, serverless metadata normalization, and CDN-edge caching",
             "Drove a 30% increase in post-launch user satisfaction on the new creator experience",
           ],
-          technologies: ["Playwright", "Docker", "Jenkins", "GitHub Actions", "Splunk", "AWS", "Python", "SeleniumGrid"],
+          technologies: [
+            "Playwright",
+            "Docker",
+            "Jenkins",
+            "GitHub Actions",
+            "Splunk",
+            "AWS",
+            "Python",
+            "SeleniumGrid",
+          ],
         },
         impact: [
           "Scope: Inherited 5 siloed QE teams across SnapFish, Lifetouch, Spoonflower, SFLY Business, and SFLY Consumer, 120 engineers, 3 manager reports.",
@@ -64,8 +67,8 @@ const experiences: Experience[] = [
           "Action: Stood up a rolling capacity-planning model with Product, Engineering, and Finance to translate strategy into headcount, budget, and release timelines.",
           "Results: -90% manual regression, +35% release cadence, +40% test execution capacity, and $500K annual savings within 18 months.",
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "2",
@@ -109,7 +112,7 @@ const experiences: Experience[] = [
             "Boosted development velocity by 20% and reduced production incidents",
             "Built end-to-end automation for capital-expense reporting, replacing manual workflows",
             "Negotiated enterprise-wide GitHub + Atlassian agreements, 20% OPEX reduction",
-            "Led Agile/TDD transformation across 200+ engineers spanning VerticalResponse, Hostopia, WebBuilder, and LogoMix",
+            "Led Agile/TDD transformation across 200+ engineers spanning VerticalResponse, Hostopia, WebBuilder, LogoMix, and Orange Soda",
             "Cut defect rates by 50% and lifted release cadence by 40% within six months of rollout",
           ],
           technologies: ["Ruby on Rails", "Java", "GitHub", "Jenkins", "Atlassian"],
@@ -144,8 +147,8 @@ const experiences: Experience[] = [
           "Action: Designed a data-analysis framework that stress-tested pipelines against billions of records to validate reliability at scale.",
           "Results: +50% platform scalability and email-delivery performance, zero-downtime cutover, and passed PCI audit on first submission with HIPAA readiness secured.",
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "3",
@@ -193,24 +196,20 @@ const experiences: Experience[] = [
           "Action: Established the developer-QA handoff model and a repeatable, scalable QA process adopted across engineering.",
           "Results: -60% production defects and promoted from IC to QA Manager in 8 months.",
         ],
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
 const SnapshotBlock: React.FC<{ snapshot: Snapshot }> = ({ snapshot }) => (
   <div className="mb-6 rounded-xl border border-border bg-secondary/40 p-5 sm:p-6">
     <div className="grid sm:grid-cols-2 gap-4 mb-5 pb-5 border-b border-border">
       <div>
-        <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground mb-1">
-          Scope
-        </div>
+        <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground mb-1">Scope</div>
         <div className="text-sm text-foreground leading-snug">{snapshot.scope}</div>
       </div>
       <div>
-        <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground mb-1">
-          Org Size
-        </div>
+        <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground mb-1">Org Size</div>
         <div className="text-sm text-foreground leading-snug">{snapshot.orgSize}</div>
       </div>
     </div>
@@ -253,21 +252,12 @@ const ImpactBullet: React.FC<{ text: string }> = ({ text }) => {
   const match = text.match(/^(Scope|Action|Results):\s*(.*)$/);
   const label = match?.[1];
   const body = match?.[2] ?? text;
-  const labelColor =
-    label === 'Results'
-      ? 'text-accent'
-      : label === 'Scope'
-        ? 'text-foreground'
-        : 'text-foreground/80';
+  const labelColor = label === "Results" ? "text-accent" : label === "Scope" ? "text-foreground" : "text-foreground/80";
   return (
     <li className="flex gap-3 text-[15px] leading-relaxed text-muted-foreground">
       <span className="mt-2 h-1 w-1 rounded-full bg-accent flex-shrink-0" />
       <span>
-        {label && (
-          <span className={`font-mono text-[10px] uppercase tracking-widest mr-2 ${labelColor}`}>
-            {label}
-          </span>
-        )}
+        {label && <span className={`font-mono text-[10px] uppercase tracking-widest mr-2 ${labelColor}`}>{label}</span>}
         {body}
       </span>
     </li>
@@ -303,19 +293,22 @@ const RoleNarrative: React.FC<{ impact: string[] }> = ({ impact }) => {
           aria-expanded={open}
         >
           {open ? <Minus className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
-          {open ? 'Hide operating detail' : 'Show operating detail'}
+          {open ? "Hide operating detail" : "Show operating detail"}
         </button>
       )}
     </div>
   );
 };
 
-
 const Experience = () => {
   return (
     <section id="experience" className="section-container">
       <div className="section-eyebrow">03 / Career</div>
-      <h2 className="section-title">A timeline of building<br />and scaling modern software.</h2>
+      <h2 className="section-title">
+        A timeline of building
+        <br />
+        and scaling modern software.
+      </h2>
 
       <OperatingScope />
 
@@ -328,11 +321,9 @@ const Experience = () => {
                 <div>
                   <div className="flex items-center gap-3 mb-2">
                     <span className="font-mono text-[10px] tracking-widest uppercase text-accent">
-                      {String(i + 1).padStart(2, '0')}
+                      {String(i + 1).padStart(2, "0")}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-semibold text-foreground tracking-tight">
-                      {exp.company}
-                    </h3>
+                    <h3 className="text-xl md:text-2xl font-semibold text-foreground tracking-tight">{exp.company}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground font-mono">{exp.period}</p>
                 </div>
@@ -343,17 +334,13 @@ const Experience = () => {
                   className="text-xs text-muted-foreground hover:text-accent transition-colors font-mono"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  {exp.website.replace(/^https?:\/\//, '')} ↗
+                  {exp.website.replace(/^https?:\/\//, "")} ↗
                 </a>
               </div>
             );
 
             return (
-              <AccordionItem
-                key={exp.id}
-                value={exp.id}
-                className="relative border-none"
-              >
+              <AccordionItem key={exp.id} value={exp.id} className="relative border-none">
                 <span className="timeline-dot -left-[34px] md:-left-[50px] top-8" />
                 <div className="card-elevated overflow-hidden">
                   {hasRoles ? (
@@ -364,21 +351,15 @@ const Experience = () => {
                       <AccordionContent className="px-6 md:px-8 pb-8">
                         <div className="space-y-8 pt-2">
                           {exp.roles.map((role, index) => (
-                            <div
-                              key={index}
-                              className={index > 0 ? 'pt-8 border-t border-border' : ''}
-                            >
+                            <div key={index} className={index > 0 ? "pt-8 border-t border-border" : ""}>
                               <div className="mb-5">
-                                <p className="text-lg font-semibold text-foreground mb-1">
-                                  {role.position}
-                                </p>
+                                <p className="text-lg font-semibold text-foreground mb-1">{role.position}</p>
                                 <p className="text-xs text-muted-foreground font-mono uppercase tracking-wider">
                                   {role.period}
                                 </p>
                               </div>
                               {role.snapshot && <SnapshotBlock snapshot={role.snapshot} />}
                               <RoleNarrative impact={role.impact} />
-
                             </div>
                           ))}
                         </div>
