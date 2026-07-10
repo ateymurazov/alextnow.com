@@ -16,12 +16,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center gap-6">
-          <a
-            href="#insight"
+          <button
+            onClick={() => scrollToSection('insight')}
             className="text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-accent transition-colors"
           >
             Insights
-          </a>
+          </button>
           <a
             href="https://linkedin.com/in/ateymurazov"
             target="_blank"
