@@ -109,6 +109,8 @@ const experiences: Experience[] = [
             "Boosted development velocity by 20% and reduced production incidents",
             "Built end-to-end automation for capital-expense reporting, replacing manual workflows",
             "Negotiated enterprise-wide GitHub + Atlassian agreements, 20% OPEX reduction",
+            "Led Agile/TDD transformation across 200+ engineers spanning VerticalResponse, Hostopia, WebBuilder, LogoMix, and MyCorporation",
+            "Cut defect rates by 50% and lifted release cadence by 40% within six months of rollout",
           ],
           technologies: ["Ruby on Rails", "Java", "GitHub", "Jenkins", "Atlassian"],
         },
